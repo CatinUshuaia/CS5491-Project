@@ -8,15 +8,14 @@
 - mock 与 LLM 候选表达式搜索对照实验
 - 实验结果导出、图表生成与轻量交付包构建
 
-## 目录结构
+## 当前目录结构（已存在）
 
 - `01_raw_data/`：原始数据与原始文档
 - `02_processed_data/`：标准化后的 classic/fresh 数据
 - `03_core_algorithm/`：核心算法模块与 notebook
-- `04_experiment_outputs/`：实验输出（CSV、图表、元信息）
+- `04_experiment_outputs/`：实验输出（运行脚本后生成）
 - `05_scripts/`：可直接运行的 pipeline 脚本入口
 - `06_docs/`：流程、数据结构、交接文档
-- `07_delivery_packages/`：交付产物与 lite 包
 
 ## 环境要求
 
@@ -70,7 +69,7 @@ python 05_scripts/run_formal_benchmark.py
 python 05_scripts/run_llm_vs_mock_small.py
 ```
 
-5. 生成 lite 交付图表与表格
+5. 生成 lite 交付图表与表格（会创建 `07_delivery_packages/`）
 
 ```powershell
 python 05_scripts/build_lite_final_assets.py
@@ -90,7 +89,7 @@ python 05_scripts/build_lite_final_assets.py
 - `02_processed_data/classic/`：classic 标准数据与索引
 - `02_processed_data/fresh/`：fresh 数据与元信息
 - `04_experiment_outputs/`：benchmark 和对照实验输出
-- `07_delivery_packages/cvrp_docs_lite_package/`：最终精简交付产物
+- `07_delivery_packages/cvrp_docs_lite_package/`：执行 `build_lite_final_assets.py` 后生成
 
 ## 许可证
 
