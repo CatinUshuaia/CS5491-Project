@@ -10,7 +10,7 @@
 
 ## 当前目录结构
 
-- `01_raw_data/`：原始数据与原始文档
+- `01_raw_data/`：原始 CVRPLib 数据
 - `02_processed_data/`：标准化后的 classic/fresh 数据
 - `03_core_algorithm/`：核心算法模块与 notebook
 - `04_experiment_outputs/`：实验输出
@@ -57,25 +57,25 @@ python 05_scripts/process_cvrplib.py
 python 05_scripts/generate_fresh_dataset.py
 ```
 
-3. 运行正式 benchmark（扩大后的消融实验：更多实例、更多 seed、更长搜索轮数）
+3. 运行正式 benchmark
 
 ```powershell
 python 05_scripts/run_formal_benchmark.py
 ```
 
-4. 运行 classic mock vs LLM 对照 benchmark（报告级配置，无 API Key 时会自动退化为 mock-only）
+4. 运行 classic mock vs LLM 对照 benchmark
 
 ```powershell
 python 05_scripts/run_llm_vs_mock_small.py
 ```
 
-5. 运行 fresh 正式 benchmark（mock，扩大后的 benchmark 配置）
+5. 运行 fresh 正式 benchmark
 
 ```powershell
 python 05_scripts/run_fresh_formal_benchmark.py
 ```
 
-6. 运行 fresh mock vs LLM 对照 benchmark（报告级配置，无 API Key 时会自动退化为 mock-only）
+6. 运行 fresh mock vs LLM 对照 benchmark
 
 ```powershell
 python 05_scripts/run_fresh_llm_vs_mock_small.py
@@ -92,6 +92,7 @@ python 05_scripts/run_fresh_llm_vs_mock_small.py
 
 ## 主要输出位置
 
+- `01_raw_data/cvrplib_sets/`：classic 原始 `.vrp/.sol` 数据
 - `02_processed_data/classic/`：classic 标准数据与索引
 - `02_processed_data/fresh/`：fresh 数据与元信息
 - `04_experiment_outputs/`：benchmark 和对照实验输出

@@ -307,7 +307,6 @@ def main() -> None:
     raw_sets_root = project_root / "01_raw_data" / "cvrplib_sets"
     processed_base_dir = project_root / "02_processed_data" / "classic" / "base"
     processed_meta_dir = project_root / "02_processed_data" / "classic" / "meta"
-    raw_export_dir = project_root / "01_raw_data" / "raw_snapshot" / "raw"
     docs_dir = project_root / "06_docs" / "pipeline_docs"
     index_csv_path = project_root / "02_processed_data" / "classic" / "index.csv"
     qa_report_path = docs_dir / "qa_report.md"
@@ -315,7 +314,6 @@ def main() -> None:
 
     processed_base_dir.mkdir(parents=True, exist_ok=True)
     processed_meta_dir.mkdir(parents=True, exist_ok=True)
-    raw_export_dir.mkdir(parents=True, exist_ok=True)
     docs_dir.mkdir(parents=True, exist_ok=True)
 
     index_rows: List[Dict] = []
@@ -363,14 +361,6 @@ def main() -> None:
                     "max_distance": max_distance,
                 }
             )
-
-            # Keep exact raw copies for traceability.
-            exported_vrp = raw_export_dir / set_id / vrp_path.name
-            exported_vrp.parent.mkdir(parents=True, exist_ok=True)
-            exported_vrp.write_text(vrp_path.read_text(encoding="utf-8"), encoding="utf-8")
-            if sol_path.exists():
-                exported_sol = raw_export_dir / set_id / sol_path.name
-                exported_sol.write_text(sol_path.read_text(encoding="utf-8"), encoding="utf-8")
 
     index_rows.sort(key=lambda r: r["instance_id"])
     index_csv_path.parent.mkdir(parents=True, exist_ok=True)
