@@ -1,0 +1,45 @@
+{
+  "num_instances": 39,
+  "generation_mode": "mock",
+  "num_rounds": 5,
+  "variants_per_expr": 8,
+  "top_k_per_round": 5,
+  "seeds": [
+    42,
+    52,
+    62,
+    72
+  ],
+  "ablations": [
+    {
+      "name": "base",
+      "enable_dedup": false,
+      "max_complexity": null,
+      "require_novel": false
+    },
+    {
+      "name": "base_plus_dedup",
+      "enable_dedup": true,
+      "max_complexity": null,
+      "require_novel": false
+    },
+    {
+      "name": "base_plus_complexity",
+      "enable_dedup": false,
+      "max_complexity": 90,
+      "require_novel": false
+    },
+    {
+      "name": "base_plus_novelty",
+      "enable_dedup": false,
+      "max_complexity": null,
+      "require_novel": true
+    },
+    {
+      "name": "all_enabled",
+      "enable_dedup": true,
+      "max_complexity": 90,
+      "require_novel": true
+    }
+  ]
+}

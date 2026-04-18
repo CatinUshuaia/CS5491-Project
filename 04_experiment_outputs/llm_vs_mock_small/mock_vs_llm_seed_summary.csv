@@ -1,0 +1,7 @@
+mode,seed,num_instances,num_rounds,variants_per_expr,top_k_per_round,rounds_with_summary,summary_rows,llm_calls,llm_total_tokens,best_avg_cost,best_feasible_rate,best_avg_runtime_sec,best_avg_num_routes,best_expression
+mock,42,29,4,6,5,4,27,0,0,1260.0689655172414,1.0,0.043741727697438205,8.172413793103448,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']]
+mock,52,29,4,6,5,4,27,0,0,1260.0689655172414,1.0,0.04513806310193292,8.172413793103448,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']]
+mock,62,29,4,6,5,4,27,0,0,1260.0689655172414,1.0,0.043660895577792465,8.172413793103448,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']]
+llm,42,29,4,6,5,4,42,4,16158,1262.8620689655172,1.0,0.051718670746375775,8.172413793103448,0.8 * dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']]
+llm,52,29,4,6,5,4,41,4,12892,1293.3793103448277,1.0,0.02631352687704152,8.241379310344827,dist_matrix[current][c]
+llm,62,29,4,6,5,4,51,4,13271,1286.4137931034484,1.0,0.06403824378704202,8.172413793103448,0.28 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (0.25 * remaining + 1)

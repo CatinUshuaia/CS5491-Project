@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-18T18:50:15.917471",
+  "output_root": "C:\\Users\\Administrator\\Desktop\\CVRP\\04_experiment_outputs\\formal_benchmark\\base_cvrp_all_enabled_seed42",
+  "files": {
+    "summary_full_rows": 3,
+    "all_detail_outer_rows": 1092,
+    "all_summary_outer_rows": 12,
+    "all_top_outer_rows": 11
+  }
+}

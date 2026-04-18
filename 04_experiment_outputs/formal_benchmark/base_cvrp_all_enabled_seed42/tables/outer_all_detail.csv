@@ -1,0 +1,1093 @@
+instance,expression,cost,runtime_sec,feasible,num_routes,round_idx,known_opt_cost,set_id,dimension,gap,gap_pct
+P-n23-k8,dist_matrix[current][c],746.0,0.0018537044525146484,True,9,0,529.0,P,23,217.0,41.02079395085066
+A-n38-k5,dist_matrix[current][c],1084.0,0.00402379035949707,True,5,0,730.0,A,38,354.0,48.49315068493151
+A-n33-k5,dist_matrix[current][c],977.0,0.003983974456787109,True,5,0,661.0,A,33,316.0,47.806354009077154
+B-n35-k5,dist_matrix[current][c],1304.0,0.003865957260131836,True,5,0,955.0,B,35,349.0,36.544502617801044
+B-n31-k5,dist_matrix[current][c],887.0,0.003030538558959961,True,5,0,672.0,B,31,215.0,31.994047619047617
+A-n48-k7,dist_matrix[current][c],1475.0,0.006741046905517578,True,7,0,1073.0,A,48,402.0,37.46505125815471
+A-n39-k5,dist_matrix[current][c],1070.0,0.006014823913574219,True,5,0,822.0,A,39,248.0,30.170316301703163
+A-n37-k6,dist_matrix[current][c],1334.0,0.004951953887939453,True,6,0,949.0,A,37,385.0,40.56902002107481
+P-n16-k8,dist_matrix[current][c],497.0,0.0007450580596923828,True,8,0,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c],948.0,0.0058536529541015625,True,5,0,669.0,A,37,279.0,41.70403587443946
+E-n13-k4,dist_matrix[current][c],380.0,0.0008618831634521484,True,4,0,247.0,E,13,133.0,53.84615384615385
+A-n33-k6,dist_matrix[current][c],1042.0,0.004435300827026367,True,6,0,742.0,A,33,300.0,40.43126684636118
+P-n50-k10,dist_matrix[current][c],907.0,0.008620262145996094,True,10,0,696.0,P,50,211.0,30.31609195402299
+P-n20-k2,dist_matrix[current][c],309.0,0.001710653305053711,True,2,0,216.0,P,20,93.0,43.05555555555556
+A-n46-k7,dist_matrix[current][c],1335.0,0.0062105655670166016,True,7,0,914.0,A,46,421.0,46.06126914660831
+B-n56-k7,dist_matrix[current][c],1248.0,0.01031637191772461,True,7,0,707.0,B,56,541.0,76.52050919377652
+P-n55-k7,dist_matrix[current][c],754.0,0.010857105255126953,True,7,0,568.0,P,55,186.0,32.74647887323944
+A-n54-k7,dist_matrix[current][c],1421.0,0.009183645248413086,True,7,0,1167.0,A,54,254.0,21.765209940017137
+P-n60-k15,dist_matrix[current][c],1170.0,0.01177668571472168,True,15,0,968.0,P,60,202.0,20.867768595041323
+B-n51-k7,dist_matrix[current][c],1333.0,0.009050607681274414,True,7,0,1032.0,B,51,301.0,29.166666666666668
+P-n60-k10,dist_matrix[current][c],1014.0,0.011854410171508789,True,10,0,744.0,P,60,270.0,36.29032258064516
+E-n76-k7,dist_matrix[current][c],1098.0,0.018486976623535156,True,7,0,682.0,E,76,416.0,60.997067448680355
+P-n76-k5,dist_matrix[current][c],962.0,0.020411014556884766,True,5,0,627.0,P,76,335.0,53.42902711323764
+F-n72-k4,dist_matrix[current][c],413.0,0.01683521270751953,True,4,0,237.0,F,72,176.0,74.26160337552743
+B-n64-k9,dist_matrix[current][c],1272.0,0.012549161911010742,True,9,0,861.0,B,64,411.0,47.73519163763066
+A-n64-k9,dist_matrix[current][c],1964.0,0.013719797134399414,True,9,0,1401.0,A,64,563.0,40.18558172733761
+E-n76-k14,dist_matrix[current][c],1353.0,0.017108917236328125,True,15,0,1021.0,E,76,332.0,32.51714005876592
+E-n76-k8,dist_matrix[current][c],1081.0,0.01798534393310547,True,8,0,735.0,E,76,346.0,47.074829931972786
+A-n53-k7,dist_matrix[current][c],1444.0,0.009067535400390625,True,7,0,1010.0,A,53,434.0,42.97029702970297
+E-n76-k10,dist_matrix[current][c],1221.0,0.0215606689453125,True,10,0,830.0,E,76,391.0,47.10843373493976
+E-n101-k14,dist_matrix[current][c],1658.0,0.0341792106628418,True,14,0,1067.0,E,101,591.0,55.38894095595126
+E-n101-k8,dist_matrix[current][c],1176.0,0.03882575035095215,True,8,0,815.0,E,101,361.0,44.29447852760736
+F-n135-k7,dist_matrix[current][c],1792.0,0.06582784652709961,True,7,0,1162.0,F,135,630.0,54.21686746987952
+M-n101-k10,dist_matrix[current][c],1299.0,0.04001045227050781,True,10,0,820.0,M,101,479.0,58.41463414634146
+M-n121-k7,dist_matrix[current][c],1552.0,0.053708791732788086,True,7,0,1034.0,M,121,518.0,50.09671179883946
+M-n151-k12,dist_matrix[current][c],1547.0,0.07927393913269043,True,12,0,1015.0,M,151,532.0,52.41379310344828
+M-n200-k16,dist_matrix[current][c],1989.0,0.1314716339111328,True,17,0,1274.0,M,200,715.0,56.12244897959183
+M-n200-k17,dist_matrix[current][c],1989.0,0.14644265174865723,True,17,0,1275.0,M,200,714.0,56.00000000000001
+P-n101-k4,dist_matrix[current][c],1021.0,0.03484773635864258,True,4,0,681.0,P,101,340.0,49.926578560939795
+P-n23-k8,dist_matrix[current][c] - 2 * instance['demands'][c],653.0,0.002448558807373047,True,9,0,529.0,P,23,124.0,23.440453686200378
+A-n38-k5,dist_matrix[current][c] - 2 * instance['demands'][c],912.0,0.007631540298461914,True,5,0,730.0,A,38,182.0,24.93150684931507
+A-n33-k5,dist_matrix[current][c] - 2 * instance['demands'][c],928.0,0.007142543792724609,True,5,0,661.0,A,33,267.0,40.39334341906203
+B-n35-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1164.0,0.00676274299621582,True,5,0,955.0,B,35,209.0,21.8848167539267
+B-n31-k5,dist_matrix[current][c] - 2 * instance['demands'][c],909.0,0.0056760311126708984,True,5,0,672.0,B,31,237.0,35.267857142857146
+A-n48-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1507.0,0.013669490814208984,True,7,0,1073.0,A,48,434.0,40.44734389561976
+A-n39-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1131.0,0.007347583770751953,True,5,0,822.0,A,39,309.0,37.591240875912405
+A-n37-k6,dist_matrix[current][c] - 2 * instance['demands'][c],1409.0,0.006534099578857422,True,6,0,949.0,A,37,460.0,48.472075869336145
+P-n16-k8,dist_matrix[current][c] - 2 * instance['demands'][c],497.0,0.001070261001586914,True,8,0,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1018.0,0.006429195404052734,True,5,0,669.0,A,37,349.0,52.167414050822124
+E-n13-k4,dist_matrix[current][c] - 2 * instance['demands'][c],369.0,0.0007808208465576172,True,4,0,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - 2 * instance['demands'][c],1097.0,0.005018711090087891,True,6,0,742.0,A,33,355.0,47.84366576819407
+P-n50-k10,dist_matrix[current][c] - 2 * instance['demands'][c],964.0,0.012211799621582031,True,10,0,696.0,P,50,268.0,38.50574712643678
+P-n20-k2,dist_matrix[current][c] - 2 * instance['demands'][c],308.0,0.0019881725311279297,True,2,0,216.0,P,20,92.0,42.592592592592595
+A-n46-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1342.0,0.009299039840698242,True,7,0,914.0,A,46,428.0,46.82713347921225
+B-n56-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1224.0,0.015596389770507812,True,7,0,707.0,B,56,517.0,73.12588401697313
+P-n55-k7,dist_matrix[current][c] - 2 * instance['demands'][c],920.0,0.01738286018371582,True,7,0,568.0,P,55,352.0,61.97183098591549
+A-n54-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1536.0,0.01495218276977539,True,7,0,1167.0,A,54,369.0,31.619537275064268
+P-n60-k15,dist_matrix[current][c] - 2 * instance['demands'][c],1344.0,0.017857789993286133,True,15,0,968.0,P,60,376.0,38.84297520661157
+B-n51-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1352.0,0.01310420036315918,True,7,0,1032.0,B,51,320.0,31.007751937984494
+P-n60-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1075.0,0.02366328239440918,True,10,0,744.0,P,60,331.0,44.48924731182796
+E-n76-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1335.0,0.03211355209350586,True,7,0,682.0,E,76,653.0,95.74780058651027
+P-n76-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1209.0,0.03170323371887207,True,5,0,627.0,P,76,582.0,92.82296650717703
+F-n72-k4,dist_matrix[current][c] - 2 * instance['demands'][c],1200.0,0.02506279945373535,True,4,0,237.0,F,72,963.0,406.32911392405066
+B-n64-k9,dist_matrix[current][c] - 2 * instance['demands'][c],1335.0,0.021165132522583008,True,9,0,861.0,B,64,474.0,55.052264808362374
+A-n64-k9,dist_matrix[current][c] - 2 * instance['demands'][c],2159.0,0.020820140838623047,True,9,0,1401.0,A,64,758.0,54.10421127765882
+E-n76-k14,dist_matrix[current][c] - 2 * instance['demands'][c],1508.0,0.031026124954223633,True,14,0,1021.0,E,76,487.0,47.69833496571989
+E-n76-k8,dist_matrix[current][c] - 2 * instance['demands'][c],1332.0,0.030751466751098633,True,8,0,735.0,E,76,597.0,81.22448979591836
+A-n53-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1545.0,0.013634204864501953,True,7,0,1010.0,A,53,535.0,52.97029702970298
+E-n76-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1325.0,0.030633926391601562,True,10,0,830.0,E,76,495.0,59.63855421686747
+E-n101-k14,dist_matrix[current][c] - 2 * instance['demands'][c],1716.0,0.05053424835205078,True,14,0,1067.0,E,101,649.0,60.824742268041234
+E-n101-k8,dist_matrix[current][c] - 2 * instance['demands'][c],1587.0,0.05249810218811035,True,8,0,815.0,E,101,772.0,94.7239263803681
+F-n135-k7,dist_matrix[current][c] - 2 * instance['demands'][c],3303.0,0.09807491302490234,True,7,0,1162.0,F,135,2141.0,184.2512908777969
+M-n101-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1464.0,0.056166887283325195,True,10,0,820.0,M,101,644.0,78.53658536585367
+M-n121-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1688.0,0.08069276809692383,True,7,0,1034.0,M,121,654.0,63.2495164410058
+M-n151-k12,dist_matrix[current][c] - 2 * instance['demands'][c],1979.0,0.12222099304199219,True,12,0,1015.0,M,151,964.0,94.97536945812809
+M-n200-k16,dist_matrix[current][c] - 2 * instance['demands'][c],2396.0,0.2086772918701172,True,16,0,1274.0,M,200,1122.0,88.0690737833595
+M-n200-k17,dist_matrix[current][c] - 2 * instance['demands'][c],2396.0,0.21352171897888184,True,16,0,1275.0,M,200,1121.0,87.92156862745098
+P-n101-k4,dist_matrix[current][c] - 2 * instance['demands'][c],1421.0,0.05714821815490723,True,4,0,681.0,P,101,740.0,108.66372980910425
+P-n23-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],627.0,0.0032808780670166016,True,9,0,529.0,P,23,98.0,18.525519848771268
+A-n38-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1153.0,0.007871150970458984,True,5,0,730.0,A,38,423.0,57.945205479452056
+A-n33-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],955.0,0.006117820739746094,True,5,0,661.0,A,33,294.0,44.47806354009077
+B-n35-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1244.0,0.006540060043334961,True,5,0,955.0,B,35,289.0,30.261780104712045
+B-n31-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.0056781768798828125,True,5,0,672.0,B,31,224.0,33.33333333333333
+A-n48-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1520.0,0.012050390243530273,True,7,0,1073.0,A,48,447.0,41.658900279589936
+A-n39-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1167.0,0.009220361709594727,True,5,0,822.0,A,39,345.0,41.97080291970803
+A-n37-k6,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1350.0,0.0075337886810302734,True,6,0,949.0,A,37,401.0,42.2550052687039
+P-n16-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],497.0,0.0010673999786376953,True,8,0,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],980.0,0.006239414215087891,True,5,0,669.0,A,37,311.0,46.48729446935725
+E-n13-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],358.0,0.0008230209350585938,True,4,0,247.0,E,13,111.0,44.93927125506073
+A-n33-k6,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1034.0,0.006925106048583984,True,6,0,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],891.0,0.01231837272644043,True,10,0,696.0,P,50,195.0,28.01724137931034
+P-n20-k2,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],291.0,0.002773284912109375,True,2,0,216.0,P,20,75.0,34.72222222222222
+A-n46-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1224.0,0.011945247650146484,True,7,0,914.0,A,46,310.0,33.91684901531728
+B-n56-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1251.0,0.017648696899414062,True,7,0,707.0,B,56,544.0,76.94483734087694
+P-n55-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],769.0,0.01840353012084961,True,7,0,568.0,P,55,201.0,35.38732394366197
+A-n54-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1405.0,0.01754927635192871,True,7,0,1167.0,A,54,238.0,20.394173093401886
+P-n60-k15,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1294.0,0.021712064743041992,True,15,0,968.0,P,60,326.0,33.67768595041322
+B-n51-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1335.0,0.015169858932495117,True,7,0,1032.0,B,51,303.0,29.360465116279073
+P-n60-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1038.0,0.020299434661865234,True,10,0,744.0,P,60,294.0,39.516129032258064
+E-n76-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1168.0,0.03217673301696777,True,7,0,682.0,E,76,486.0,71.26099706744868
+P-n76-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],912.0,0.033431053161621094,True,5,0,627.0,P,76,285.0,45.45454545454545
+F-n72-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],365.0,0.032227516174316406,True,4,0,237.0,F,72,128.0,54.008438818565395
+B-n64-k9,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1424.0,0.022870779037475586,True,9,0,861.0,B,64,563.0,65.38908246225319
+A-n64-k9,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1952.0,0.022622108459472656,True,9,0,1401.0,A,64,551.0,39.32905067808708
+E-n76-k14,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1439.0,0.03288698196411133,True,14,0,1021.0,E,76,418.0,40.94025465230167
+E-n76-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1147.0,0.034680843353271484,True,8,0,735.0,E,76,412.0,56.054421768707485
+A-n53-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1497.0,0.015553951263427734,True,7,0,1010.0,A,53,487.0,48.21782178217822
+E-n76-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1164.0,0.03254127502441406,True,10,0,830.0,E,76,334.0,40.24096385542168
+E-n101-k14,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1726.0,0.054216861724853516,True,14,0,1067.0,E,101,659.0,61.761949390815374
+E-n101-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1341.0,0.07230377197265625,True,8,0,815.0,E,101,526.0,64.5398773006135
+F-n135-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1643.0,0.11187982559204102,True,7,0,1162.0,F,135,481.0,41.39414802065404
+M-n101-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1305.0,0.06371951103210449,True,10,0,820.0,M,101,485.0,59.14634146341463
+M-n121-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1511.0,0.08837532997131348,True,7,0,1034.0,M,121,477.0,46.131528046421664
+M-n151-k12,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1761.0,0.13078856468200684,True,12,0,1015.0,M,151,746.0,73.4975369458128
+M-n200-k16,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1847.0,0.2587130069732666,True,16,0,1274.0,M,200,573.0,44.976452119309265
+M-n200-k17,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1847.0,0.24092459678649902,True,16,0,1275.0,M,200,572.0,44.86274509803921
+P-n101-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1049.0,0.06467080116271973,True,4,0,681.0,P,101,368.0,54.03817914831131
+P-n23-k8,dist_matrix[current][c] - instance['demands'][c],613.0,0.00267791748046875,True,9,0,529.0,P,23,84.0,15.879017013232513
+A-n38-k5,dist_matrix[current][c] - instance['demands'][c],1011.0,0.006423234939575195,True,5,0,730.0,A,38,281.0,38.49315068493151
+A-n33-k5,dist_matrix[current][c] - instance['demands'][c],935.0,0.00418853759765625,True,5,0,661.0,A,33,274.0,41.45234493192133
+B-n35-k5,dist_matrix[current][c] - instance['demands'][c],1230.0,0.004477500915527344,True,5,0,955.0,B,35,275.0,28.79581151832461
+B-n31-k5,dist_matrix[current][c] - instance['demands'][c],952.0,0.004946708679199219,True,5,0,672.0,B,31,280.0,41.66666666666667
+A-n48-k7,dist_matrix[current][c] - instance['demands'][c],1462.0,0.011185646057128906,True,7,0,1073.0,A,48,389.0,36.253494874184526
+A-n39-k5,dist_matrix[current][c] - instance['demands'][c],1143.0,0.007293224334716797,True,5,0,822.0,A,39,321.0,39.05109489051095
+A-n37-k6,dist_matrix[current][c] - instance['demands'][c],1359.0,0.0056722164154052734,True,6,0,949.0,A,37,410.0,43.203371970495255
+P-n16-k8,dist_matrix[current][c] - instance['demands'][c],487.0,0.0009009838104248047,True,8,0,450.0,P,16,37.0,8.222222222222223
+A-n37-k5,dist_matrix[current][c] - instance['demands'][c],954.0,0.00641942024230957,True,5,0,669.0,A,37,285.0,42.600896860986545
+E-n13-k4,dist_matrix[current][c] - instance['demands'][c],369.0,0.001695394515991211,True,4,0,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - instance['demands'][c],1025.0,0.004457712173461914,True,6,0,742.0,A,33,283.0,38.14016172506739
+P-n50-k10,dist_matrix[current][c] - instance['demands'][c],916.0,0.013129949569702148,True,10,0,696.0,P,50,220.0,31.60919540229885
+P-n20-k2,dist_matrix[current][c] - instance['demands'][c],302.0,0.0019788742065429688,True,2,0,216.0,P,20,86.0,39.81481481481482
+A-n46-k7,dist_matrix[current][c] - instance['demands'][c],1197.0,0.00973057746887207,True,7,0,914.0,A,46,283.0,30.962800875273523
+B-n56-k7,dist_matrix[current][c] - instance['demands'][c],1116.0,0.015233993530273438,True,7,0,707.0,B,56,409.0,57.85007072135785
+P-n55-k7,dist_matrix[current][c] - instance['demands'][c],788.0,0.014963388442993164,True,7,0,568.0,P,55,220.0,38.732394366197184
+A-n54-k7,dist_matrix[current][c] - instance['demands'][c],1442.0,0.012706279754638672,True,7,0,1167.0,A,54,275.0,23.564695801199655
+P-n60-k15,dist_matrix[current][c] - instance['demands'][c],1197.0,0.01784372329711914,True,15,0,968.0,P,60,229.0,23.65702479338843
+B-n51-k7,dist_matrix[current][c] - instance['demands'][c],1447.0,0.011952638626098633,True,7,0,1032.0,B,51,415.0,40.213178294573645
+P-n60-k10,dist_matrix[current][c] - instance['demands'][c],1074.0,0.018198013305664062,True,10,0,744.0,P,60,330.0,44.354838709677416
+E-n76-k7,dist_matrix[current][c] - instance['demands'][c],1233.0,0.02582859992980957,True,7,0,682.0,E,76,551.0,80.79178885630498
+P-n76-k5,dist_matrix[current][c] - instance['demands'][c],1113.0,0.029532670974731445,True,5,0,627.0,P,76,486.0,77.51196172248804
+F-n72-k4,dist_matrix[current][c] - instance['demands'][c],1188.0,0.024828672409057617,True,4,0,237.0,F,72,951.0,401.26582278481015
+B-n64-k9,dist_matrix[current][c] - instance['demands'][c],1177.0,0.016972780227661133,True,9,0,861.0,B,64,316.0,36.70150987224158
+A-n64-k9,dist_matrix[current][c] - instance['demands'][c],1965.0,0.02022075653076172,True,9,0,1401.0,A,64,564.0,40.25695931477516
+E-n76-k14,dist_matrix[current][c] - instance['demands'][c],1385.0,0.02678060531616211,True,14,0,1021.0,E,76,364.0,35.6513222331048
+E-n76-k8,dist_matrix[current][c] - instance['demands'][c],1120.0,0.029824495315551758,True,8,0,735.0,E,76,385.0,52.38095238095239
+A-n53-k7,dist_matrix[current][c] - instance['demands'][c],1401.0,0.013561010360717773,True,7,0,1010.0,A,53,391.0,38.71287128712871
+E-n76-k10,dist_matrix[current][c] - instance['demands'][c],1290.0,0.028915882110595703,True,10,0,830.0,E,76,460.0,55.42168674698795
+E-n101-k14,dist_matrix[current][c] - instance['demands'][c],1534.0,0.04891037940979004,True,14,0,1067.0,E,101,467.0,43.767572633552014
+E-n101-k8,dist_matrix[current][c] - instance['demands'][c],1307.0,0.05287909507751465,True,8,0,815.0,E,101,492.0,60.368098159509195
+F-n135-k7,dist_matrix[current][c] - instance['demands'][c],3056.0,0.08770179748535156,True,7,0,1162.0,F,135,1894.0,162.99483648881238
+M-n101-k10,dist_matrix[current][c] - instance['demands'][c],1378.0,0.053046464920043945,True,10,0,820.0,M,101,558.0,68.04878048780488
+M-n121-k7,dist_matrix[current][c] - instance['demands'][c],1666.0,0.07557272911071777,True,7,0,1034.0,M,121,632.0,61.12185686653772
+M-n151-k12,dist_matrix[current][c] - instance['demands'][c],1757.0,0.11501526832580566,True,12,0,1015.0,M,151,742.0,73.10344827586206
+M-n200-k16,dist_matrix[current][c] - instance['demands'][c],2121.0,0.20089125633239746,True,16,0,1274.0,M,200,847.0,66.48351648351648
+M-n200-k17,dist_matrix[current][c] - instance['demands'][c],2121.0,0.19304394721984863,True,16,0,1275.0,M,200,846.0,66.3529411764706
+P-n101-k4,dist_matrix[current][c] - instance['demands'][c],1190.0,0.050319671630859375,True,4,0,681.0,P,101,509.0,74.74302496328929
+P-n23-k8,dist_matrix[current][c] + instance['demands'][c],669.0,0.0031659603118896484,True,10,0,529.0,P,23,140.0,26.46502835538752
+A-n38-k5,dist_matrix[current][c] + instance['demands'][c],1050.0,0.01001596450805664,True,5,0,730.0,A,38,320.0,43.83561643835616
+A-n33-k5,dist_matrix[current][c] + instance['demands'][c],921.0,0.006205081939697266,True,5,0,661.0,A,33,260.0,39.334341906202724
+B-n35-k5,dist_matrix[current][c] + instance['demands'][c],1318.0,0.00757908821105957,True,5,0,955.0,B,35,363.0,38.010471204188484
+B-n31-k5,dist_matrix[current][c] + instance['demands'][c],973.0,0.005026817321777344,True,5,0,672.0,B,31,301.0,44.79166666666667
+A-n48-k7,dist_matrix[current][c] + instance['demands'][c],1703.0,0.012331962585449219,True,7,0,1073.0,A,48,630.0,58.7138863000932
+A-n39-k5,dist_matrix[current][c] + instance['demands'][c],1282.0,0.0069158077239990234,True,5,0,822.0,A,39,460.0,55.961070559610704
+A-n37-k6,dist_matrix[current][c] + instance['demands'][c],1452.0,0.005264997482299805,True,6,0,949.0,A,37,503.0,53.0031612223393
+P-n16-k8,dist_matrix[current][c] + instance['demands'][c],509.0,0.0007941722869873047,True,8,0,450.0,P,16,59.0,13.111111111111112
+A-n37-k5,dist_matrix[current][c] + instance['demands'][c],1072.0,0.007443666458129883,True,5,0,669.0,A,37,403.0,60.239162929745895
+E-n13-k4,dist_matrix[current][c] + instance['demands'][c],412.0,0.0007197856903076172,True,4,0,247.0,E,13,165.0,66.80161943319838
+A-n33-k6,dist_matrix[current][c] + instance['demands'][c],1049.0,0.005552768707275391,True,6,0,742.0,A,33,307.0,41.37466307277628
+P-n50-k10,dist_matrix[current][c] + instance['demands'][c],908.0,0.013664960861206055,True,11,0,696.0,P,50,212.0,30.45977011494253
+P-n20-k2,dist_matrix[current][c] + instance['demands'][c],297.0,0.0017521381378173828,True,2,0,216.0,P,20,81.0,37.5
+A-n46-k7,dist_matrix[current][c] + instance['demands'][c],1178.0,0.010793924331665039,True,7,0,914.0,A,46,264.0,28.88402625820569
+B-n56-k7,dist_matrix[current][c] + instance['demands'][c],1420.0,0.01513671875,True,7,0,707.0,B,56,713.0,100.84865629420085
+P-n55-k7,dist_matrix[current][c] + instance['demands'][c],844.0,0.015100717544555664,True,7,0,568.0,P,55,276.0,48.59154929577465
+A-n54-k7,dist_matrix[current][c] + instance['demands'][c],1629.0,0.013947010040283203,True,7,0,1167.0,A,54,462.0,39.588688946015424
+P-n60-k15,dist_matrix[current][c] + instance['demands'][c],1326.0,0.015791654586791992,True,16,0,968.0,P,60,358.0,36.98347107438016
+B-n51-k7,dist_matrix[current][c] + instance['demands'][c],1612.0,0.012610197067260742,True,8,0,1032.0,B,51,580.0,56.201550387596896
+P-n60-k10,dist_matrix[current][c] + instance['demands'][c],1029.0,0.01938605308532715,True,10,0,744.0,P,60,285.0,38.306451612903224
+E-n76-k7,dist_matrix[current][c] + instance['demands'][c],1262.0,0.03202533721923828,True,7,0,682.0,E,76,580.0,85.04398826979472
+P-n76-k5,dist_matrix[current][c] + instance['demands'][c],1035.0,0.03334927558898926,True,5,0,627.0,P,76,408.0,65.07177033492823
+F-n72-k4,dist_matrix[current][c] + instance['demands'][c],1121.0,0.02706146240234375,True,5,0,237.0,F,72,884.0,372.99578059071735
+B-n64-k9,dist_matrix[current][c] + instance['demands'][c],1538.0,0.019808530807495117,True,10,0,861.0,B,64,677.0,78.62950058072009
+A-n64-k9,dist_matrix[current][c] + instance['demands'][c],1881.0,0.020394563674926758,True,9,0,1401.0,A,64,480.0,34.26124197002141
+E-n76-k14,dist_matrix[current][c] + instance['demands'][c],1435.0,0.027449369430541992,True,15,0,1021.0,E,76,414.0,40.54848188050931
+E-n76-k8,dist_matrix[current][c] + instance['demands'][c],1127.0,0.050276994705200195,True,8,0,735.0,E,76,392.0,53.333333333333336
+A-n53-k7,dist_matrix[current][c] + instance['demands'][c],1430.0,0.023073196411132812,True,7,0,1010.0,A,53,420.0,41.584158415841586
+E-n76-k10,dist_matrix[current][c] + instance['demands'][c],1377.0,0.04734659194946289,True,10,0,830.0,E,76,547.0,65.90361445783132
+E-n101-k14,dist_matrix[current][c] + instance['demands'][c],1695.0,0.08119893074035645,True,14,0,1067.0,E,101,628.0,58.85660731021556
+E-n101-k8,dist_matrix[current][c] + instance['demands'][c],1444.0,0.047976016998291016,True,8,0,815.0,E,101,629.0,77.17791411042944
+F-n135-k7,dist_matrix[current][c] + instance['demands'][c],2955.0,0.0979776382446289,True,7,0,1162.0,F,135,1793.0,154.30292598967296
+M-n101-k10,dist_matrix[current][c] + instance['demands'][c],1539.0,0.05286240577697754,True,10,0,820.0,M,101,719.0,87.6829268292683
+M-n121-k7,dist_matrix[current][c] + instance['demands'][c],1741.0,0.07884621620178223,True,7,0,1034.0,M,121,707.0,68.3752417794971
+M-n151-k12,dist_matrix[current][c] + instance['demands'][c],1886.0,0.11865592002868652,True,12,0,1015.0,M,151,871.0,85.8128078817734
+M-n200-k16,dist_matrix[current][c] + instance['demands'][c],2276.0,0.19318556785583496,True,17,0,1274.0,M,200,1002.0,78.64992150706436
+M-n200-k17,dist_matrix[current][c] + instance['demands'][c],2276.0,0.19956660270690918,True,17,0,1275.0,M,200,1001.0,78.50980392156863
+P-n101-k4,dist_matrix[current][c] + instance['demands'][c],1272.0,0.05104684829711914,True,4,0,681.0,P,101,591.0,86.78414096916299
+P-n23-k8,dist_matrix[current][c],746.0,0.0016210079193115234,True,9,1,529.0,P,23,217.0,41.02079395085066
+A-n38-k5,dist_matrix[current][c],1084.0,0.005205869674682617,True,5,1,730.0,A,38,354.0,48.49315068493151
+A-n33-k5,dist_matrix[current][c],977.0,0.0033330917358398438,True,5,1,661.0,A,33,316.0,47.806354009077154
+B-n35-k5,dist_matrix[current][c],1304.0,0.003518819808959961,True,5,1,955.0,B,35,349.0,36.544502617801044
+B-n31-k5,dist_matrix[current][c],887.0,0.0031168460845947266,True,5,1,672.0,B,31,215.0,31.994047619047617
+A-n48-k7,dist_matrix[current][c],1475.0,0.00716710090637207,True,7,1,1073.0,A,48,402.0,37.46505125815471
+A-n39-k5,dist_matrix[current][c],1070.0,0.004535675048828125,True,5,1,822.0,A,39,248.0,30.170316301703163
+A-n37-k6,dist_matrix[current][c],1334.0,0.003810405731201172,True,6,1,949.0,A,37,385.0,40.56902002107481
+P-n16-k8,dist_matrix[current][c],497.0,0.0006151199340820312,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c],948.0,0.004587411880493164,True,5,1,669.0,A,37,279.0,41.70403587443946
+E-n13-k4,dist_matrix[current][c],380.0,0.0006020069122314453,True,4,1,247.0,E,13,133.0,53.84615384615385
+A-n33-k6,dist_matrix[current][c],1042.0,0.0038802623748779297,True,6,1,742.0,A,33,300.0,40.43126684636118
+P-n50-k10,dist_matrix[current][c],907.0,0.007753133773803711,True,10,1,696.0,P,50,211.0,30.31609195402299
+P-n20-k2,dist_matrix[current][c],309.0,0.0013663768768310547,True,2,1,216.0,P,20,93.0,43.05555555555556
+A-n46-k7,dist_matrix[current][c],1335.0,0.006513833999633789,True,7,1,914.0,A,46,421.0,46.06126914660831
+B-n56-k7,dist_matrix[current][c],1248.0,0.010711193084716797,True,7,1,707.0,B,56,541.0,76.52050919377652
+P-n55-k7,dist_matrix[current][c],754.0,0.009970903396606445,True,7,1,568.0,P,55,186.0,32.74647887323944
+A-n54-k7,dist_matrix[current][c],1421.0,0.010455846786499023,True,7,1,1167.0,A,54,254.0,21.765209940017137
+P-n60-k15,dist_matrix[current][c],1170.0,0.012093067169189453,True,15,1,968.0,P,60,202.0,20.867768595041323
+B-n51-k7,dist_matrix[current][c],1333.0,0.008550405502319336,True,7,1,1032.0,B,51,301.0,29.166666666666668
+P-n60-k10,dist_matrix[current][c],1014.0,0.011149406433105469,True,10,1,744.0,P,60,270.0,36.29032258064516
+E-n76-k7,dist_matrix[current][c],1098.0,0.019394874572753906,True,7,1,682.0,E,76,416.0,60.997067448680355
+P-n76-k5,dist_matrix[current][c],962.0,0.02016162872314453,True,5,1,627.0,P,76,335.0,53.42902711323764
+F-n72-k4,dist_matrix[current][c],413.0,0.0167081356048584,True,4,1,237.0,F,72,176.0,74.26160337552743
+B-n64-k9,dist_matrix[current][c],1272.0,0.011735677719116211,True,9,1,861.0,B,64,411.0,47.73519163763066
+A-n64-k9,dist_matrix[current][c],1964.0,0.012681007385253906,True,9,1,1401.0,A,64,563.0,40.18558172733761
+E-n76-k14,dist_matrix[current][c],1353.0,0.01674818992614746,True,15,1,1021.0,E,76,332.0,32.51714005876592
+E-n76-k8,dist_matrix[current][c],1081.0,0.019430875778198242,True,8,1,735.0,E,76,346.0,47.074829931972786
+A-n53-k7,dist_matrix[current][c],1444.0,0.008614301681518555,True,7,1,1010.0,A,53,434.0,42.97029702970297
+E-n76-k10,dist_matrix[current][c],1221.0,0.017811298370361328,True,10,1,830.0,E,76,391.0,47.10843373493976
+E-n101-k14,dist_matrix[current][c],1658.0,0.03328108787536621,True,14,1,1067.0,E,101,591.0,55.38894095595126
+E-n101-k8,dist_matrix[current][c],1176.0,0.03502011299133301,True,8,1,815.0,E,101,361.0,44.29447852760736
+F-n135-k7,dist_matrix[current][c],1792.0,0.0623316764831543,True,7,1,1162.0,F,135,630.0,54.21686746987952
+M-n101-k10,dist_matrix[current][c],1299.0,0.03790903091430664,True,10,1,820.0,M,101,479.0,58.41463414634146
+M-n121-k7,dist_matrix[current][c],1552.0,0.05458569526672363,True,7,1,1034.0,M,121,518.0,50.09671179883946
+M-n151-k12,dist_matrix[current][c],1547.0,0.07686996459960938,True,12,1,1015.0,M,151,532.0,52.41379310344828
+M-n200-k16,dist_matrix[current][c],1989.0,0.1343698501586914,True,17,1,1274.0,M,200,715.0,56.12244897959183
+M-n200-k17,dist_matrix[current][c],1989.0,0.1373884677886963,True,17,1,1275.0,M,200,714.0,56.00000000000001
+P-n101-k4,dist_matrix[current][c],1021.0,0.034842729568481445,True,4,1,681.0,P,101,340.0,49.926578560939795
+P-n23-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,679.0,0.0038025379180908203,True,9,1,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1067.0,0.00999593734741211,True,5,1,730.0,A,38,337.0,46.16438356164384
+A-n33-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,874.0,0.008389949798583984,True,5,1,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1178.0,0.008015871047973633,True,5,1,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,948.0,0.0075986385345458984,True,5,1,672.0,B,31,276.0,41.07142857142857
+A-n48-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1474.0,0.017605066299438477,True,7,1,1073.0,A,48,401.0,37.37185461323392
+A-n39-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1110.0,0.01110076904296875,True,5,1,822.0,A,39,288.0,35.03649635036496
+A-n37-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1173.0,0.008929729461669922,True,6,1,949.0,A,37,224.0,23.603793466807165
+P-n16-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,497.0,0.0018863677978515625,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,975.0,0.008641719818115234,True,5,1,669.0,A,37,306.0,45.73991031390135
+E-n13-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,369.0,0.0011191368103027344,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1034.0,0.007934093475341797,True,6,1,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,937.0,0.017492055892944336,True,10,1,696.0,P,50,241.0,34.62643678160919
+P-n20-k2,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,264.0,0.003383636474609375,True,2,1,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1180.0,0.015060663223266602,True,7,1,914.0,A,46,266.0,29.10284463894967
+B-n56-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1227.0,0.02252197265625,True,7,1,707.0,B,56,520.0,73.55021216407354
+P-n55-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,686.0,0.02367091178894043,True,7,1,568.0,P,55,118.0,20.774647887323944
+A-n54-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1389.0,0.021703481674194336,True,7,1,1167.0,A,54,222.0,19.02313624678663
+P-n60-k15,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1380.0,0.023609161376953125,True,15,1,968.0,P,60,412.0,42.561983471074385
+B-n51-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1391.0,0.019737958908081055,True,7,1,1032.0,B,51,359.0,34.786821705426355
+P-n60-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,999.0,0.026271820068359375,True,10,1,744.0,P,60,255.0,34.274193548387096
+E-n76-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1022.0,0.043540000915527344,True,7,1,682.0,E,76,340.0,49.853372434017594
+P-n76-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,891.0,0.046082258224487305,True,5,1,627.0,P,76,264.0,42.10526315789473
+F-n72-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1010.0,0.03775286674499512,True,4,1,237.0,F,72,773.0,326.1603375527426
+B-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1074.0,0.027883291244506836,True,9,1,861.0,B,64,213.0,24.738675958188153
+A-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1905.0,0.028633832931518555,True,9,1,1401.0,A,64,504.0,35.974304068522486
+E-n76-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1460.0,0.04074454307556152,True,15,1,1021.0,E,76,439.0,42.99706170421156
+E-n76-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1120.0,0.04197382926940918,True,8,1,735.0,E,76,385.0,52.38095238095239
+A-n53-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1510.0,0.019190549850463867,True,7,1,1010.0,A,53,500.0,49.504950495049506
+E-n76-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1155.0,0.04226827621459961,True,10,1,830.0,E,76,325.0,39.1566265060241
+E-n101-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1455.0,0.07528018951416016,True,14,1,1067.0,E,101,388.0,36.36363636363637
+E-n101-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1126.0,0.0804131031036377,True,8,1,815.0,E,101,311.0,38.15950920245399
+F-n135-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,2383.0,0.14792943000793457,True,7,1,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1272.0,0.0819234848022461,True,10,1,820.0,M,101,452.0,55.1219512195122
+M-n121-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1687.0,0.11742305755615234,True,7,1,1034.0,M,121,653.0,63.15280464216635
+M-n151-k12,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1577.0,0.16890478134155273,True,12,1,1015.0,M,151,562.0,55.36945812807882
+M-n200-k16,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.3048529624938965,True,16,1,1274.0,M,200,664.0,52.119309262166404
+M-n200-k17,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.3081378936767578,True,16,1,1275.0,M,200,663.0,52.0
+P-n101-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1014.0,0.08308911323547363,True,4,1,681.0,P,101,333.0,48.89867841409692
+P-n23-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],679.0,0.0024666786193847656,True,9,1,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1050.0,0.007079362869262695,True,5,1,730.0,A,38,320.0,43.83561643835616
+A-n33-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],952.0,0.005806922912597656,True,5,1,661.0,A,33,291.0,44.024205748865356
+B-n35-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1090.0,0.005984306335449219,True,5,1,955.0,B,35,135.0,14.136125654450263
+B-n31-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],960.0,0.004923582077026367,True,5,1,672.0,B,31,288.0,42.857142857142854
+A-n48-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1383.0,0.01188802719116211,True,7,1,1073.0,A,48,310.0,28.890959925442683
+A-n39-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1072.0,0.008182525634765625,True,5,1,822.0,A,39,250.0,30.413625304136254
+A-n37-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1443.0,0.00601959228515625,True,6,1,949.0,A,37,494.0,52.054794520547944
+P-n16-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],497.0,0.0012729167938232422,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1062.0,0.006461143493652344,True,5,1,669.0,A,37,393.0,58.744394618834086
+E-n13-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],369.0,0.0011456012725830078,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1007.0,0.004786014556884766,True,6,1,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],909.0,0.012161016464233398,True,10,1,696.0,P,50,213.0,30.603448275862068
+P-n20-k2,dist_matrix[current][c] - 0.4 * instance['demands'][c],302.0,0.0024361610412597656,True,2,1,216.0,P,20,86.0,39.81481481481482
+A-n46-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1384.0,0.01162862777709961,True,7,1,914.0,A,46,470.0,51.42231947483589
+B-n56-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1182.0,0.01548910140991211,True,7,1,707.0,B,56,475.0,67.18528995756718
+P-n55-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],730.0,0.017052412033081055,True,7,1,568.0,P,55,162.0,28.52112676056338
+A-n54-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1382.0,0.014697790145874023,True,7,1,1167.0,A,54,215.0,18.42330762639246
+P-n60-k15,dist_matrix[current][c] - 0.4 * instance['demands'][c],1305.0,0.018074750900268555,True,15,1,968.0,P,60,337.0,34.81404958677686
+B-n51-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1327.0,0.014290809631347656,True,7,1,1032.0,B,51,295.0,28.58527131782946
+P-n60-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1002.0,0.019257068634033203,True,10,1,744.0,P,60,258.0,34.67741935483871
+E-n76-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1056.0,0.029941797256469727,True,7,1,682.0,E,76,374.0,54.83870967741935
+P-n76-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],925.0,0.03168344497680664,True,5,1,627.0,P,76,298.0,47.52791068580542
+F-n72-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1092.0,0.02750563621520996,True,4,1,237.0,F,72,855.0,360.7594936708861
+B-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1120.0,0.02058124542236328,True,9,1,861.0,B,64,259.0,30.081300813008134
+A-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1919.0,0.02112889289855957,True,9,1,1401.0,A,64,518.0,36.973590292648105
+E-n76-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1461.0,0.030694246292114258,True,14,1,1021.0,E,76,440.0,43.09500489715965
+E-n76-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1033.0,0.03320598602294922,True,8,1,735.0,E,76,298.0,40.54421768707483
+A-n53-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1464.0,0.013353347778320312,True,7,1,1010.0,A,53,454.0,44.95049504950495
+E-n76-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1179.0,0.03168988227844238,True,10,1,830.0,E,76,349.0,42.04819277108434
+E-n101-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1436.0,0.05031132698059082,True,14,1,1067.0,E,101,369.0,34.58294283036551
+E-n101-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1304.0,0.05612897872924805,True,8,1,815.0,E,101,489.0,60.0
+F-n135-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],2383.0,0.10023045539855957,True,7,1,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1293.0,0.05736255645751953,True,10,1,820.0,M,101,473.0,57.68292682926829
+M-n121-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1526.0,0.08271503448486328,True,7,1,1034.0,M,121,492.0,47.582205029013544
+M-n151-k12,dist_matrix[current][c] - 0.4 * instance['demands'][c],1624.0,0.12296295166015625,True,12,1,1015.0,M,151,609.0,60.0
+M-n200-k16,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.20116591453552246,True,16,1,1274.0,M,200,681.0,53.453689167974886
+M-n200-k17,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.20309877395629883,True,16,1,1275.0,M,200,680.0,53.333333333333336
+P-n101-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1098.0,0.05205655097961426,True,4,1,681.0,P,101,417.0,61.23348017621145
+P-n23-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],745.0,0.0033795833587646484,True,9,1,529.0,P,23,216.0,40.831758034026464
+A-n38-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1084.0,0.008562326431274414,True,5,1,730.0,A,38,354.0,48.49315068493151
+A-n33-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],941.0,0.006227731704711914,True,5,1,661.0,A,33,280.0,42.36006051437216
+B-n35-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1304.0,0.006407976150512695,True,5,1,955.0,B,35,349.0,36.544502617801044
+B-n31-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],889.0,0.005056619644165039,True,5,1,672.0,B,31,217.0,32.29166666666667
+A-n48-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1465.0,0.013400554656982422,True,7,1,1073.0,A,48,392.0,36.533084808946874
+A-n39-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],988.0,0.00835561752319336,True,5,1,822.0,A,39,166.0,20.194647201946474
+A-n37-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1213.0,0.006376981735229492,True,6,1,949.0,A,37,264.0,27.81875658587987
+P-n16-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],497.0,0.0010650157928466797,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],956.0,0.008136987686157227,True,5,1,669.0,A,37,287.0,42.89985052316891
+E-n13-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],312.0,0.0008871555328369141,True,4,1,247.0,E,13,65.0,26.31578947368421
+A-n33-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1017.0,0.006021976470947266,True,6,1,742.0,A,33,275.0,37.06199460916442
+P-n50-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],901.0,0.014973640441894531,True,10,1,696.0,P,50,205.0,29.454022988505745
+P-n20-k2,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],267.0,0.002689838409423828,True,2,1,216.0,P,20,51.0,23.61111111111111
+A-n46-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1259.0,0.011458873748779297,True,7,1,914.0,A,46,345.0,37.74617067833698
+B-n56-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1244.0,0.017167091369628906,True,7,1,707.0,B,56,537.0,75.95473833097596
+P-n55-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],744.0,0.018497228622436523,True,7,1,568.0,P,55,176.0,30.985915492957744
+A-n54-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1535.0,0.016222715377807617,True,7,1,1167.0,A,54,368.0,31.533847472150818
+P-n60-k15,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1311.0,0.019362211227416992,True,15,1,968.0,P,60,343.0,35.43388429752066
+B-n51-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1508.0,0.014807939529418945,True,7,1,1032.0,B,51,476.0,46.12403100775194
+P-n60-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1011.0,0.02077174186706543,True,10,1,744.0,P,60,267.0,35.88709677419355
+E-n76-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],946.0,0.03260493278503418,True,7,1,682.0,E,76,264.0,38.70967741935484
+P-n76-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],827.0,0.03512287139892578,True,5,1,627.0,P,76,200.0,31.89792663476874
+F-n72-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],418.0,0.028146028518676758,True,4,1,237.0,F,72,181.0,76.37130801687763
+B-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1274.0,0.021089792251586914,True,9,1,861.0,B,64,413.0,47.96747967479675
+A-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1971.0,0.021996021270751953,True,9,1,1401.0,A,64,570.0,40.68522483940043
+E-n76-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1341.0,0.03154253959655762,True,15,1,1021.0,E,76,320.0,31.341821743388838
+E-n76-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1014.0,0.034377098083496094,True,8,1,735.0,E,76,279.0,37.95918367346939
+A-n53-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1235.0,0.016618013381958008,True,7,1,1010.0,A,53,225.0,22.277227722772277
+E-n76-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1110.0,0.032993316650390625,True,10,1,830.0,E,76,280.0,33.734939759036145
+E-n101-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1569.0,0.05724143981933594,True,14,1,1067.0,E,101,502.0,47.047797563261476
+E-n101-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1140.0,0.0575709342956543,True,8,1,815.0,E,101,325.0,39.87730061349693
+F-n135-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1624.0,0.11277151107788086,True,7,1,1162.0,F,135,462.0,39.75903614457831
+M-n101-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1283.0,0.06739187240600586,True,10,1,820.0,M,101,463.0,56.46341463414634
+M-n121-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1429.0,0.08744144439697266,True,7,1,1034.0,M,121,395.0,38.20116054158607
+M-n151-k12,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1511.0,0.1305398941040039,True,12,1,1015.0,M,151,496.0,48.86699507389163
+M-n200-k16,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.22933411598205566,True,16,1,1274.0,M,200,699.0,54.86656200941915
+M-n200-k17,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.23125100135803223,True,16,1,1275.0,M,200,698.0,54.74509803921569
+P-n101-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],964.0,0.06538176536560059,True,4,1,681.0,P,101,283.0,41.55653450807636
+P-n23-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],640.0,0.002577543258666992,True,9,1,529.0,P,23,111.0,20.982986767485823
+A-n38-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1153.0,0.007302284240722656,True,5,1,730.0,A,38,423.0,57.945205479452056
+A-n33-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],977.0,0.005548715591430664,True,5,1,661.0,A,33,316.0,47.806354009077154
+B-n35-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1244.0,0.0071032047271728516,True,5,1,955.0,B,35,289.0,30.261780104712045
+B-n31-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.005155324935913086,True,5,1,672.0,B,31,224.0,33.33333333333333
+A-n48-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1453.0,0.011345386505126953,True,7,1,1073.0,A,48,380.0,35.414725069897486
+A-n39-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1043.0,0.008009910583496094,True,5,1,822.0,A,39,221.0,26.885644768856448
+A-n37-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1350.0,0.0066680908203125,True,6,1,949.0,A,37,401.0,42.2550052687039
+P-n16-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],497.0,0.0010514259338378906,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],980.0,0.0070514678955078125,True,5,1,669.0,A,37,311.0,46.48729446935725
+E-n13-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],355.0,0.0008137226104736328,True,4,1,247.0,E,13,108.0,43.7246963562753
+A-n33-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1034.0,0.005095958709716797,True,6,1,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],941.0,0.014218807220458984,True,10,1,696.0,P,50,245.0,35.201149425287355
+P-n20-k2,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],287.0,0.0019500255584716797,True,2,1,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1377.0,0.009732723236083984,True,7,1,914.0,A,46,463.0,50.65645514223195
+B-n56-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1251.0,0.015230178833007812,True,7,1,707.0,B,56,544.0,76.94483734087694
+P-n55-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],769.0,0.016805171966552734,True,7,1,568.0,P,55,201.0,35.38732394366197
+A-n54-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1405.0,0.014446735382080078,True,7,1,1167.0,A,54,238.0,20.394173093401886
+P-n60-k15,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1276.0,0.01738262176513672,True,15,1,968.0,P,60,308.0,31.818181818181817
+B-n51-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1329.0,0.01403188705444336,True,7,1,1032.0,B,51,297.0,28.77906976744186
+P-n60-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1087.0,0.01795220375061035,True,10,1,744.0,P,60,343.0,46.10215053763441
+E-n76-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1163.0,0.028954744338989258,True,7,1,682.0,E,76,481.0,70.52785923753666
+P-n76-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.030699729919433594,True,5,1,627.0,P,76,269.0,42.90271132376395
+F-n72-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],365.0,0.030765771865844727,True,4,1,237.0,F,72,128.0,54.008438818565395
+B-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1257.0,0.020600318908691406,True,9,1,861.0,B,64,396.0,45.99303135888502
+A-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1909.0,0.02197718620300293,True,9,1,1401.0,A,64,508.0,36.25981441827266
+E-n76-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1439.0,0.030103206634521484,True,14,1,1021.0,E,76,418.0,40.94025465230167
+E-n76-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1288.0,0.03326106071472168,True,8,1,735.0,E,76,553.0,75.23809523809524
+A-n53-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1529.0,0.01320791244506836,True,7,1,1010.0,A,53,519.0,51.38613861386139
+E-n76-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1111.0,0.030765533447265625,True,10,1,830.0,E,76,281.0,33.855421686746986
+E-n101-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1654.0,0.050002336502075195,True,14,1,1067.0,E,101,587.0,55.01405810684161
+E-n101-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1348.0,0.056345462799072266,True,8,1,815.0,E,101,533.0,65.39877300613497
+F-n135-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1885.0,0.10208582878112793,True,7,1,1162.0,F,135,723.0,62.22030981067126
+M-n101-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1207.0,0.0598599910736084,True,10,1,820.0,M,101,387.0,47.19512195121951
+M-n121-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1522.0,0.08643102645874023,True,7,1,1034.0,M,121,488.0,47.195357833655706
+M-n151-k12,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1441.0,0.12946319580078125,True,12,1,1015.0,M,151,426.0,41.970443349753694
+M-n200-k16,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.22925758361816406,True,16,1,1274.0,M,200,605.0,47.48822605965463
+M-n200-k17,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.22350025177001953,True,16,1,1275.0,M,200,604.0,47.372549019607845
+P-n101-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1039.0,0.05985283851623535,True,4,1,681.0,P,101,358.0,52.56975036710719
+P-n23-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),665.0,0.0025725364685058594,True,9,1,529.0,P,23,136.0,25.708884688090738
+A-n38-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1028.0,0.00833439826965332,True,5,1,730.0,A,38,298.0,40.821917808219176
+A-n33-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),942.0,0.006344795227050781,True,5,1,661.0,A,33,281.0,42.511346444780635
+B-n35-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1178.0,0.0068950653076171875,True,5,1,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),963.0,0.005645751953125,True,5,1,672.0,B,31,291.0,43.30357142857143
+A-n48-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1377.0,0.013071298599243164,True,7,1,1073.0,A,48,304.0,28.33178005591799
+A-n39-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1122.0,0.009429931640625,True,5,1,822.0,A,39,300.0,36.496350364963504
+A-n37-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1319.0,0.007877349853515625,True,6,1,949.0,A,37,370.0,38.98840885142255
+P-n16-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),497.0,0.0011742115020751953,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1054.0,0.008453845977783203,True,5,1,669.0,A,37,385.0,57.548579970104626
+E-n13-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),369.0,0.001070261001586914,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1007.0,0.005850553512573242,True,6,1,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1020.0,0.01470041275024414,True,10,1,696.0,P,50,324.0,46.55172413793103
+P-n20-k2,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),264.0,0.002808809280395508,True,2,1,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1381.0,0.012752771377563477,True,7,1,914.0,A,46,467.0,51.09409190371991
+B-n56-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1179.0,0.01915264129638672,True,7,1,707.0,B,56,472.0,66.76096181046675
+P-n55-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),819.0,0.01942586898803711,True,7,1,568.0,P,55,251.0,44.190140845070424
+A-n54-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1423.0,0.01663041114807129,True,7,1,1167.0,A,54,256.0,21.936589545844047
+P-n60-k15,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1282.0,0.02140522003173828,True,16,1,968.0,P,60,314.0,32.438016528925615
+B-n51-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1495.0,0.015221834182739258,True,7,1,1032.0,B,51,463.0,44.86434108527132
+P-n60-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1103.0,0.02291274070739746,True,10,1,744.0,P,60,359.0,48.252688172043015
+E-n76-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1029.0,0.037589073181152344,True,7,1,682.0,E,76,347.0,50.879765395894424
+P-n76-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),892.0,0.038582801818847656,True,5,1,627.0,P,76,265.0,42.26475279106858
+F-n72-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1058.0,0.030743122100830078,True,4,1,237.0,F,72,821.0,346.41350210970467
+B-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1129.0,0.02203202247619629,True,9,1,861.0,B,64,268.0,31.126596980255517
+A-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1914.0,0.023678302764892578,True,9,1,1401.0,A,64,513.0,36.61670235546038
+E-n76-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1487.0,0.03254127502441406,True,14,1,1021.0,E,76,466.0,45.641527913809995
+E-n76-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1079.0,0.03716421127319336,True,8,1,735.0,E,76,344.0,46.802721088435376
+A-n53-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1526.0,0.015761375427246094,True,7,1,1010.0,A,53,516.0,51.08910891089109
+E-n76-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1277.0,0.035019636154174805,True,10,1,830.0,E,76,447.0,53.855421686746986
+E-n101-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1476.0,0.05739164352416992,True,14,1,1067.0,E,101,409.0,38.33177132146204
+E-n101-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1303.0,0.06212019920349121,True,8,1,815.0,E,101,488.0,59.87730061349693
+F-n135-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),2389.0,0.11933469772338867,True,7,1,1162.0,F,135,1227.0,105.59380378657488
+M-n101-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1284.0,0.07109785079956055,True,10,1,820.0,M,101,464.0,56.58536585365853
+M-n121-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1462.0,0.09056258201599121,True,7,1,1034.0,M,121,428.0,41.3926499032882
+M-n151-k12,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1666.0,0.12598037719726562,True,12,1,1015.0,M,151,651.0,64.13793103448275
+M-n200-k16,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.2491006851196289,True,16,1,1274.0,M,200,568.0,44.5839874411303
+M-n200-k17,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.25586795806884766,True,16,1,1275.0,M,200,567.0,44.470588235294116
+P-n101-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),989.0,0.06854462623596191,True,4,1,681.0,P,101,308.0,45.22760646108664
+P-n23-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,639.0,0.00260162353515625,True,9,1,529.0,P,23,110.0,20.793950850661624
+A-n38-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1011.0,0.008336067199707031,True,5,1,730.0,A,38,281.0,38.49315068493151
+A-n33-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,874.0,0.006202220916748047,True,5,1,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1218.0,0.006573677062988281,True,5,1,955.0,B,35,263.0,27.53926701570681
+B-n31-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,946.0,0.005707502365112305,True,5,1,672.0,B,31,274.0,40.773809523809526
+A-n48-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1499.0,0.012385845184326172,True,7,1,1073.0,A,48,426.0,39.70177073625349
+A-n39-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1113.0,0.008993387222290039,True,5,1,822.0,A,39,291.0,35.4014598540146
+A-n37-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1341.0,0.007219076156616211,True,6,1,949.0,A,37,392.0,41.30663856691254
+P-n16-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,497.0,0.0011725425720214844,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1027.0,0.007063865661621094,True,5,1,669.0,A,37,358.0,53.51270553064275
+E-n13-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,369.0,0.0009171962738037109,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,999.0,0.006532192230224609,True,6,1,742.0,A,33,257.0,34.63611859838275
+P-n50-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,958.0,0.014170169830322266,True,10,1,696.0,P,50,262.0,37.64367816091954
+P-n20-k2,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,287.0,0.002415895462036133,True,2,1,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1372.0,0.013075828552246094,True,7,1,914.0,A,46,458.0,50.10940919037199
+B-n56-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1104.0,0.01757955551147461,True,7,1,707.0,B,56,397.0,56.15275813295615
+P-n55-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,776.0,0.018826007843017578,True,7,1,568.0,P,55,208.0,36.61971830985916
+A-n54-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1466.0,0.01614236831665039,True,7,1,1167.0,A,54,299.0,25.621251071122536
+P-n60-k15,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1284.0,0.01978588104248047,True,15,1,968.0,P,60,316.0,32.64462809917356
+B-n51-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1397.0,0.01666545867919922,True,7,1,1032.0,B,51,365.0,35.36821705426357
+P-n60-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1023.0,0.02058577537536621,True,10,1,744.0,P,60,279.0,37.5
+E-n76-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1012.0,0.03526759147644043,True,7,1,682.0,E,76,330.0,48.38709677419355
+P-n76-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,897.0,0.036545515060424805,True,5,1,627.0,P,76,270.0,43.0622009569378
+F-n72-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1037.0,0.0305178165435791,True,4,1,237.0,F,72,800.0,337.55274261603375
+B-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1359.0,0.020435810089111328,True,9,1,861.0,B,64,498.0,57.8397212543554
+A-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1984.0,0.02213144302368164,True,9,1,1401.0,A,64,583.0,41.61313347608851
+E-n76-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1441.0,0.032959938049316406,True,14,1,1021.0,E,76,420.0,41.13614103819784
+E-n76-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1145.0,0.035832881927490234,True,8,1,735.0,E,76,410.0,55.78231292517006
+A-n53-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1445.0,0.01636791229248047,True,7,1,1010.0,A,53,435.0,43.06930693069307
+E-n76-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1304.0,0.03328967094421387,True,10,1,830.0,E,76,474.0,57.10843373493976
+E-n101-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1575.0,0.05623316764831543,True,14,1,1067.0,E,101,508.0,47.61012183692596
+E-n101-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1257.0,0.058309078216552734,True,8,1,815.0,E,101,442.0,54.233128834355824
+F-n135-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,2417.0,0.11623334884643555,True,7,1,1162.0,F,135,1255.0,108.00344234079174
+M-n101-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1259.0,0.06659984588623047,True,10,1,820.0,M,101,439.0,53.53658536585366
+M-n121-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1465.0,0.09608578681945801,True,7,1,1034.0,M,121,431.0,41.682785299806575
+M-n151-k12,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1683.0,0.14258742332458496,True,12,1,1015.0,M,151,668.0,65.8128078817734
+M-n200-k16,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.24669408798217773,True,16,1,1274.0,M,200,554.0,43.4850863422292
+M-n200-k17,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.26630282402038574,True,16,1,1275.0,M,200,553.0,43.372549019607845
+P-n101-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,934.0,0.06638288497924805,True,4,1,681.0,P,101,253.0,37.15124816446402
+P-n23-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],627.0,0.002590656280517578,True,9,1,529.0,P,23,98.0,18.525519848771268
+A-n38-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1153.0,0.006720066070556641,True,5,1,730.0,A,38,423.0,57.945205479452056
+A-n33-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],955.0,0.0054967403411865234,True,5,1,661.0,A,33,294.0,44.47806354009077
+B-n35-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1244.0,0.008576393127441406,True,5,1,955.0,B,35,289.0,30.261780104712045
+B-n31-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.004732847213745117,True,5,1,672.0,B,31,224.0,33.33333333333333
+A-n48-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1520.0,0.015851974487304688,True,7,1,1073.0,A,48,447.0,41.658900279589936
+A-n39-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1167.0,0.012739181518554688,True,5,1,822.0,A,39,345.0,41.97080291970803
+A-n37-k6,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1350.0,0.006567478179931641,True,6,1,949.0,A,37,401.0,42.2550052687039
+P-n16-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],497.0,0.0011336803436279297,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],980.0,0.008370637893676758,True,5,1,669.0,A,37,311.0,46.48729446935725
+E-n13-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],358.0,0.0008153915405273438,True,4,1,247.0,E,13,111.0,44.93927125506073
+A-n33-k6,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1034.0,0.005207061767578125,True,6,1,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],891.0,0.014519929885864258,True,10,1,696.0,P,50,195.0,28.01724137931034
+P-n20-k2,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],291.0,0.0023102760314941406,True,2,1,216.0,P,20,75.0,34.72222222222222
+A-n46-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1224.0,0.011676311492919922,True,7,1,914.0,A,46,310.0,33.91684901531728
+B-n56-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1251.0,0.019055604934692383,True,7,1,707.0,B,56,544.0,76.94483734087694
+P-n55-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],769.0,0.019660234451293945,True,7,1,568.0,P,55,201.0,35.38732394366197
+A-n54-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1405.0,0.016482114791870117,True,7,1,1167.0,A,54,238.0,20.394173093401886
+P-n60-k15,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1294.0,0.019701004028320312,True,15,1,968.0,P,60,326.0,33.67768595041322
+B-n51-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1335.0,0.015363693237304688,True,7,1,1032.0,B,51,303.0,29.360465116279073
+P-n60-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1038.0,0.020520687103271484,True,10,1,744.0,P,60,294.0,39.516129032258064
+E-n76-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1168.0,0.03322863578796387,True,7,1,682.0,E,76,486.0,71.26099706744868
+P-n76-k5,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],912.0,0.03477597236633301,True,5,1,627.0,P,76,285.0,45.45454545454545
+F-n72-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],365.0,0.027509212493896484,True,4,1,237.0,F,72,128.0,54.008438818565395
+B-n64-k9,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1424.0,0.02223682403564453,True,9,1,861.0,B,64,563.0,65.38908246225319
+A-n64-k9,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1952.0,0.02404952049255371,True,9,1,1401.0,A,64,551.0,39.32905067808708
+E-n76-k14,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1439.0,0.030919790267944336,True,14,1,1021.0,E,76,418.0,40.94025465230167
+E-n76-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1147.0,0.03600811958312988,True,8,1,735.0,E,76,412.0,56.054421768707485
+A-n53-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1497.0,0.015267610549926758,True,7,1,1010.0,A,53,487.0,48.21782178217822
+E-n76-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1164.0,0.03163003921508789,True,10,1,830.0,E,76,334.0,40.24096385542168
+E-n101-k14,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1726.0,0.05436396598815918,True,14,1,1067.0,E,101,659.0,61.761949390815374
+E-n101-k8,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1341.0,0.06025958061218262,True,8,1,815.0,E,101,526.0,64.5398773006135
+F-n135-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1643.0,0.1135413646697998,True,7,1,1162.0,F,135,481.0,41.39414802065404
+M-n101-k10,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1305.0,0.06452631950378418,True,10,1,820.0,M,101,485.0,59.14634146341463
+M-n121-k7,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1511.0,0.09385395050048828,True,7,1,1034.0,M,121,477.0,46.131528046421664
+M-n151-k12,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1761.0,0.13483572006225586,True,12,1,1015.0,M,151,746.0,73.4975369458128
+M-n200-k16,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1847.0,0.24039936065673828,True,16,1,1274.0,M,200,573.0,44.976452119309265
+M-n200-k17,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1847.0,0.24427461624145508,True,16,1,1275.0,M,200,572.0,44.86274509803921
+P-n101-k4,0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1049.0,0.05866551399230957,True,4,1,681.0,P,101,368.0,54.03817914831131
+P-n23-k8,dist_matrix[current][c] - instance['demands'][c],613.0,0.0021932125091552734,True,9,1,529.0,P,23,84.0,15.879017013232513
+A-n38-k5,dist_matrix[current][c] - instance['demands'][c],1011.0,0.0062847137451171875,True,5,1,730.0,A,38,281.0,38.49315068493151
+A-n33-k5,dist_matrix[current][c] - instance['demands'][c],935.0,0.0054454803466796875,True,5,1,661.0,A,33,274.0,41.45234493192133
+B-n35-k5,dist_matrix[current][c] - instance['demands'][c],1230.0,0.004788398742675781,True,5,1,955.0,B,35,275.0,28.79581151832461
+B-n31-k5,dist_matrix[current][c] - instance['demands'][c],952.0,0.003952741622924805,True,5,1,672.0,B,31,280.0,41.66666666666667
+A-n48-k7,dist_matrix[current][c] - instance['demands'][c],1462.0,0.011007308959960938,True,7,1,1073.0,A,48,389.0,36.253494874184526
+A-n39-k5,dist_matrix[current][c] - instance['demands'][c],1143.0,0.007077217102050781,True,5,1,822.0,A,39,321.0,39.05109489051095
+A-n37-k6,dist_matrix[current][c] - instance['demands'][c],1359.0,0.006727457046508789,True,6,1,949.0,A,37,410.0,43.203371970495255
+P-n16-k8,dist_matrix[current][c] - instance['demands'][c],487.0,0.00089263916015625,True,8,1,450.0,P,16,37.0,8.222222222222223
+A-n37-k5,dist_matrix[current][c] - instance['demands'][c],954.0,0.005584239959716797,True,5,1,669.0,A,37,285.0,42.600896860986545
+E-n13-k4,dist_matrix[current][c] - instance['demands'][c],369.0,0.0010335445404052734,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - instance['demands'][c],1025.0,0.0049173831939697266,True,6,1,742.0,A,33,283.0,38.14016172506739
+P-n50-k10,dist_matrix[current][c] - instance['demands'][c],916.0,0.010979890823364258,True,10,1,696.0,P,50,220.0,31.60919540229885
+P-n20-k2,dist_matrix[current][c] - instance['demands'][c],302.0,0.0022499561309814453,True,2,1,216.0,P,20,86.0,39.81481481481482
+A-n46-k7,dist_matrix[current][c] - instance['demands'][c],1197.0,0.009278535842895508,True,7,1,914.0,A,46,283.0,30.962800875273523
+B-n56-k7,dist_matrix[current][c] - instance['demands'][c],1116.0,0.013500452041625977,True,7,1,707.0,B,56,409.0,57.85007072135785
+P-n55-k7,dist_matrix[current][c] - instance['demands'][c],788.0,0.015673398971557617,True,7,1,568.0,P,55,220.0,38.732394366197184
+A-n54-k7,dist_matrix[current][c] - instance['demands'][c],1442.0,0.012691736221313477,True,7,1,1167.0,A,54,275.0,23.564695801199655
+P-n60-k15,dist_matrix[current][c] - instance['demands'][c],1197.0,0.017233610153198242,True,15,1,968.0,P,60,229.0,23.65702479338843
+B-n51-k7,dist_matrix[current][c] - instance['demands'][c],1447.0,0.011638879776000977,True,7,1,1032.0,B,51,415.0,40.213178294573645
+P-n60-k10,dist_matrix[current][c] - instance['demands'][c],1074.0,0.0168459415435791,True,10,1,744.0,P,60,330.0,44.354838709677416
+E-n76-k7,dist_matrix[current][c] - instance['demands'][c],1233.0,0.028164386749267578,True,7,1,682.0,E,76,551.0,80.79178885630498
+P-n76-k5,dist_matrix[current][c] - instance['demands'][c],1113.0,0.027150392532348633,True,5,1,627.0,P,76,486.0,77.51196172248804
+F-n72-k4,dist_matrix[current][c] - instance['demands'][c],1188.0,0.02263641357421875,True,4,1,237.0,F,72,951.0,401.26582278481015
+B-n64-k9,dist_matrix[current][c] - instance['demands'][c],1177.0,0.01702260971069336,True,9,1,861.0,B,64,316.0,36.70150987224158
+A-n64-k9,dist_matrix[current][c] - instance['demands'][c],1965.0,0.01867532730102539,True,9,1,1401.0,A,64,564.0,40.25695931477516
+E-n76-k14,dist_matrix[current][c] - instance['demands'][c],1385.0,0.023740530014038086,True,14,1,1021.0,E,76,364.0,35.6513222331048
+E-n76-k8,dist_matrix[current][c] - instance['demands'][c],1120.0,0.026535987854003906,True,8,1,735.0,E,76,385.0,52.38095238095239
+A-n53-k7,dist_matrix[current][c] - instance['demands'][c],1401.0,0.012860298156738281,True,7,1,1010.0,A,53,391.0,38.71287128712871
+E-n76-k10,dist_matrix[current][c] - instance['demands'][c],1290.0,0.02601480484008789,True,10,1,830.0,E,76,460.0,55.42168674698795
+E-n101-k14,dist_matrix[current][c] - instance['demands'][c],1534.0,0.048449039459228516,True,14,1,1067.0,E,101,467.0,43.767572633552014
+E-n101-k8,dist_matrix[current][c] - instance['demands'][c],1307.0,0.04779314994812012,True,8,1,815.0,E,101,492.0,60.368098159509195
+F-n135-k7,dist_matrix[current][c] - instance['demands'][c],3056.0,0.08699417114257812,True,7,1,1162.0,F,135,1894.0,162.99483648881238
+M-n101-k10,dist_matrix[current][c] - instance['demands'][c],1378.0,0.05351662635803223,True,10,1,820.0,M,101,558.0,68.04878048780488
+M-n121-k7,dist_matrix[current][c] - instance['demands'][c],1666.0,0.07353425025939941,True,7,1,1034.0,M,121,632.0,61.12185686653772
+M-n151-k12,dist_matrix[current][c] - instance['demands'][c],1757.0,0.1104891300201416,True,12,1,1015.0,M,151,742.0,73.10344827586206
+M-n200-k16,dist_matrix[current][c] - instance['demands'][c],2121.0,0.19211697578430176,True,16,1,1274.0,M,200,847.0,66.48351648351648
+M-n200-k17,dist_matrix[current][c] - instance['demands'][c],2121.0,0.1871187686920166,True,16,1,1275.0,M,200,846.0,66.3529411764706
+P-n101-k4,dist_matrix[current][c] - instance['demands'][c],1190.0,0.049395084381103516,True,4,1,681.0,P,101,509.0,74.74302496328929
+P-n23-k8,dist_matrix[current][c] + instance['demands'][c],669.0,0.0019989013671875,True,10,1,529.0,P,23,140.0,26.46502835538752
+A-n38-k5,dist_matrix[current][c] + instance['demands'][c],1050.0,0.00712895393371582,True,5,1,730.0,A,38,320.0,43.83561643835616
+A-n33-k5,dist_matrix[current][c] + instance['demands'][c],921.0,0.00506591796875,True,5,1,661.0,A,33,260.0,39.334341906202724
+B-n35-k5,dist_matrix[current][c] + instance['demands'][c],1318.0,0.005592823028564453,True,5,1,955.0,B,35,363.0,38.010471204188484
+B-n31-k5,dist_matrix[current][c] + instance['demands'][c],973.0,0.00435948371887207,True,5,1,672.0,B,31,301.0,44.79166666666667
+A-n48-k7,dist_matrix[current][c] + instance['demands'][c],1703.0,0.011104822158813477,True,7,1,1073.0,A,48,630.0,58.7138863000932
+A-n39-k5,dist_matrix[current][c] + instance['demands'][c],1282.0,0.008062124252319336,True,5,1,822.0,A,39,460.0,55.961070559610704
+A-n37-k6,dist_matrix[current][c] + instance['demands'][c],1452.0,0.0050966739654541016,True,6,1,949.0,A,37,503.0,53.0031612223393
+P-n16-k8,dist_matrix[current][c] + instance['demands'][c],509.0,0.0009050369262695312,True,8,1,450.0,P,16,59.0,13.111111111111112
+A-n37-k5,dist_matrix[current][c] + instance['demands'][c],1072.0,0.0057582855224609375,True,5,1,669.0,A,37,403.0,60.239162929745895
+E-n13-k4,dist_matrix[current][c] + instance['demands'][c],412.0,0.0009262561798095703,True,4,1,247.0,E,13,165.0,66.80161943319838
+A-n33-k6,dist_matrix[current][c] + instance['demands'][c],1049.0,0.0046274662017822266,True,6,1,742.0,A,33,307.0,41.37466307277628
+P-n50-k10,dist_matrix[current][c] + instance['demands'][c],908.0,0.010752677917480469,True,11,1,696.0,P,50,212.0,30.45977011494253
+P-n20-k2,dist_matrix[current][c] + instance['demands'][c],297.0,0.0018317699432373047,True,2,1,216.0,P,20,81.0,37.5
+A-n46-k7,dist_matrix[current][c] + instance['demands'][c],1178.0,0.008940696716308594,True,7,1,914.0,A,46,264.0,28.88402625820569
+B-n56-k7,dist_matrix[current][c] + instance['demands'][c],1420.0,0.01331949234008789,True,7,1,707.0,B,56,713.0,100.84865629420085
+P-n55-k7,dist_matrix[current][c] + instance['demands'][c],844.0,0.014485359191894531,True,7,1,568.0,P,55,276.0,48.59154929577465
+A-n54-k7,dist_matrix[current][c] + instance['demands'][c],1629.0,0.013074398040771484,True,7,1,1167.0,A,54,462.0,39.588688946015424
+P-n60-k15,dist_matrix[current][c] + instance['demands'][c],1326.0,0.015944719314575195,True,16,1,968.0,P,60,358.0,36.98347107438016
+B-n51-k7,dist_matrix[current][c] + instance['demands'][c],1612.0,0.011458873748779297,True,8,1,1032.0,B,51,580.0,56.201550387596896
+P-n60-k10,dist_matrix[current][c] + instance['demands'][c],1029.0,0.020076513290405273,True,10,1,744.0,P,60,285.0,38.306451612903224
+E-n76-k7,dist_matrix[current][c] + instance['demands'][c],1262.0,0.028954505920410156,True,7,1,682.0,E,76,580.0,85.04398826979472
+P-n76-k5,dist_matrix[current][c] + instance['demands'][c],1035.0,0.029062271118164062,True,5,1,627.0,P,76,408.0,65.07177033492823
+F-n72-k4,dist_matrix[current][c] + instance['demands'][c],1121.0,0.026481151580810547,True,5,1,237.0,F,72,884.0,372.99578059071735
+B-n64-k9,dist_matrix[current][c] + instance['demands'][c],1538.0,0.01741194725036621,True,10,1,861.0,B,64,677.0,78.62950058072009
+A-n64-k9,dist_matrix[current][c] + instance['demands'][c],1881.0,0.018254756927490234,True,9,1,1401.0,A,64,480.0,34.26124197002141
+E-n76-k14,dist_matrix[current][c] + instance['demands'][c],1435.0,0.026903152465820312,True,15,1,1021.0,E,76,414.0,40.54848188050931
+E-n76-k8,dist_matrix[current][c] + instance['demands'][c],1127.0,0.028721332550048828,True,8,1,735.0,E,76,392.0,53.333333333333336
+A-n53-k7,dist_matrix[current][c] + instance['demands'][c],1430.0,0.012482404708862305,True,7,1,1010.0,A,53,420.0,41.584158415841586
+E-n76-k10,dist_matrix[current][c] + instance['demands'][c],1377.0,0.026678085327148438,True,10,1,830.0,E,76,547.0,65.90361445783132
+E-n101-k14,dist_matrix[current][c] + instance['demands'][c],1695.0,0.04902768135070801,True,14,1,1067.0,E,101,628.0,58.85660731021556
+E-n101-k8,dist_matrix[current][c] + instance['demands'][c],1444.0,0.0493474006652832,True,8,1,815.0,E,101,629.0,77.17791411042944
+F-n135-k7,dist_matrix[current][c] + instance['demands'][c],2955.0,0.09085202217102051,True,7,1,1162.0,F,135,1793.0,154.30292598967296
+M-n101-k10,dist_matrix[current][c] + instance['demands'][c],1539.0,0.050118446350097656,True,10,1,820.0,M,101,719.0,87.6829268292683
+M-n121-k7,dist_matrix[current][c] + instance['demands'][c],1741.0,0.07441067695617676,True,7,1,1034.0,M,121,707.0,68.3752417794971
+M-n151-k12,dist_matrix[current][c] + instance['demands'][c],1886.0,0.11158633232116699,True,12,1,1015.0,M,151,871.0,85.8128078817734
+M-n200-k16,dist_matrix[current][c] + instance['demands'][c],2276.0,0.19309568405151367,True,17,1,1274.0,M,200,1002.0,78.64992150706436
+M-n200-k17,dist_matrix[current][c] + instance['demands'][c],2276.0,0.19294214248657227,True,17,1,1275.0,M,200,1001.0,78.50980392156863
+P-n101-k4,dist_matrix[current][c] + instance['demands'][c],1272.0,0.04904317855834961,True,4,1,681.0,P,101,591.0,86.78414096916299
+P-n23-k8,dist_matrix[current][c] - 2 * instance['demands'][c],653.0,0.001940011978149414,True,9,1,529.0,P,23,124.0,23.440453686200378
+A-n38-k5,dist_matrix[current][c] - 2 * instance['demands'][c],912.0,0.006179332733154297,True,5,1,730.0,A,38,182.0,24.93150684931507
+A-n33-k5,dist_matrix[current][c] - 2 * instance['demands'][c],928.0,0.0053863525390625,True,5,1,661.0,A,33,267.0,40.39334341906203
+B-n35-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1164.0,0.007291316986083984,True,5,1,955.0,B,35,209.0,21.8848167539267
+B-n31-k5,dist_matrix[current][c] - 2 * instance['demands'][c],909.0,0.005182743072509766,True,5,1,672.0,B,31,237.0,35.267857142857146
+A-n48-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1507.0,0.012428522109985352,True,7,1,1073.0,A,48,434.0,40.44734389561976
+A-n39-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1131.0,0.0075092315673828125,True,5,1,822.0,A,39,309.0,37.591240875912405
+A-n37-k6,dist_matrix[current][c] - 2 * instance['demands'][c],1409.0,0.006153106689453125,True,6,1,949.0,A,37,460.0,48.472075869336145
+P-n16-k8,dist_matrix[current][c] - 2 * instance['demands'][c],497.0,0.0010347366333007812,True,8,1,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1018.0,0.006762266159057617,True,5,1,669.0,A,37,349.0,52.167414050822124
+E-n13-k4,dist_matrix[current][c] - 2 * instance['demands'][c],369.0,0.0010802745819091797,True,4,1,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - 2 * instance['demands'][c],1097.0,0.004505634307861328,True,6,1,742.0,A,33,355.0,47.84366576819407
+P-n50-k10,dist_matrix[current][c] - 2 * instance['demands'][c],964.0,0.011923789978027344,True,10,1,696.0,P,50,268.0,38.50574712643678
+P-n20-k2,dist_matrix[current][c] - 2 * instance['demands'][c],308.0,0.0018703937530517578,True,2,1,216.0,P,20,92.0,42.592592592592595
+A-n46-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1342.0,0.00887155532836914,True,7,1,914.0,A,46,428.0,46.82713347921225
+B-n56-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1224.0,0.015122175216674805,True,7,1,707.0,B,56,517.0,73.12588401697313
+P-n55-k7,dist_matrix[current][c] - 2 * instance['demands'][c],920.0,0.015625953674316406,True,7,1,568.0,P,55,352.0,61.97183098591549
+A-n54-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1536.0,0.012857675552368164,True,7,1,1167.0,A,54,369.0,31.619537275064268
+P-n60-k15,dist_matrix[current][c] - 2 * instance['demands'][c],1344.0,0.016097068786621094,True,15,1,968.0,P,60,376.0,38.84297520661157
+B-n51-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1352.0,0.012709379196166992,True,7,1,1032.0,B,51,320.0,31.007751937984494
+P-n60-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1075.0,0.018697261810302734,True,10,1,744.0,P,60,331.0,44.48924731182796
+E-n76-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1335.0,0.028465986251831055,True,7,1,682.0,E,76,653.0,95.74780058651027
+P-n76-k5,dist_matrix[current][c] - 2 * instance['demands'][c],1209.0,0.029603242874145508,True,5,1,627.0,P,76,582.0,92.82296650717703
+F-n72-k4,dist_matrix[current][c] - 2 * instance['demands'][c],1200.0,0.025388479232788086,True,4,1,237.0,F,72,963.0,406.32911392405066
+B-n64-k9,dist_matrix[current][c] - 2 * instance['demands'][c],1335.0,0.018378496170043945,True,9,1,861.0,B,64,474.0,55.052264808362374
+A-n64-k9,dist_matrix[current][c] - 2 * instance['demands'][c],2159.0,0.01934075355529785,True,9,1,1401.0,A,64,758.0,54.10421127765882
+E-n76-k14,dist_matrix[current][c] - 2 * instance['demands'][c],1508.0,0.026533126831054688,True,14,1,1021.0,E,76,487.0,47.69833496571989
+E-n76-k8,dist_matrix[current][c] - 2 * instance['demands'][c],1332.0,0.0289156436920166,True,8,1,735.0,E,76,597.0,81.22448979591836
+A-n53-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1545.0,0.012693643569946289,True,7,1,1010.0,A,53,535.0,52.97029702970298
+E-n76-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1325.0,0.03318428993225098,True,10,1,830.0,E,76,495.0,59.63855421686747
+E-n101-k14,dist_matrix[current][c] - 2 * instance['demands'][c],1716.0,0.05013298988342285,True,14,1,1067.0,E,101,649.0,60.824742268041234
+E-n101-k8,dist_matrix[current][c] - 2 * instance['demands'][c],1587.0,0.05315566062927246,True,8,1,815.0,E,101,772.0,94.7239263803681
+F-n135-k7,dist_matrix[current][c] - 2 * instance['demands'][c],3303.0,0.09256386756896973,True,7,1,1162.0,F,135,2141.0,184.2512908777969
+M-n101-k10,dist_matrix[current][c] - 2 * instance['demands'][c],1464.0,0.05565333366394043,True,10,1,820.0,M,101,644.0,78.53658536585367
+M-n121-k7,dist_matrix[current][c] - 2 * instance['demands'][c],1688.0,0.07534050941467285,True,7,1,1034.0,M,121,654.0,63.2495164410058
+M-n151-k12,dist_matrix[current][c] - 2 * instance['demands'][c],1979.0,0.11644601821899414,True,12,1,1015.0,M,151,964.0,94.97536945812809
+M-n200-k16,dist_matrix[current][c] - 2 * instance['demands'][c],2396.0,0.20129632949829102,True,16,1,1274.0,M,200,1122.0,88.0690737833595
+M-n200-k17,dist_matrix[current][c] - 2 * instance['demands'][c],2396.0,0.20276975631713867,True,16,1,1275.0,M,200,1121.0,87.92156862745098
+P-n101-k4,dist_matrix[current][c] - 2 * instance['demands'][c],1421.0,0.05182647705078125,True,4,1,681.0,P,101,740.0,108.66372980910425
+P-n23-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],745.0,0.0020542144775390625,True,9,2,529.0,P,23,216.0,40.831758034026464
+A-n38-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1084.0,0.00842595100402832,True,5,2,730.0,A,38,354.0,48.49315068493151
+A-n33-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],941.0,0.005518674850463867,True,5,2,661.0,A,33,280.0,42.36006051437216
+B-n35-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1304.0,0.005852937698364258,True,5,2,955.0,B,35,349.0,36.544502617801044
+B-n31-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],889.0,0.005583763122558594,True,5,2,672.0,B,31,217.0,32.29166666666667
+A-n48-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1465.0,0.012748479843139648,True,7,2,1073.0,A,48,392.0,36.533084808946874
+A-n39-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],988.0,0.00929117202758789,True,5,2,822.0,A,39,166.0,20.194647201946474
+A-n37-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1213.0,0.006460666656494141,True,6,2,949.0,A,37,264.0,27.81875658587987
+P-n16-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],497.0,0.0010519027709960938,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],956.0,0.008063316345214844,True,5,2,669.0,A,37,287.0,42.89985052316891
+E-n13-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],312.0,0.0008862018585205078,True,4,2,247.0,E,13,65.0,26.31578947368421
+A-n33-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1017.0,0.005499124526977539,True,6,2,742.0,A,33,275.0,37.06199460916442
+P-n50-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],901.0,0.01739025115966797,True,10,2,696.0,P,50,205.0,29.454022988505745
+P-n20-k2,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],267.0,0.002506256103515625,True,2,2,216.0,P,20,51.0,23.61111111111111
+A-n46-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1259.0,0.01068878173828125,True,7,2,914.0,A,46,345.0,37.74617067833698
+B-n56-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1244.0,0.017319202423095703,True,7,2,707.0,B,56,537.0,75.95473833097596
+P-n55-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],744.0,0.01703643798828125,True,7,2,568.0,P,55,176.0,30.985915492957744
+A-n54-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1535.0,0.0171964168548584,True,7,2,1167.0,A,54,368.0,31.533847472150818
+P-n60-k15,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1311.0,0.018053054809570312,True,15,2,968.0,P,60,343.0,35.43388429752066
+B-n51-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1508.0,0.014985322952270508,True,7,2,1032.0,B,51,476.0,46.12403100775194
+P-n60-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1011.0,0.01965022087097168,True,10,2,744.0,P,60,267.0,35.88709677419355
+E-n76-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],946.0,0.03385305404663086,True,7,2,682.0,E,76,264.0,38.70967741935484
+P-n76-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],827.0,0.03449249267578125,True,5,2,627.0,P,76,200.0,31.89792663476874
+F-n72-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],418.0,0.02606821060180664,True,4,2,237.0,F,72,181.0,76.37130801687763
+B-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1274.0,0.021175861358642578,True,9,2,861.0,B,64,413.0,47.96747967479675
+A-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1971.0,0.023041248321533203,True,9,2,1401.0,A,64,570.0,40.68522483940043
+E-n76-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1341.0,0.03081655502319336,True,15,2,1021.0,E,76,320.0,31.341821743388838
+E-n76-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1014.0,0.0378575325012207,True,8,2,735.0,E,76,279.0,37.95918367346939
+A-n53-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1235.0,0.014986515045166016,True,7,2,1010.0,A,53,225.0,22.277227722772277
+E-n76-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1110.0,0.03194308280944824,True,10,2,830.0,E,76,280.0,33.734939759036145
+E-n101-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1569.0,0.05988931655883789,True,14,2,1067.0,E,101,502.0,47.047797563261476
+E-n101-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1140.0,0.060906171798706055,True,8,2,815.0,E,101,325.0,39.87730061349693
+F-n135-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1624.0,0.11344075202941895,True,7,2,1162.0,F,135,462.0,39.75903614457831
+M-n101-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1283.0,0.06168818473815918,True,10,2,820.0,M,101,463.0,56.46341463414634
+M-n121-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1429.0,0.08998751640319824,True,7,2,1034.0,M,121,395.0,38.20116054158607
+M-n151-k12,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1511.0,0.13861894607543945,True,12,2,1015.0,M,151,496.0,48.86699507389163
+M-n200-k16,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.22931528091430664,True,16,2,1274.0,M,200,699.0,54.86656200941915
+M-n200-k17,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.22782087326049805,True,16,2,1275.0,M,200,698.0,54.74509803921569
+P-n101-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],964.0,0.06347870826721191,True,4,2,681.0,P,101,283.0,41.55653450807636
+P-n23-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,679.0,0.0033817291259765625,True,9,2,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1067.0,0.010333538055419922,True,5,2,730.0,A,38,337.0,46.16438356164384
+A-n33-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,874.0,0.007984161376953125,True,5,2,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1178.0,0.007543087005615234,True,5,2,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,948.0,0.006614208221435547,True,5,2,672.0,B,31,276.0,41.07142857142857
+A-n48-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1474.0,0.014762401580810547,True,7,2,1073.0,A,48,401.0,37.37185461323392
+A-n39-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1110.0,0.011527776718139648,True,5,2,822.0,A,39,288.0,35.03649635036496
+A-n37-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1173.0,0.008301496505737305,True,6,2,949.0,A,37,224.0,23.603793466807165
+P-n16-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,497.0,0.0017936229705810547,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,975.0,0.008375167846679688,True,5,2,669.0,A,37,306.0,45.73991031390135
+E-n13-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,369.0,0.0017218589782714844,True,4,2,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1034.0,0.00743412971496582,True,6,2,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,937.0,0.017410755157470703,True,10,2,696.0,P,50,241.0,34.62643678160919
+P-n20-k2,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,264.0,0.002620220184326172,True,2,2,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1180.0,0.015672683715820312,True,7,2,914.0,A,46,266.0,29.10284463894967
+B-n56-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1227.0,0.0233001708984375,True,7,2,707.0,B,56,520.0,73.55021216407354
+P-n55-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,686.0,0.022776365280151367,True,7,2,568.0,P,55,118.0,20.774647887323944
+A-n54-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1389.0,0.02141737937927246,True,7,2,1167.0,A,54,222.0,19.02313624678663
+P-n60-k15,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1380.0,0.02382373809814453,True,15,2,968.0,P,60,412.0,42.561983471074385
+B-n51-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1391.0,0.019108295440673828,True,7,2,1032.0,B,51,359.0,34.786821705426355
+P-n60-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,999.0,0.024827957153320312,True,10,2,744.0,P,60,255.0,34.274193548387096
+E-n76-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1022.0,0.04321002960205078,True,7,2,682.0,E,76,340.0,49.853372434017594
+P-n76-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,891.0,0.04497027397155762,True,5,2,627.0,P,76,264.0,42.10526315789473
+F-n72-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1010.0,0.03832817077636719,True,4,2,237.0,F,72,773.0,326.1603375527426
+B-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1074.0,0.026731491088867188,True,9,2,861.0,B,64,213.0,24.738675958188153
+A-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1905.0,0.02775120735168457,True,9,2,1401.0,A,64,504.0,35.974304068522486
+E-n76-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1460.0,0.03831219673156738,True,15,2,1021.0,E,76,439.0,42.99706170421156
+E-n76-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1120.0,0.04383420944213867,True,8,2,735.0,E,76,385.0,52.38095238095239
+A-n53-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1510.0,0.019281625747680664,True,7,2,1010.0,A,53,500.0,49.504950495049506
+E-n76-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1155.0,0.041336774826049805,True,10,2,830.0,E,76,325.0,39.1566265060241
+E-n101-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1455.0,0.07094073295593262,True,14,2,1067.0,E,101,388.0,36.36363636363637
+E-n101-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1126.0,0.07845282554626465,True,8,2,815.0,E,101,311.0,38.15950920245399
+F-n135-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,2383.0,0.1385059356689453,True,7,2,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1272.0,0.08214998245239258,True,10,2,820.0,M,101,452.0,55.1219512195122
+M-n121-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1687.0,0.1150522232055664,True,7,2,1034.0,M,121,653.0,63.15280464216635
+M-n151-k12,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1577.0,0.16587567329406738,True,12,2,1015.0,M,151,562.0,55.36945812807882
+M-n200-k16,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.298372745513916,True,16,2,1274.0,M,200,664.0,52.119309262166404
+M-n200-k17,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.31413912773132324,True,16,2,1275.0,M,200,663.0,52.0
+P-n101-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1014.0,0.08041191101074219,True,4,2,681.0,P,101,333.0,48.89867841409692
+P-n23-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],679.0,0.0022487640380859375,True,9,2,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1050.0,0.0062367916107177734,True,5,2,730.0,A,38,320.0,43.83561643835616
+A-n33-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],952.0,0.005254268646240234,True,5,2,661.0,A,33,291.0,44.024205748865356
+B-n35-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1090.0,0.006184577941894531,True,5,2,955.0,B,35,135.0,14.136125654450263
+B-n31-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],960.0,0.004311323165893555,True,5,2,672.0,B,31,288.0,42.857142857142854
+A-n48-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1383.0,0.010477304458618164,True,7,2,1073.0,A,48,310.0,28.890959925442683
+A-n39-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1072.0,0.006830930709838867,True,5,2,822.0,A,39,250.0,30.413625304136254
+A-n37-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1443.0,0.006083488464355469,True,6,2,949.0,A,37,494.0,52.054794520547944
+P-n16-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],497.0,0.0009629726409912109,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1062.0,0.005450010299682617,True,5,2,669.0,A,37,393.0,58.744394618834086
+E-n13-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],369.0,0.0007760524749755859,True,4,2,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1007.0,0.005499839782714844,True,6,2,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],909.0,0.013114213943481445,True,10,2,696.0,P,50,213.0,30.603448275862068
+P-n20-k2,dist_matrix[current][c] - 0.4 * instance['demands'][c],302.0,0.0020782947540283203,True,2,2,216.0,P,20,86.0,39.81481481481482
+A-n46-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1384.0,0.010615110397338867,True,7,2,914.0,A,46,470.0,51.42231947483589
+B-n56-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1182.0,0.0163271427154541,True,7,2,707.0,B,56,475.0,67.18528995756718
+P-n55-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],730.0,0.0162203311920166,True,7,2,568.0,P,55,162.0,28.52112676056338
+A-n54-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1382.0,0.014124393463134766,True,7,2,1167.0,A,54,215.0,18.42330762639246
+P-n60-k15,dist_matrix[current][c] - 0.4 * instance['demands'][c],1305.0,0.01820230484008789,True,15,2,968.0,P,60,337.0,34.81404958677686
+B-n51-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1327.0,0.012893199920654297,True,7,2,1032.0,B,51,295.0,28.58527131782946
+P-n60-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1002.0,0.019237756729125977,True,10,2,744.0,P,60,258.0,34.67741935483871
+E-n76-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1056.0,0.02956843376159668,True,7,2,682.0,E,76,374.0,54.83870967741935
+P-n76-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],925.0,0.03061389923095703,True,5,2,627.0,P,76,298.0,47.52791068580542
+F-n72-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1092.0,0.02437448501586914,True,4,2,237.0,F,72,855.0,360.7594936708861
+B-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1120.0,0.01778578758239746,True,9,2,861.0,B,64,259.0,30.081300813008134
+A-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1919.0,0.01956939697265625,True,9,2,1401.0,A,64,518.0,36.973590292648105
+E-n76-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1461.0,0.026694059371948242,True,14,2,1021.0,E,76,440.0,43.09500489715965
+E-n76-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1033.0,0.030417680740356445,True,8,2,735.0,E,76,298.0,40.54421768707483
+A-n53-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1464.0,0.011409282684326172,True,7,2,1010.0,A,53,454.0,44.95049504950495
+E-n76-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1179.0,0.02683115005493164,True,10,2,830.0,E,76,349.0,42.04819277108434
+E-n101-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1436.0,0.05198478698730469,True,14,2,1067.0,E,101,369.0,34.58294283036551
+E-n101-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1304.0,0.05147981643676758,True,8,2,815.0,E,101,489.0,60.0
+F-n135-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],2383.0,0.09948110580444336,True,7,2,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1293.0,0.058118581771850586,True,10,2,820.0,M,101,473.0,57.68292682926829
+M-n121-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1526.0,0.07907581329345703,True,7,2,1034.0,M,121,492.0,47.582205029013544
+M-n151-k12,dist_matrix[current][c] - 0.4 * instance['demands'][c],1624.0,0.1166684627532959,True,12,2,1015.0,M,151,609.0,60.0
+M-n200-k16,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.2016887664794922,True,16,2,1274.0,M,200,681.0,53.453689167974886
+M-n200-k17,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.1940314769744873,True,16,2,1275.0,M,200,680.0,53.333333333333336
+P-n101-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1098.0,0.05360889434814453,True,4,2,681.0,P,101,417.0,61.23348017621145
+P-n23-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],640.0,0.002752542495727539,True,9,2,529.0,P,23,111.0,20.982986767485823
+A-n38-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1153.0,0.008266925811767578,True,5,2,730.0,A,38,423.0,57.945205479452056
+A-n33-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],977.0,0.006234645843505859,True,5,2,661.0,A,33,316.0,47.806354009077154
+B-n35-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1244.0,0.006214618682861328,True,5,2,955.0,B,35,289.0,30.261780104712045
+B-n31-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.005193471908569336,True,5,2,672.0,B,31,224.0,33.33333333333333
+A-n48-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1453.0,0.012052774429321289,True,7,2,1073.0,A,48,380.0,35.414725069897486
+A-n39-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1043.0,0.009608983993530273,True,5,2,822.0,A,39,221.0,26.885644768856448
+A-n37-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1350.0,0.0069408416748046875,True,6,2,949.0,A,37,401.0,42.2550052687039
+P-n16-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],497.0,0.0010380744934082031,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],980.0,0.0072634220123291016,True,5,2,669.0,A,37,311.0,46.48729446935725
+E-n13-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],355.0,0.0008156299591064453,True,4,2,247.0,E,13,108.0,43.7246963562753
+A-n33-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1034.0,0.005990266799926758,True,6,2,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],941.0,0.013162612915039062,True,10,2,696.0,P,50,245.0,35.201149425287355
+P-n20-k2,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],287.0,0.0026438236236572266,True,2,2,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1377.0,0.010244607925415039,True,7,2,914.0,A,46,463.0,50.65645514223195
+B-n56-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1251.0,0.016968965530395508,True,7,2,707.0,B,56,544.0,76.94483734087694
+P-n55-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],769.0,0.017495393753051758,True,7,2,568.0,P,55,201.0,35.38732394366197
+A-n54-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1405.0,0.016550779342651367,True,7,2,1167.0,A,54,238.0,20.394173093401886
+P-n60-k15,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1276.0,0.022820711135864258,True,15,2,968.0,P,60,308.0,31.818181818181817
+B-n51-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1329.0,0.01489877700805664,True,7,2,1032.0,B,51,297.0,28.77906976744186
+P-n60-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1087.0,0.02031874656677246,True,10,2,744.0,P,60,343.0,46.10215053763441
+E-n76-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1163.0,0.030658483505249023,True,7,2,682.0,E,76,481.0,70.52785923753666
+P-n76-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.03329777717590332,True,5,2,627.0,P,76,269.0,42.90271132376395
+F-n72-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],365.0,0.029230117797851562,True,4,2,237.0,F,72,128.0,54.008438818565395
+B-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1257.0,0.02104926109313965,True,9,2,861.0,B,64,396.0,45.99303135888502
+A-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1909.0,0.02271413803100586,True,9,2,1401.0,A,64,508.0,36.25981441827266
+E-n76-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1439.0,0.03224372863769531,True,14,2,1021.0,E,76,418.0,40.94025465230167
+E-n76-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1288.0,0.03315329551696777,True,8,2,735.0,E,76,553.0,75.23809523809524
+A-n53-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1529.0,0.01296544075012207,True,7,2,1010.0,A,53,519.0,51.38613861386139
+E-n76-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1111.0,0.03274106979370117,True,10,2,830.0,E,76,281.0,33.855421686746986
+E-n101-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1654.0,0.05489993095397949,True,14,2,1067.0,E,101,587.0,55.01405810684161
+E-n101-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1348.0,0.05372166633605957,True,8,2,815.0,E,101,533.0,65.39877300613497
+F-n135-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1885.0,0.10415863990783691,True,7,2,1162.0,F,135,723.0,62.22030981067126
+M-n101-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1207.0,0.06214642524719238,True,10,2,820.0,M,101,387.0,47.19512195121951
+M-n121-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1522.0,0.08550357818603516,True,7,2,1034.0,M,121,488.0,47.195357833655706
+M-n151-k12,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1441.0,0.1295151710510254,True,12,2,1015.0,M,151,426.0,41.970443349753694
+M-n200-k16,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.22783923149108887,True,16,2,1274.0,M,200,605.0,47.48822605965463
+M-n200-k17,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.22557592391967773,True,16,2,1275.0,M,200,604.0,47.372549019607845
+P-n101-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1039.0,0.06138467788696289,True,4,2,681.0,P,101,358.0,52.56975036710719
+P-n23-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),665.0,0.0025641918182373047,True,9,2,529.0,P,23,136.0,25.708884688090738
+A-n38-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1028.0,0.008645772933959961,True,5,2,730.0,A,38,298.0,40.821917808219176
+A-n33-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),942.0,0.005841255187988281,True,5,2,661.0,A,33,281.0,42.511346444780635
+B-n35-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1178.0,0.007782936096191406,True,5,2,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),963.0,0.005990266799926758,True,5,2,672.0,B,31,291.0,43.30357142857143
+A-n48-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1377.0,0.01412653923034668,True,7,2,1073.0,A,48,304.0,28.33178005591799
+A-n39-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1122.0,0.010823726654052734,True,5,2,822.0,A,39,300.0,36.496350364963504
+A-n37-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1319.0,0.006963491439819336,True,6,2,949.0,A,37,370.0,38.98840885142255
+P-n16-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),497.0,0.0018415451049804688,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1054.0,0.006812572479248047,True,5,2,669.0,A,37,385.0,57.548579970104626
+E-n13-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),369.0,0.0009527206420898438,True,4,2,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1007.0,0.006562709808349609,True,6,2,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1020.0,0.014665365219116211,True,10,2,696.0,P,50,324.0,46.55172413793103
+P-n20-k2,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),264.0,0.0023927688598632812,True,2,2,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1381.0,0.012241840362548828,True,7,2,914.0,A,46,467.0,51.09409190371991
+B-n56-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1179.0,0.018842458724975586,True,7,2,707.0,B,56,472.0,66.76096181046675
+P-n55-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),819.0,0.018900394439697266,True,7,2,568.0,P,55,251.0,44.190140845070424
+A-n54-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1423.0,0.018454551696777344,True,7,2,1167.0,A,54,256.0,21.936589545844047
+P-n60-k15,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1282.0,0.021229028701782227,True,16,2,968.0,P,60,314.0,32.438016528925615
+B-n51-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1495.0,0.013412714004516602,True,7,2,1032.0,B,51,463.0,44.86434108527132
+P-n60-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1103.0,0.023733854293823242,True,10,2,744.0,P,60,359.0,48.252688172043015
+E-n76-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1029.0,0.03701019287109375,True,7,2,682.0,E,76,347.0,50.879765395894424
+P-n76-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),892.0,0.039749860763549805,True,5,2,627.0,P,76,265.0,42.26475279106858
+F-n72-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1058.0,0.0307464599609375,True,4,2,237.0,F,72,821.0,346.41350210970467
+B-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1129.0,0.021300315856933594,True,9,2,861.0,B,64,268.0,31.126596980255517
+A-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1914.0,0.023103713989257812,True,9,2,1401.0,A,64,513.0,36.61670235546038
+E-n76-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1487.0,0.0319216251373291,True,14,2,1021.0,E,76,466.0,45.641527913809995
+E-n76-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1079.0,0.03554248809814453,True,8,2,735.0,E,76,344.0,46.802721088435376
+A-n53-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1526.0,0.01480555534362793,True,7,2,1010.0,A,53,516.0,51.08910891089109
+E-n76-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1277.0,0.036942481994628906,True,10,2,830.0,E,76,447.0,53.855421686746986
+E-n101-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1476.0,0.057740211486816406,True,14,2,1067.0,E,101,409.0,38.33177132146204
+E-n101-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1303.0,0.06393861770629883,True,8,2,815.0,E,101,488.0,59.87730061349693
+F-n135-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),2389.0,0.11645340919494629,True,7,2,1162.0,F,135,1227.0,105.59380378657488
+M-n101-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1284.0,0.07114458084106445,True,10,2,820.0,M,101,464.0,56.58536585365853
+M-n121-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1462.0,0.09298563003540039,True,7,2,1034.0,M,121,428.0,41.3926499032882
+M-n151-k12,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1666.0,0.13878321647644043,True,12,2,1015.0,M,151,651.0,64.13793103448275
+M-n200-k16,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.2557687759399414,True,16,2,1274.0,M,200,568.0,44.5839874411303
+M-n200-k17,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.2635657787322998,True,16,2,1275.0,M,200,567.0,44.470588235294116
+P-n101-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),989.0,0.06695055961608887,True,4,2,681.0,P,101,308.0,45.22760646108664
+P-n23-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,639.0,0.0025882720947265625,True,9,2,529.0,P,23,110.0,20.793950850661624
+A-n38-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1011.0,0.008857488632202148,True,5,2,730.0,A,38,281.0,38.49315068493151
+A-n33-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,874.0,0.006464958190917969,True,5,2,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1218.0,0.006365776062011719,True,5,2,955.0,B,35,263.0,27.53926701570681
+B-n31-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,946.0,0.005251646041870117,True,5,2,672.0,B,31,274.0,40.773809523809526
+A-n48-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1499.0,0.01464533805847168,True,7,2,1073.0,A,48,426.0,39.70177073625349
+A-n39-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1113.0,0.009458065032958984,True,5,2,822.0,A,39,291.0,35.4014598540146
+A-n37-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1341.0,0.006270647048950195,True,6,2,949.0,A,37,392.0,41.30663856691254
+P-n16-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,497.0,0.0017154216766357422,True,8,2,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1027.0,0.007616281509399414,True,5,2,669.0,A,37,358.0,53.51270553064275
+E-n13-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,369.0,0.0009539127349853516,True,4,2,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,999.0,0.0056765079498291016,True,6,2,742.0,A,33,257.0,34.63611859838275
+P-n50-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,958.0,0.013933181762695312,True,10,2,696.0,P,50,262.0,37.64367816091954
+P-n20-k2,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,287.0,0.0024852752685546875,True,2,2,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1372.0,0.011964082717895508,True,7,2,914.0,A,46,458.0,50.10940919037199
+B-n56-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1104.0,0.01909947395324707,True,7,2,707.0,B,56,397.0,56.15275813295615
+P-n55-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,776.0,0.01978921890258789,True,7,2,568.0,P,55,208.0,36.61971830985916
+A-n54-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1466.0,0.016933679580688477,True,7,2,1167.0,A,54,299.0,25.621251071122536
+P-n60-k15,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1284.0,0.019634723663330078,True,15,2,968.0,P,60,316.0,32.64462809917356
+B-n51-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1397.0,0.01565694808959961,True,7,2,1032.0,B,51,365.0,35.36821705426357
+P-n60-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1023.0,0.020218372344970703,True,10,2,744.0,P,60,279.0,37.5
+E-n76-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1012.0,0.034239768981933594,True,7,2,682.0,E,76,330.0,48.38709677419355
+P-n76-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,897.0,0.03673529624938965,True,5,2,627.0,P,76,270.0,43.0622009569378
+F-n72-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1037.0,0.030373334884643555,True,4,2,237.0,F,72,800.0,337.55274261603375
+B-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1359.0,0.02141261100769043,True,9,2,861.0,B,64,498.0,57.8397212543554
+A-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1984.0,0.023267269134521484,True,9,2,1401.0,A,64,583.0,41.61313347608851
+E-n76-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1441.0,0.031204938888549805,True,14,2,1021.0,E,76,420.0,41.13614103819784
+E-n76-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1145.0,0.034522294998168945,True,8,2,735.0,E,76,410.0,55.78231292517006
+A-n53-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1445.0,0.015132665634155273,True,7,2,1010.0,A,53,435.0,43.06930693069307
+E-n76-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1304.0,0.03406071662902832,True,10,2,830.0,E,76,474.0,57.10843373493976
+E-n101-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1575.0,0.05642580986022949,True,14,2,1067.0,E,101,508.0,47.61012183692596
+E-n101-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1257.0,0.05833745002746582,True,8,2,815.0,E,101,442.0,54.233128834355824
+F-n135-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,2417.0,0.10998773574829102,True,7,2,1162.0,F,135,1255.0,108.00344234079174
+M-n101-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1259.0,0.06776928901672363,True,10,2,820.0,M,101,439.0,53.53658536585366
+M-n121-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1465.0,0.09379863739013672,True,7,2,1034.0,M,121,431.0,41.682785299806575
+M-n151-k12,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1683.0,0.14069676399230957,True,12,2,1015.0,M,151,668.0,65.8128078817734
+M-n200-k16,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.24850797653198242,True,16,2,1274.0,M,200,554.0,43.4850863422292
+M-n200-k17,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.2384333610534668,True,16,2,1275.0,M,200,553.0,43.372549019607845
+P-n101-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,934.0,0.0664207935333252,True,4,2,681.0,P,101,253.0,37.15124816446402
+P-n23-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),665.0,0.002907991409301758,True,9,3,529.0,P,23,136.0,25.708884688090738
+A-n38-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1028.0,0.008343696594238281,True,5,3,730.0,A,38,298.0,40.821917808219176
+A-n33-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),942.0,0.006754398345947266,True,5,3,661.0,A,33,281.0,42.511346444780635
+B-n35-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1178.0,0.006392240524291992,True,5,3,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),963.0,0.00544428825378418,True,5,3,672.0,B,31,291.0,43.30357142857143
+A-n48-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1377.0,0.013499975204467773,True,7,3,1073.0,A,48,304.0,28.33178005591799
+A-n39-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1122.0,0.008657455444335938,True,5,3,822.0,A,39,300.0,36.496350364963504
+A-n37-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1319.0,0.007174253463745117,True,6,3,949.0,A,37,370.0,38.98840885142255
+P-n16-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),497.0,0.0011806488037109375,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1054.0,0.007788658142089844,True,5,3,669.0,A,37,385.0,57.548579970104626
+E-n13-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),369.0,0.0010952949523925781,True,4,3,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1007.0,0.005738973617553711,True,6,3,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1020.0,0.015656709671020508,True,10,3,696.0,P,50,324.0,46.55172413793103
+P-n20-k2,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),264.0,0.0030837059020996094,True,2,3,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1381.0,0.012343645095825195,True,7,3,914.0,A,46,467.0,51.09409190371991
+B-n56-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1179.0,0.01981806755065918,True,7,3,707.0,B,56,472.0,66.76096181046675
+P-n55-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),819.0,0.020427465438842773,True,7,3,568.0,P,55,251.0,44.190140845070424
+A-n54-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1423.0,0.01775527000427246,True,7,3,1167.0,A,54,256.0,21.936589545844047
+P-n60-k15,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1282.0,0.02170085906982422,True,16,3,968.0,P,60,314.0,32.438016528925615
+B-n51-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1495.0,0.015464544296264648,True,7,3,1032.0,B,51,463.0,44.86434108527132
+P-n60-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1103.0,0.023537397384643555,True,10,3,744.0,P,60,359.0,48.252688172043015
+E-n76-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1029.0,0.03903818130493164,True,7,3,682.0,E,76,347.0,50.879765395894424
+P-n76-k5,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),892.0,0.03923344612121582,True,5,3,627.0,P,76,265.0,42.26475279106858
+F-n72-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1058.0,0.03202056884765625,True,4,3,237.0,F,72,821.0,346.41350210970467
+B-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1129.0,0.02352118492126465,True,9,3,861.0,B,64,268.0,31.126596980255517
+A-n64-k9,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1914.0,0.023920059204101562,True,9,3,1401.0,A,64,513.0,36.61670235546038
+E-n76-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1487.0,0.0363619327545166,True,14,3,1021.0,E,76,466.0,45.641527913809995
+E-n76-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1079.0,0.03642129898071289,True,8,3,735.0,E,76,344.0,46.802721088435376
+A-n53-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1526.0,0.01487112045288086,True,7,3,1010.0,A,53,516.0,51.08910891089109
+E-n76-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1277.0,0.033693552017211914,True,10,3,830.0,E,76,447.0,53.855421686746986
+E-n101-k14,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1476.0,0.0584263801574707,True,14,3,1067.0,E,101,409.0,38.33177132146204
+E-n101-k8,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1303.0,0.06215190887451172,True,8,3,815.0,E,101,488.0,59.87730061349693
+F-n135-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),2389.0,0.11728072166442871,True,7,3,1162.0,F,135,1227.0,105.59380378657488
+M-n101-k10,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1284.0,0.07059860229492188,True,10,3,820.0,M,101,464.0,56.58536585365853
+M-n121-k7,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1462.0,0.09517884254455566,True,7,3,1034.0,M,121,428.0,41.3926499032882
+M-n151-k12,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1666.0,0.1380174160003662,True,12,3,1015.0,M,151,651.0,64.13793103448275
+M-n200-k16,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.2566359043121338,True,16,3,1274.0,M,200,568.0,44.5839874411303
+M-n200-k17,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),1842.0,0.2514655590057373,True,16,3,1275.0,M,200,567.0,44.470588235294116
+P-n101-k4,0.1 * remaining + (dist_matrix[current][c] - 0.3 * instance['demands'][c]),989.0,0.06582832336425781,True,4,3,681.0,P,101,308.0,45.22760646108664
+P-n23-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,679.0,0.0032739639282226562,True,9,3,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1067.0,0.010270833969116211,True,5,3,730.0,A,38,337.0,46.16438356164384
+A-n33-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,874.0,0.007839441299438477,True,5,3,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1178.0,0.007930517196655273,True,5,3,955.0,B,35,223.0,23.350785340314136
+B-n31-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,948.0,0.006243228912353516,True,5,3,672.0,B,31,276.0,41.07142857142857
+A-n48-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1474.0,0.016744375228881836,True,7,3,1073.0,A,48,401.0,37.37185461323392
+A-n39-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1110.0,0.012063980102539062,True,5,3,822.0,A,39,288.0,35.03649635036496
+A-n37-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1173.0,0.008985519409179688,True,6,3,949.0,A,37,224.0,23.603793466807165
+P-n16-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,497.0,0.0013728141784667969,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,975.0,0.00881195068359375,True,5,3,669.0,A,37,306.0,45.73991031390135
+E-n13-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,369.0,0.0011827945709228516,True,4,3,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1034.0,0.007739543914794922,True,6,3,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,937.0,0.017201900482177734,True,10,3,696.0,P,50,241.0,34.62643678160919
+P-n20-k2,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,264.0,0.002849578857421875,True,2,3,216.0,P,20,48.0,22.22222222222222
+A-n46-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1180.0,0.015552759170532227,True,7,3,914.0,A,46,266.0,29.10284463894967
+B-n56-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1227.0,0.020632505416870117,True,7,3,707.0,B,56,520.0,73.55021216407354
+P-n55-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,686.0,0.023366689682006836,True,7,3,568.0,P,55,118.0,20.774647887323944
+A-n54-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1389.0,0.020899295806884766,True,7,3,1167.0,A,54,222.0,19.02313624678663
+P-n60-k15,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1380.0,0.023362159729003906,True,15,3,968.0,P,60,412.0,42.561983471074385
+B-n51-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1391.0,0.019844770431518555,True,7,3,1032.0,B,51,359.0,34.786821705426355
+P-n60-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,999.0,0.024320363998413086,True,10,3,744.0,P,60,255.0,34.274193548387096
+E-n76-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1022.0,0.04207777976989746,True,7,3,682.0,E,76,340.0,49.853372434017594
+P-n76-k5,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,891.0,0.04234671592712402,True,5,3,627.0,P,76,264.0,42.10526315789473
+F-n72-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1010.0,0.03563094139099121,True,4,3,237.0,F,72,773.0,326.1603375527426
+B-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1074.0,0.027592897415161133,True,9,3,861.0,B,64,213.0,24.738675958188153
+A-n64-k9,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1905.0,0.02716231346130371,True,9,3,1401.0,A,64,504.0,35.974304068522486
+E-n76-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1460.0,0.03824973106384277,True,15,3,1021.0,E,76,439.0,42.99706170421156
+E-n76-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1120.0,0.03961539268493652,True,8,3,735.0,E,76,385.0,52.38095238095239
+A-n53-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1510.0,0.0196688175201416,True,7,3,1010.0,A,53,500.0,49.504950495049506
+E-n76-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1155.0,0.043332815170288086,True,10,3,830.0,E,76,325.0,39.1566265060241
+E-n101-k14,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1455.0,0.0720834732055664,True,14,3,1067.0,E,101,388.0,36.36363636363637
+E-n101-k8,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1126.0,0.07534241676330566,True,8,3,815.0,E,101,311.0,38.15950920245399
+F-n135-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,2383.0,0.13906550407409668,True,7,3,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1272.0,0.08092093467712402,True,10,3,820.0,M,101,452.0,55.1219512195122
+M-n121-k7,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1687.0,0.11120796203613281,True,7,3,1034.0,M,121,653.0,63.15280464216635
+M-n151-k12,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1577.0,0.16982150077819824,True,12,3,1015.0,M,151,562.0,55.36945812807882
+M-n200-k16,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.30529046058654785,True,16,3,1274.0,M,200,664.0,52.119309262166404
+M-n200-k17,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1938.0,0.307814359664917,True,16,3,1275.0,M,200,663.0,52.0
+P-n101-k4,dist_matrix[current][c] - (dist_matrix[c][instance['depot']] + instance['demands'][c]) * 0.2,1014.0,0.08551168441772461,True,4,3,681.0,P,101,333.0,48.89867841409692
+P-n23-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],679.0,0.002024412155151367,True,9,3,529.0,P,23,150.0,28.35538752362949
+A-n38-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1050.0,0.00724029541015625,True,5,3,730.0,A,38,320.0,43.83561643835616
+A-n33-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],952.0,0.005390644073486328,True,5,3,661.0,A,33,291.0,44.024205748865356
+B-n35-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1090.0,0.006358146667480469,True,5,3,955.0,B,35,135.0,14.136125654450263
+B-n31-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],960.0,0.004785776138305664,True,5,3,672.0,B,31,288.0,42.857142857142854
+A-n48-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1383.0,0.011346101760864258,True,7,3,1073.0,A,48,310.0,28.890959925442683
+A-n39-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1072.0,0.007254838943481445,True,5,3,822.0,A,39,250.0,30.413625304136254
+A-n37-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1443.0,0.006651401519775391,True,6,3,949.0,A,37,494.0,52.054794520547944
+P-n16-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],497.0,0.0017261505126953125,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],1062.0,0.006229877471923828,True,5,3,669.0,A,37,393.0,58.744394618834086
+E-n13-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],369.0,0.0007808208465576172,True,4,3,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - 0.4 * instance['demands'][c],1007.0,0.0059816837310791016,True,6,3,742.0,A,33,265.0,35.714285714285715
+P-n50-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],909.0,0.013637781143188477,True,10,3,696.0,P,50,213.0,30.603448275862068
+P-n20-k2,dist_matrix[current][c] - 0.4 * instance['demands'][c],302.0,0.0019636154174804688,True,2,3,216.0,P,20,86.0,39.81481481481482
+A-n46-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1384.0,0.011987447738647461,True,7,3,914.0,A,46,470.0,51.42231947483589
+B-n56-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1182.0,0.017764568328857422,True,7,3,707.0,B,56,475.0,67.18528995756718
+P-n55-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],730.0,0.017577171325683594,True,7,3,568.0,P,55,162.0,28.52112676056338
+A-n54-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1382.0,0.014964103698730469,True,7,3,1167.0,A,54,215.0,18.42330762639246
+P-n60-k15,dist_matrix[current][c] - 0.4 * instance['demands'][c],1305.0,0.019555330276489258,True,15,3,968.0,P,60,337.0,34.81404958677686
+B-n51-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1327.0,0.013479948043823242,True,7,3,1032.0,B,51,295.0,28.58527131782946
+P-n60-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1002.0,0.018757104873657227,True,10,3,744.0,P,60,258.0,34.67741935483871
+E-n76-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1056.0,0.03163933753967285,True,7,3,682.0,E,76,374.0,54.83870967741935
+P-n76-k5,dist_matrix[current][c] - 0.4 * instance['demands'][c],925.0,0.03345489501953125,True,5,3,627.0,P,76,298.0,47.52791068580542
+F-n72-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1092.0,0.029081106185913086,True,4,3,237.0,F,72,855.0,360.7594936708861
+B-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1120.0,0.019098520278930664,True,9,3,861.0,B,64,259.0,30.081300813008134
+A-n64-k9,dist_matrix[current][c] - 0.4 * instance['demands'][c],1919.0,0.019103527069091797,True,9,3,1401.0,A,64,518.0,36.973590292648105
+E-n76-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1461.0,0.027065515518188477,True,14,3,1021.0,E,76,440.0,43.09500489715965
+E-n76-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1033.0,0.029940128326416016,True,8,3,735.0,E,76,298.0,40.54421768707483
+A-n53-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1464.0,0.014524459838867188,True,7,3,1010.0,A,53,454.0,44.95049504950495
+E-n76-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1179.0,0.02926015853881836,True,10,3,830.0,E,76,349.0,42.04819277108434
+E-n101-k14,dist_matrix[current][c] - 0.4 * instance['demands'][c],1436.0,0.05192732810974121,True,14,3,1067.0,E,101,369.0,34.58294283036551
+E-n101-k8,dist_matrix[current][c] - 0.4 * instance['demands'][c],1304.0,0.054962873458862305,True,8,3,815.0,E,101,489.0,60.0
+F-n135-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],2383.0,0.09723305702209473,True,7,3,1162.0,F,135,1221.0,105.07745266781411
+M-n101-k10,dist_matrix[current][c] - 0.4 * instance['demands'][c],1293.0,0.057677507400512695,True,10,3,820.0,M,101,473.0,57.68292682926829
+M-n121-k7,dist_matrix[current][c] - 0.4 * instance['demands'][c],1526.0,0.08340644836425781,True,7,3,1034.0,M,121,492.0,47.582205029013544
+M-n151-k12,dist_matrix[current][c] - 0.4 * instance['demands'][c],1624.0,0.11726832389831543,True,12,3,1015.0,M,151,609.0,60.0
+M-n200-k16,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.20295047760009766,True,16,3,1274.0,M,200,681.0,53.453689167974886
+M-n200-k17,dist_matrix[current][c] - 0.4 * instance['demands'][c],1955.0,0.2052159309387207,True,16,3,1275.0,M,200,680.0,53.333333333333336
+P-n101-k4,dist_matrix[current][c] - 0.4 * instance['demands'][c],1098.0,0.05491518974304199,True,4,3,681.0,P,101,417.0,61.23348017621145
+P-n23-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],745.0,0.0028879642486572266,True,9,3,529.0,P,23,216.0,40.831758034026464
+A-n38-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1084.0,0.0077631473541259766,True,5,3,730.0,A,38,354.0,48.49315068493151
+A-n33-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],941.0,0.006869316101074219,True,5,3,661.0,A,33,280.0,42.36006051437216
+B-n35-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1304.0,0.005143404006958008,True,5,3,955.0,B,35,349.0,36.544502617801044
+B-n31-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],889.0,0.00452733039855957,True,5,3,672.0,B,31,217.0,32.29166666666667
+A-n48-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1465.0,0.012314796447753906,True,7,3,1073.0,A,48,392.0,36.533084808946874
+A-n39-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],988.0,0.009033441543579102,True,5,3,822.0,A,39,166.0,20.194647201946474
+A-n37-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1213.0,0.0067141056060791016,True,6,3,949.0,A,37,264.0,27.81875658587987
+P-n16-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],497.0,0.001047372817993164,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],956.0,0.0074117183685302734,True,5,3,669.0,A,37,287.0,42.89985052316891
+E-n13-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],312.0,0.0008332729339599609,True,4,3,247.0,E,13,65.0,26.31578947368421
+A-n33-k6,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1017.0,0.005804777145385742,True,6,3,742.0,A,33,275.0,37.06199460916442
+P-n50-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],901.0,0.012853145599365234,True,10,3,696.0,P,50,205.0,29.454022988505745
+P-n20-k2,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],267.0,0.002056121826171875,True,2,3,216.0,P,20,51.0,23.61111111111111
+A-n46-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1259.0,0.01170492172241211,True,7,3,914.0,A,46,345.0,37.74617067833698
+B-n56-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1244.0,0.01816082000732422,True,7,3,707.0,B,56,537.0,75.95473833097596
+P-n55-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],744.0,0.017350435256958008,True,7,3,568.0,P,55,176.0,30.985915492957744
+A-n54-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1535.0,0.015636205673217773,True,7,3,1167.0,A,54,368.0,31.533847472150818
+P-n60-k15,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1311.0,0.018864870071411133,True,15,3,968.0,P,60,343.0,35.43388429752066
+B-n51-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1508.0,0.014596939086914062,True,7,3,1032.0,B,51,476.0,46.12403100775194
+P-n60-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1011.0,0.020105361938476562,True,10,3,744.0,P,60,267.0,35.88709677419355
+E-n76-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],946.0,0.03347206115722656,True,7,3,682.0,E,76,264.0,38.70967741935484
+P-n76-k5,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],827.0,0.035388946533203125,True,5,3,627.0,P,76,200.0,31.89792663476874
+F-n72-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],418.0,0.02856898307800293,True,4,3,237.0,F,72,181.0,76.37130801687763
+B-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1274.0,0.02251410484313965,True,9,3,861.0,B,64,413.0,47.96747967479675
+A-n64-k9,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1971.0,0.0210878849029541,True,9,3,1401.0,A,64,570.0,40.68522483940043
+E-n76-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1341.0,0.03364968299865723,True,15,3,1021.0,E,76,320.0,31.341821743388838
+E-n76-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1014.0,0.0335848331451416,True,8,3,735.0,E,76,279.0,37.95918367346939
+A-n53-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1235.0,0.017689228057861328,True,7,3,1010.0,A,53,225.0,22.277227722772277
+E-n76-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1110.0,0.032410621643066406,True,10,3,830.0,E,76,280.0,33.734939759036145
+E-n101-k14,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1569.0,0.05516195297241211,True,14,3,1067.0,E,101,502.0,47.047797563261476
+E-n101-k8,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1140.0,0.060492515563964844,True,8,3,815.0,E,101,325.0,39.87730061349693
+F-n135-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1624.0,0.10645675659179688,True,7,3,1162.0,F,135,462.0,39.75903614457831
+M-n101-k10,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1283.0,0.06525063514709473,True,10,3,820.0,M,101,463.0,56.46341463414634
+M-n121-k7,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1429.0,0.09189891815185547,True,7,3,1034.0,M,121,395.0,38.20116054158607
+M-n151-k12,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1511.0,0.13942480087280273,True,12,3,1015.0,M,151,496.0,48.86699507389163
+M-n200-k16,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.232252836227417,True,16,3,1274.0,M,200,699.0,54.86656200941915
+M-n200-k17,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],1973.0,0.22365498542785645,True,16,3,1275.0,M,200,698.0,54.74509803921569
+P-n101-k4,dist_matrix[current][c] - 0.2 * dist_matrix[c][instance['depot']],964.0,0.06289362907409668,True,4,3,681.0,P,101,283.0,41.55653450807636
+P-n23-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],640.0,0.0022852420806884766,True,9,3,529.0,P,23,111.0,20.982986767485823
+A-n38-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1153.0,0.007951736450195312,True,5,3,730.0,A,38,423.0,57.945205479452056
+A-n33-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],977.0,0.00587153434753418,True,5,3,661.0,A,33,316.0,47.806354009077154
+B-n35-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1244.0,0.0063571929931640625,True,5,3,955.0,B,35,289.0,30.261780104712045
+B-n31-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.005616426467895508,True,5,3,672.0,B,31,224.0,33.33333333333333
+A-n48-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1453.0,0.012105703353881836,True,7,3,1073.0,A,48,380.0,35.414725069897486
+A-n39-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1043.0,0.009454727172851562,True,5,3,822.0,A,39,221.0,26.885644768856448
+A-n37-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1350.0,0.006575822830200195,True,6,3,949.0,A,37,401.0,42.2550052687039
+P-n16-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],497.0,0.0013279914855957031,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],980.0,0.006566286087036133,True,5,3,669.0,A,37,311.0,46.48729446935725
+E-n13-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],355.0,0.0008203983306884766,True,4,3,247.0,E,13,108.0,43.7246963562753
+A-n33-k6,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1034.0,0.005892515182495117,True,6,3,742.0,A,33,292.0,39.35309973045822
+P-n50-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],941.0,0.01422119140625,True,10,3,696.0,P,50,245.0,35.201149425287355
+P-n20-k2,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],287.0,0.0024509429931640625,True,2,3,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1377.0,0.011047601699829102,True,7,3,914.0,A,46,463.0,50.65645514223195
+B-n56-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1251.0,0.017571449279785156,True,7,3,707.0,B,56,544.0,76.94483734087694
+P-n55-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],769.0,0.018004417419433594,True,7,3,568.0,P,55,201.0,35.38732394366197
+A-n54-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1405.0,0.016595125198364258,True,7,3,1167.0,A,54,238.0,20.394173093401886
+P-n60-k15,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1276.0,0.019166946411132812,True,15,3,968.0,P,60,308.0,31.818181818181817
+B-n51-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1329.0,0.015702009201049805,True,7,3,1032.0,B,51,297.0,28.77906976744186
+P-n60-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1087.0,0.021351337432861328,True,10,3,744.0,P,60,343.0,46.10215053763441
+E-n76-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1163.0,0.03392648696899414,True,7,3,682.0,E,76,481.0,70.52785923753666
+P-n76-k5,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],896.0,0.0356292724609375,True,5,3,627.0,P,76,269.0,42.90271132376395
+F-n72-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],365.0,0.028422117233276367,True,4,3,237.0,F,72,128.0,54.008438818565395
+B-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1257.0,0.021742582321166992,True,9,3,861.0,B,64,396.0,45.99303135888502
+A-n64-k9,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1909.0,0.021634578704833984,True,9,3,1401.0,A,64,508.0,36.25981441827266
+E-n76-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1439.0,0.03041839599609375,True,14,3,1021.0,E,76,418.0,40.94025465230167
+E-n76-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1288.0,0.03236079216003418,True,8,3,735.0,E,76,553.0,75.23809523809524
+A-n53-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1529.0,0.014580011367797852,True,7,3,1010.0,A,53,519.0,51.38613861386139
+E-n76-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1111.0,0.03127169609069824,True,10,3,830.0,E,76,281.0,33.855421686746986
+E-n101-k14,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1654.0,0.05029916763305664,True,14,3,1067.0,E,101,587.0,55.01405810684161
+E-n101-k8,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1348.0,0.05624818801879883,True,8,3,815.0,E,101,533.0,65.39877300613497
+F-n135-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1885.0,0.10161519050598145,True,7,3,1162.0,F,135,723.0,62.22030981067126
+M-n101-k10,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1207.0,0.061414241790771484,True,10,3,820.0,M,101,387.0,47.19512195121951
+M-n121-k7,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1522.0,0.08831310272216797,True,7,3,1034.0,M,121,488.0,47.195357833655706
+M-n151-k12,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1441.0,0.13591289520263672,True,12,3,1015.0,M,151,426.0,41.970443349753694
+M-n200-k16,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.2244277000427246,True,16,3,1274.0,M,200,605.0,47.48822605965463
+M-n200-k17,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1879.0,0.23254776000976562,True,16,3,1275.0,M,200,604.0,47.372549019607845
+P-n101-k4,0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],1039.0,0.06200456619262695,True,4,3,681.0,P,101,358.0,52.56975036710719
+P-n23-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,639.0,0.0029592514038085938,True,9,3,529.0,P,23,110.0,20.793950850661624
+A-n38-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1011.0,0.007856369018554688,True,5,3,730.0,A,38,281.0,38.49315068493151
+A-n33-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,874.0,0.0075225830078125,True,5,3,661.0,A,33,213.0,32.22390317700454
+B-n35-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1218.0,0.0064394474029541016,True,5,3,955.0,B,35,263.0,27.53926701570681
+B-n31-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,946.0,0.005742788314819336,True,5,3,672.0,B,31,274.0,40.773809523809526
+A-n48-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1499.0,0.013234376907348633,True,7,3,1073.0,A,48,426.0,39.70177073625349
+A-n39-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1113.0,0.009298086166381836,True,5,3,822.0,A,39,291.0,35.4014598540146
+A-n37-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1341.0,0.006890058517456055,True,6,3,949.0,A,37,392.0,41.30663856691254
+P-n16-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,497.0,0.0013835430145263672,True,8,3,450.0,P,16,47.0,10.444444444444445
+A-n37-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1027.0,0.007776498794555664,True,5,3,669.0,A,37,358.0,53.51270553064275
+E-n13-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,369.0,0.0009126663208007812,True,4,3,247.0,E,13,122.0,49.392712550607285
+A-n33-k6,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,999.0,0.0062656402587890625,True,6,3,742.0,A,33,257.0,34.63611859838275
+P-n50-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,958.0,0.014626502990722656,True,10,3,696.0,P,50,262.0,37.64367816091954
+P-n20-k2,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,287.0,0.002920866012573242,True,2,3,216.0,P,20,71.0,32.870370370370374
+A-n46-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1372.0,0.012441635131835938,True,7,3,914.0,A,46,458.0,50.10940919037199
+B-n56-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1104.0,0.018005847930908203,True,7,3,707.0,B,56,397.0,56.15275813295615
+P-n55-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,776.0,0.018741369247436523,True,7,3,568.0,P,55,208.0,36.61971830985916
+A-n54-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1466.0,0.020200252532958984,True,7,3,1167.0,A,54,299.0,25.621251071122536
+P-n60-k15,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1284.0,0.01988673210144043,True,15,3,968.0,P,60,316.0,32.64462809917356
+B-n51-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1397.0,0.01576089859008789,True,7,3,1032.0,B,51,365.0,35.36821705426357
+P-n60-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1023.0,0.020086050033569336,True,10,3,744.0,P,60,279.0,37.5
+E-n76-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1012.0,0.03432464599609375,True,7,3,682.0,E,76,330.0,48.38709677419355
+P-n76-k5,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,897.0,0.036470890045166016,True,5,3,627.0,P,76,270.0,43.0622009569378
+F-n72-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1037.0,0.02912425994873047,True,4,3,237.0,F,72,800.0,337.55274261603375
+B-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1359.0,0.02115464210510254,True,9,3,861.0,B,64,498.0,57.8397212543554
+A-n64-k9,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1984.0,0.021673917770385742,True,9,3,1401.0,A,64,583.0,41.61313347608851
+E-n76-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1441.0,0.03272104263305664,True,14,3,1021.0,E,76,420.0,41.13614103819784
+E-n76-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1145.0,0.0330204963684082,True,8,3,735.0,E,76,410.0,55.78231292517006
+A-n53-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1445.0,0.014158010482788086,True,7,3,1010.0,A,53,435.0,43.06930693069307
+E-n76-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1304.0,0.032178640365600586,True,10,3,830.0,E,76,474.0,57.10843373493976
+E-n101-k14,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1575.0,0.05560922622680664,True,14,3,1067.0,E,101,508.0,47.61012183692596
+E-n101-k8,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1257.0,0.05880427360534668,True,8,3,815.0,E,101,442.0,54.233128834355824
+F-n135-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,2417.0,0.1186528205871582,True,7,3,1162.0,F,135,1255.0,108.00344234079174
+M-n101-k10,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1259.0,0.06647109985351562,True,10,3,820.0,M,101,439.0,53.53658536585366
+M-n121-k7,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1465.0,0.0948326587677002,True,7,3,1034.0,M,121,431.0,41.682785299806575
+M-n151-k12,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1683.0,0.13958215713500977,True,12,3,1015.0,M,151,668.0,65.8128078817734
+M-n200-k16,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.24515986442565918,True,16,3,1274.0,M,200,554.0,43.4850863422292
+M-n200-k17,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,1828.0,0.2469780445098877,True,16,3,1275.0,M,200,553.0,43.372549019607845
+P-n101-k4,dist_matrix[current][c] - (remaining + instance['demands'][c]) * 0.2,934.0,0.06447076797485352,True,4,3,681.0,P,101,253.0,37.15124816446402

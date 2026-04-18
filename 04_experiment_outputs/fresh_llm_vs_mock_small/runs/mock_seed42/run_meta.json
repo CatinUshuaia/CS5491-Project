@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-04-18T19:36:12.548572",
+  "output_root": "C:\\Users\\Administrator\\Desktop\\CVRP\\04_experiment_outputs\\fresh_llm_vs_mock_small\\runs\\mock_seed42",
+  "files": {
+    "summary_full_rows": 3,
+    "all_detail_outer_rows": 1740,
+    "all_summary_outer_rows": 60,
+    "all_top_outer_rows": 19
+  }
+}

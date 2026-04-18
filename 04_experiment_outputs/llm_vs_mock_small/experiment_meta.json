@@ -1,0 +1,51 @@
+{
+  "num_instances_total": 95,
+  "num_instances_sampled": 29,
+  "sampled_instances": [
+    "P-n23-k8",
+    "A-n38-k5",
+    "A-n33-k5",
+    "B-n35-k5",
+    "B-n31-k5",
+    "A-n48-k7",
+    "A-n39-k5",
+    "A-n37-k6",
+    "P-n16-k8",
+    "A-n37-k5",
+    "P-n70-k10",
+    "E-n76-k8",
+    "A-n55-k9",
+    "A-n54-k7",
+    "A-n62-k8",
+    "B-n52-k7",
+    "B-n56-k7",
+    "P-n55-k7",
+    "P-n65-k10",
+    "B-n63-k10",
+    "E-n101-k14",
+    "E-n101-k8",
+    "F-n135-k7",
+    "M-n101-k10",
+    "M-n121-k7",
+    "M-n151-k12",
+    "M-n200-k16",
+    "M-n200-k17",
+    "P-n101-k4"
+  ],
+  "modes": [
+    "mock",
+    "llm"
+  ],
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "num_rounds": 4,
+  "variants_per_expr": 6,
+  "top_k_per_round": 5,
+  "max_complexity": 90,
+  "require_novel": false,
+  "enable_dedup": true,
+  "llm_enabled": true
+}

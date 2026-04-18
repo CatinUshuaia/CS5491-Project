@@ -1,0 +1,21 @@
+expression,num_instances,feasible_rate,avg_cost,avg_runtime_sec,avg_num_routes,complexity,behavior_signature,is_novel,mo_score,round_idx
+dist_matrix[current][c],29,1.0,1293.3793103448277,0.02646269469425596,8.241379310344827,18,"(1293.38, 8.24, 1.0, 3)",True,0.625,0
+0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],29,1.0,1309.7241379310344,0.04396852131547599,8.172413793103448,46,"(1309.72, 8.17, 1.0, 9)",True,0.6242827868852457,0
+dist_matrix[current][c] - instance['demands'][c],29,1.0,1371.0,0.03656749067635372,8.172413793103448,35,"(1371.0, 8.17, 1.0, 7)",True,0.6956747658079626,0
+dist_matrix[current][c] - 2 * instance['demands'][c],29,1.0,1455.1724137931035,0.040407378098060345,8.172413793103448,40,"(1455.17, 8.17, 1.0, 8)",True,0.8296545667447309,0
+dist_matrix[current][c] + instance['demands'][c],29,1.0,1461.655172413793,0.03760776026495572,8.310344827586206,35,"(1461.66, 8.31, 1.0, 7)",True,0.9803571428571429,0
+instance['demands'][c] / (1 + remaining) + dist_matrix[current][c],29,1.0,1288.448275862069,0.04270659644028236,8.241379310344827,47,"(1288.45, 8.24, 1.0, 9)",True,0.6202941176470586,1
+0.25 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (1 + remaining),29,1.0,1292.3103448275863,0.05977863278882257,8.172413793103448,74,"(1292.31, 8.17, 1.0, 14)",True,0.6052336448598131,1
+0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c],29,1.0,1293.3793103448277,0.04407283355449808,8.172413793103448,46,"(1293.38, 8.17, 1.0, 9)",True,0.565505772402419,1
+dist_matrix[current][c] - 0.5 * instance['demands'][c],29,1.0,1315.6206896551723,0.03916525018626246,8.172413793103448,40,"(1315.62, 8.17, 1.0, 8)",True,0.5868224299065419,1
+0.2 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] + instance['demands'][c] / (1 + remaining),29,1.0,1321.0689655172414,0.05912178138206745,8.275862068965518,74,"(1321.07, 8.28, 1.0, 14)",True,0.7342056074766358,1
+0.1 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (1 + remaining),29,1.0,1292.1724137931035,0.060370108176921976,8.172413793103448,74,"(1292.17, 8.17, 1.0, 14)",True,0.5705882352941177,2
+0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (1 + remaining),29,1.0,1296.6896551724137,0.06103265696558459,8.172413793103448,74,"(1296.69, 8.17, 1.0, 14)",True,0.5924507186051987,2
+0.1 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - 0.2 * instance['demands'][c],29,1.0,1297.6896551724137,0.05337106770482557,8.241379310344827,67,"(1297.69, 8.24, 1.0, 13)",True,0.6767022696929226,2
+0.15 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] + 0.5 * instance['demands'][c] / (1 + remaining),29,1.0,1302.8620689655172,0.06405384787197771,8.241379310344827,79,"(1302.86, 8.24, 1.0, 15)",True,0.7370297651770977,2
+0.35 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - 0.25 * instance['demands'][c],29,1.0,1308.9310344827586,0.054916801123783505,8.241379310344827,67,"(1308.93, 8.24, 1.0, 13)",True,0.7311081441922553,2
+0.28 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (0.25 * remaining + 1),29,1.0,1286.4137931034484,0.06403824378704202,8.172413793103448,79,"(1286.41, 8.17, 1.0, 15)",True,0.5875,3
+0.2 * dist_matrix[c][instance['depot']] + 1.1 * dist_matrix[current][c] - 0.2 * instance['demands'][c],29,1.0,1287.551724137931,0.06036688541543895,8.172413793103448,72,"(1287.55, 8.17, 1.0, 14)",True,0.5709960937499992,3
+0.3 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - 0.15 * instance['demands'][c],29,1.0,1287.7931034482758,0.055422873332582674,8.172413793103448,67,"(1287.79, 8.17, 1.0, 13)",True,0.556510416666666,3
+0.25 * dist_matrix[c][instance['depot']] + dist_matrix[current][c] - instance['demands'][c] / (0.5 * remaining + 1),29,1.0,1288.8620689655172,0.06308570401421909,8.172413793103448,79,"(1288.86, 8.17, 1.0, 15)",True,0.5990559895833327,3
+0.1 * dist_matrix[c][instance['depot']] + 0.9 * dist_matrix[current][c] - instance['demands'][c] / (1 + remaining),29,1.0,1290.3793103448277,0.06368007331058897,8.172413793103448,79,"(1290.38, 8.17, 1.0, 15)",True,0.6062174479166667,3

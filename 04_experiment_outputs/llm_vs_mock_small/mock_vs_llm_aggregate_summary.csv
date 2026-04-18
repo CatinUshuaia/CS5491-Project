@@ -1,0 +1,3 @@
+mode,best_avg_cost_mean,best_avg_cost_std,best_feasible_rate_mean,best_avg_runtime_sec_mean,llm_total_tokens,seeds
+mock,1260.0689655172414,0.0,1.0,0.044180228792387866,0,3
+llm,1280.8850574712644,15.992207277880937,1.0,0.04735681380348644,42321,3
