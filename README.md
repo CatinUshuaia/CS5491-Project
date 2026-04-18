@@ -100,10 +100,8 @@ python 05_scripts/run_fresh_llm_vs_mock_small.py
 ## 建议阅读入口
 
 - `README.md`：项目总体说明与运行入口
-- `06_docs/handover_notes/Experiment_Run_Summary.md`：本轮正式实验摘要
 - `06_docs/handover_notes/CVRP_LLM_Handover_Notes.md`：项目结构、方法和接手说明
 
-说明：面向文档同学的交付整理包已作为外部交付物处理，仓库内以 `handover_notes` 和 `pipeline_docs` 作为长期保留文档入口。
 
 ## 许可证
 
