@@ -1,6 +1,6 @@
 # Data Schema (Classic CVRP)
 
-## File: `data/processed/base/<instance_id>.base.json`
+## File: `02_processed_data/classic/base/<instance_id>.base.json`
 
 - `instance_id` (string): instance name, e.g. `A-n32-k5`
 - `set_id` (string): one of `A/B/E/F/M/P`
@@ -16,7 +16,7 @@
 - `known_opt_cost` (number|null): from `.sol` if available
 - `known_opt_routes` (array[array[int]]): parsed route sequence from `.sol`
 
-## File: `data/processed/meta/<instance_id>.meta.json`
+## File: `02_processed_data/classic/meta/<instance_id>.meta.json`
 
 - `instance_id` (string)
 - `source.vrp_file` (string): absolute path to source `.vrp`
@@ -27,6 +27,6 @@
 - `edge_weight_format` (string|null)
 - `depot_ids` (array[int])
 
-## File: `data/index.csv`
+## File: `02_processed_data/classic/index.csv`
 
 One row per instance for quick filtering and statistics.

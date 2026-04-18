@@ -1,8 +1,8 @@
 {
   "instance_id": "A-n62-k8",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\A\\A-n62-k8.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\A\\A-n62-k8.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\A\\A-n62-k8.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\A\\A-n62-k8.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(Augerat et al, No of trucks: 8, Optimal value: 1288)",

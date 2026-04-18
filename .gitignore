@@ -35,13 +35,3 @@ desktop.ini
 .env.*
 *.key
 *.pem
-
-# Local experiment outputs (generated artifacts)
-04_experiment_outputs/
-
-# Delivery zip/package artifacts (generated)
-07_delivery_packages/*.zip
-
-# Archives / backups
-99_archives/
-

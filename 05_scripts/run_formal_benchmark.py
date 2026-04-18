@@ -1,20 +1,42 @@
 import json
 import math
 import time
+import ast
 from pathlib import Path
 from typing import Dict, List
-
-import pandas as pd
-from ortools.constraint_solver import pywrapcp, routing_enums_pb2
 
 import sys
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 MODULE_DIR = ROOT_DIR / "03_core_algorithm" / "modules"
+METHODS_DIR = ROOT_DIR / "03_core_algorithm" / "methods_advanced"
 if str(MODULE_DIR) not in sys.path:
     sys.path.append(str(MODULE_DIR))
+if str(METHODS_DIR) not in sys.path:
+    sys.path.append(str(METHODS_DIR))
+
+from ortools_compat import add_ortools_dll_directory
+
+add_ortools_dll_directory()
+try:
+    from ortools.constraint_solver import pywrapcp, routing_enums_pb2
+    ORTOOLS_AVAILABLE = True
+    ORTOOLS_IMPORT_ERROR = ""
+except (ImportError, OSError) as exc:
+    pywrapcp = None
+    routing_enums_pb2 = None
+    ORTOOLS_AVAILABLE = False
+    ORTOOLS_IMPORT_ERROR = str(exc)
+
+import numpy as np
+import pandas as pd
 
 from benchmark_experiment_workflow import run_formal_experiments, stratified_sample_instances
+from duplicate_checking import canonicalize_expr, dedup_candidates_advanced
+
+
+ORTOOLS_SOLVER_NAME = "ortools" if ORTOOLS_AVAILABLE else "ortools_fallback_greedy"
+_ORTOOLS_WARNING_EMITTED = False
 
 
 def total_distance(routes: List[List[int]], dist_matrix: List[List[int]]) -> float:
@@ -113,6 +135,16 @@ def nearest_neighbor_v2(instance: Dict) -> List[List[int]]:
 
 
 def ortools_cvrp_solver(instance: Dict, time_limit_sec: int = 3) -> List[List[int]]:
+    global _ORTOOLS_WARNING_EMITTED
+    if not ORTOOLS_AVAILABLE:
+        if not _ORTOOLS_WARNING_EMITTED:
+            print(
+                f"[warn] OR-Tools unavailable, fallback to greedy solver: {ORTOOLS_IMPORT_ERROR}",
+                flush=True,
+            )
+            _ORTOOLS_WARNING_EMITTED = True
+        return greedy_cvrp_solver(instance)
+
     dist = instance["distance_matrix"]
     demands = instance["demands"]
     capacity = instance["capacity"]
@@ -265,19 +297,66 @@ def evaluate_named_solver_on_instances(instances: List[Dict], solver_name: str, 
     return pd.DataFrame(rows)
 
 
-def dedup_expressions(candidate_expressions: List[str]) -> List[str]:
-    seen = set()
-    out = []
-    for e in candidate_expressions:
-        if e not in seen:
-            seen.add(e)
-            out.append(e)
-    return out
+def dedup_expressions(
+    candidate_expressions: List[str],
+    probe_instances=None,
+    eval_fn=None,
+    use_behavioral: bool = False,
+) -> List[str]:
+    if probe_instances is not None and eval_fn is not None:
+        return dedup_candidates_advanced(
+            candidate_expressions,
+            probe_instances=probe_instances,
+            eval_fn=lambda expr, instances: eval_fn(instances, [expr]),
+            use_behavioral=use_behavioral,
+        )
+
+    kept = []
+    seen_canonical = set()
+    for expr in candidate_expressions:
+        canon = canonicalize_expr(expr)
+        if canon in seen_canonical:
+            continue
+        seen_canonical.add(canon)
+        kept.append(canon)
+    return kept
 
 
 def expression_complexity(expr: str) -> int:
-    ops = sum(expr.count(ch) for ch in "+-*/")
-    return len(expr) + ops * 2
+    expr = str(expr)
+    try:
+        tree = ast.parse(expr, mode="eval")
+    except Exception:
+        op_count = sum(expr.count(op) for op in ["+", "-", "*", "/", "%"])
+        return len(expr) + 5 * op_count
+
+    node_count = 0
+    op_penalty = 0
+    names = set()
+    op_weights = {
+        ast.Add: 1,
+        ast.Sub: 1,
+        ast.Mult: 2,
+        ast.Div: 3,
+        ast.Mod: 3,
+        ast.Pow: 4,
+        ast.USub: 1,
+    }
+
+    for node in ast.walk(tree):
+        node_count += 1
+        if isinstance(node, ast.Name):
+            names.add(node.id)
+        elif isinstance(node, ast.Subscript):
+            op_penalty += 2
+        elif isinstance(node, ast.Call):
+            op_penalty += 8
+
+        for op_t, weight in op_weights.items():
+            if isinstance(node, op_t):
+                op_penalty += weight
+
+    return int(node_count + op_penalty + len(names))
 
 
 def filter_expressions_by_complexity(expressions: List[str], max_complexity=None) -> List[str]:
@@ -286,11 +365,31 @@ def filter_expressions_by_complexity(expressions: List[str], max_complexity=None
     return [e for e in expressions if expression_complexity(e) <= max_complexity]
 
 
-def make_behavior_signature_from_summary_row(row, cost_round=2, route_round=2, feas_round=3):
+def make_behavior_signature_from_summary_row(
+    row,
+    cost_round=2,
+    route_round=2,
+    feas_round=3,
+    complexity_bucket=5,
+):
+    avg_cost = row.get("avg_cost", np.inf)
+    avg_num_routes = row.get("avg_num_routes", np.inf)
+    feasible_rate = row.get("feasible_rate", 0.0)
+    complexity = row.get("complexity", np.inf)
+    if pd.isna(avg_cost):
+        avg_cost = np.inf
+    if pd.isna(avg_num_routes):
+        avg_num_routes = np.inf
+    if pd.isna(feasible_rate):
+        feasible_rate = 0.0
+    if pd.isna(complexity):
+        complexity = np.inf
+    complexity_bin = complexity if not np.isfinite(complexity) else int(complexity // complexity_bucket)
     return (
-        round(float(row["avg_cost"]), cost_round),
-        round(float(row["avg_num_routes"]), route_round),
-        round(float(row["feasible_rate"]), feas_round),
+        round(float(avg_cost), cost_round) if np.isfinite(avg_cost) else np.inf,
+        round(float(avg_num_routes), route_round) if np.isfinite(avg_num_routes) else np.inf,
+        round(float(feasible_rate), feas_round),
+        complexity_bin,
     )
 
 
@@ -314,10 +413,41 @@ def update_archive_signatures(summary_df: pd.DataFrame, archive_signatures=None,
     return out
 
 
+def _safe_minmax_norm(series, larger_is_better=False):
+    s = pd.to_numeric(series, errors="coerce")
+    s = s.replace([np.inf, -np.inf], np.nan)
+    if s.notna().sum() == 0:
+        return pd.Series(np.zeros(len(series)), index=series.index)
+
+    lo, hi = s.min(), s.max()
+    if hi == lo:
+        norm = pd.Series(np.zeros(len(series)), index=series.index)
+    else:
+        norm = (s - lo) / (hi - lo)
+    norm = norm.fillna(1.0)
+    return 1.0 - norm if larger_is_better else norm
+
+
 def sort_expression_summary(summary_df: pd.DataFrame) -> pd.DataFrame:
-    return summary_df.sort_values(
-        by=["feasible_rate", "avg_cost", "avg_num_routes", "complexity"],
-        ascending=[False, True, True, True],
+    df = summary_df.copy()
+    if "complexity" not in df.columns:
+        df["complexity"] = df["expression"].apply(expression_complexity)
+
+    n_feasible = _safe_minmax_norm(df["feasible_rate"], larger_is_better=True)
+    n_cost = _safe_minmax_norm(df["avg_cost"], larger_is_better=False)
+    n_routes = _safe_minmax_norm(df["avg_num_routes"], larger_is_better=False)
+    n_complexity = _safe_minmax_norm(df["complexity"], larger_is_better=False)
+
+    df["mo_score"] = (
+        0.55 * n_feasible
+        + 0.25 * n_cost
+        + 0.15 * n_routes
+        + 0.05 * n_complexity
+    )
+
+    return df.sort_values(
+        by=["feasible_rate", "avg_cost", "avg_num_routes", "complexity", "mo_score"],
+        ascending=[False, True, True, True, True],
     ).reset_index(drop=True)
 
 
@@ -381,13 +511,28 @@ def load_multiple_base_instances(base_dir: str, limit=None) -> List[Dict]:
 
 
 def main():
+    start_time = time.time()
     root = Path(__file__).resolve().parents[1]
     base_dir = root / "02_processed_data" / "classic" / "base"
+    output_root = "04_experiment_outputs/formal_benchmark"
+    seeds = [42, 52, 62, 72]
+    num_rounds = 5
+    variants_per_expr = 8
+    top_k_per_round = 5
     instances = load_multiple_base_instances(str(base_dir), limit=None)
-    formal_instances = stratified_sample_instances(instances, per_bucket=10, seed=42)
+    # Final-project benchmark scale: more CVRPLib instances, more seeds, and longer search.
+    formal_instances = stratified_sample_instances(instances, per_bucket=15, seed=42)
 
-    print(f"loaded instances: {len(instances)}")
-    print(f"formal sampled instances: {len(formal_instances)}")
+    print("[start] classic formal benchmark", flush=True)
+    print(f"  output_root={output_root}", flush=True)
+    print(f"  loaded_instances={len(instances)}", flush=True)
+    print(f"  sampled_instances={len(formal_instances)}", flush=True)
+    print(f"  generation_mode=mock, seeds={seeds}", flush=True)
+    print(
+        f"  num_rounds={num_rounds}, variants_per_expr={variants_per_expr}, top_k_per_round={top_k_per_round}",
+        flush=True,
+    )
+    print(f"  ortools_solver={ORTOOLS_SOLVER_NAME}", flush=True)
 
     seed_expressions = [
         "dist_matrix[current][c]",
@@ -405,6 +550,7 @@ def main():
         nearest_neighbor_v2=nearest_neighbor_v2,
         greedy_cvrp_solver=greedy_cvrp_solver,
         ortools_cvrp_solver=ortools_cvrp_solver,
+        ortools_solver_name=ORTOOLS_SOLVER_NAME,
         evaluate_expression_list_on_instances=evaluate_expression_list_on_instances,
         dedup_expressions=dedup_expressions,
         filter_expressions_by_complexity=filter_expressions_by_complexity,
@@ -414,21 +560,24 @@ def main():
         update_archive_signatures=update_archive_signatures,
         generate_mock_candidates_from_top_expressions=generate_mock_candidates_from_top_expressions,
         generate_candidates_with_llm=generate_candidates_with_llm,
-        output_root="04_experiment_outputs/formal_benchmark",
+        output_root=output_root,
         run_prefix="base_cvrp",
         generation_mode="mock",
         llm_client=None,
         llm_model_name="gpt-5-nano",
         llm_temperature=0.4,
-        num_rounds=4,
-        variants_per_expr=6,
-        top_k_per_round=5,
-        seeds=[42, 52, 62],
+        num_rounds=num_rounds,
+        variants_per_expr=variants_per_expr,
+        top_k_per_round=top_k_per_round,
+        seeds=seeds,
         verbose=True,
     )
 
-    print("Done.")
-    print(result_paths)
+    elapsed = time.time() - start_time
+    print(f"[done] classic formal benchmark finished in {elapsed:.2f}s", flush=True)
+    print(f"[output] root={result_paths['output_root']}", flush=True)
+    print(f"[output] ablation_seed_summary={result_paths['ablation_seed_summary']}", flush=True)
+    print(f"[output] ablation_aggregate_summary={result_paths['ablation_aggregate_summary']}", flush=True)
 
 
 if __name__ == "__main__":

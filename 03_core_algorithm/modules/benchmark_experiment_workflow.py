@@ -72,10 +72,11 @@ def evaluate_baselines_table(
     nearest_neighbor_v2: Callable,
     greedy_cvrp_solver: Callable,
     ortools_cvrp_solver: Callable,
+    ortools_solver_name: str = "ortools",
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
     df_nn = evaluate_named_solver_on_instances(instances, "nearest_neighbor", nearest_neighbor_v2)
     df_greedy = evaluate_named_solver_on_instances(instances, "greedy", greedy_cvrp_solver)
-    df_ortools = evaluate_named_solver_on_instances(instances, "ortools", ortools_cvrp_solver)
+    df_ortools = evaluate_named_solver_on_instances(instances, ortools_solver_name, ortools_cvrp_solver)
     detail = pd.concat([df_nn, df_greedy, df_ortools], ignore_index=True)
     summary = summarize_expression_results(detail)
     return detail, summary
@@ -104,7 +105,13 @@ def _run_one_search_round_ablation(
 
     pool = list(candidate_expressions)
     if enable_dedup:
-        pool = dedup_expressions(pool)
+        probe_instances = list(instances[: min(5, len(instances))])
+        pool = dedup_expressions(
+            pool,
+            probe_instances=probe_instances,
+            eval_fn=evaluate_expression_list_on_instances,
+            use_behavioral=True,
+        )
     if max_complexity is not None:
         pool = filter_expressions_by_complexity(pool, max_complexity=max_complexity)
 
@@ -327,6 +334,7 @@ def run_formal_experiments(
     nearest_neighbor_v2: Callable,
     greedy_cvrp_solver: Callable,
     ortools_cvrp_solver: Callable,
+    ortools_solver_name: str = "ortools",
     evaluate_expression_list_on_instances: Callable,
     dedup_expressions: Callable,
     filter_expressions_by_complexity: Callable,
@@ -362,6 +370,7 @@ def run_formal_experiments(
         nearest_neighbor_v2=nearest_neighbor_v2,
         greedy_cvrp_solver=greedy_cvrp_solver,
         ortools_cvrp_solver=ortools_cvrp_solver,
+        ortools_solver_name=ortools_solver_name,
     )
 
     ablations = [
@@ -375,6 +384,12 @@ def run_formal_experiments(
     ablation_rows = []
     for cfg in ablations:
         for seed in seeds:
+            if verbose:
+                print(
+                    f"[start] config={cfg.name}, seed={seed}, mode={generation_mode}, "
+                    f"rounds={num_rounds}, variants_per_expr={variants_per_expr}, top_k={top_k_per_round}",
+                    flush=True,
+                )
             set_global_seed(seed)
             run_name = f"{run_prefix}_{cfg.name}_seed{seed}"
             outer_result = search_outer_loop_ablation(
@@ -417,6 +432,13 @@ def run_formal_experiments(
 
             row = _aggregate_ablation_rows(cfg.name, seed, outer_result["all_round_summary_df"])
             ablation_rows.append(row)
+            if verbose:
+                print(
+                    f"[done] config={cfg.name}, seed={seed}, "
+                    f"best_avg_cost={row['best_avg_cost']:.2f}, "
+                    f"best_feasible_rate={row['best_feasible_rate']:.3f}",
+                    flush=True,
+                )
 
     ablation_seed_df = pd.DataFrame(ablation_rows)
     ablation_seed_path = root / "ablation_seed_summary.csv"

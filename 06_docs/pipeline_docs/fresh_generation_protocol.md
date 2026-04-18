@@ -1,8 +1,8 @@
 # Fresh Dataset Generation Protocol
 
 - Global seed: `5491`
-- Input: `data/processed/base/*.base.json`
-- Output: `data/processed/fresh/*.fresh.json` and `data/processed/fresh_meta/*.fresh.meta.json`
+- Input: `02_processed_data/classic/base/*.base.json`
+- Output: `02_processed_data/fresh/fresh/*.fresh.json` and `02_processed_data/fresh/fresh_meta/*.fresh.meta.json`
 
 ## Rules
 

@@ -1,6 +1,0 @@
-config,best_avg_cost_mean,best_avg_cost_std,best_feasible_rate_mean,seeds
-all_enabled,1260.0689655172414,0.0,1.0,3
-base,1260.0689655172414,0.0,1.0,3
-base_plus_complexity,1260.0689655172414,0.0,1.0,3
-base_plus_dedup,1260.0689655172414,0.0,1.0,3
-base_plus_novelty,1260.0689655172414,0.0,1.0,3

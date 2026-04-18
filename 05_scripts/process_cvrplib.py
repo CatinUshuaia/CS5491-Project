@@ -304,6 +304,7 @@ def write_json(path: Path, data: Dict) -> None:
 
 def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
+    raw_sets_root = project_root / "01_raw_data" / "cvrplib_sets"
     processed_base_dir = project_root / "02_processed_data" / "classic" / "base"
     processed_meta_dir = project_root / "02_processed_data" / "classic" / "meta"
     raw_export_dir = project_root / "01_raw_data" / "raw_snapshot" / "raw"
@@ -322,7 +323,7 @@ def main() -> None:
 
     total_instances = 0
     for set_id in DATASET_SETS:
-        source_dir = project_root / set_id
+        source_dir = raw_sets_root / set_id
         if not source_dir.exists():
             continue
         for vrp_path in sorted(source_dir.glob("*.vrp")):

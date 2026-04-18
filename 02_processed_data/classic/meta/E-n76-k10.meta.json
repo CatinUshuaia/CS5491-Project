@@ -1,8 +1,8 @@
 {
   "instance_id": "E-n76-k10",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\E\\E-n76-k10.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\E\\E-n76-k10.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\E\\E-n76-k10.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\E\\E-n76-k10.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(Christophides and Eilon, Min no of trucks: 10, Optimal value: 830)",

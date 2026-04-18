@@ -6,7 +6,7 @@
 - 面向生鲜配送场景的扩展数据生成（fresh）
 - 启发式/基线方法对比与自动化 benchmark
 - mock 与 LLM 候选表达式搜索对照实验
-- 实验结果导出、图表生成与轻量交付包构建
+- 实验结果导出与图表生成
 
 ## 当前目录结构
 
@@ -57,27 +57,33 @@ python 05_scripts/process_cvrplib.py
 python 05_scripts/generate_fresh_dataset.py
 ```
 
-3. 运行正式 benchmark（消融实验）
+3. 运行正式 benchmark（扩大后的消融实验：更多实例、更多 seed、更长搜索轮数）
 
 ```powershell
 python 05_scripts/run_formal_benchmark.py
 ```
 
-4. 运行小规模 mock vs LLM 对照实验（需要 API Key）
+4. 运行 classic mock vs LLM 对照 benchmark（报告级配置，无 API Key 时会自动退化为 mock-only）
 
 ```powershell
 python 05_scripts/run_llm_vs_mock_small.py
 ```
 
-5. 生成 lite 交付图表与表格（会创建 `07_delivery_packages/`）
+5. 运行 fresh 正式 benchmark（mock，扩大后的 benchmark 配置）
 
 ```powershell
-python 05_scripts/build_lite_final_assets.py
+python 05_scripts/run_fresh_formal_benchmark.py
+```
+
+6. 运行 fresh mock vs LLM 对照 benchmark（报告级配置，无 API Key 时会自动退化为 mock-only）
+
+```powershell
+python 05_scripts/run_fresh_llm_vs_mock_small.py
 ```
 
 ## LLM 配置说明
 
-`run_llm_vs_mock_small.py` 会尝试读取环境变量：
+`run_llm_vs_mock_small.py` 与 `run_fresh_llm_vs_mock_small.py` 会优先读取环境变量：
 
 - `CVRP_OPENAI_API_KEY`
 - `CVRP_OPENAI_HOST`（可选，默认使用脚本内配置）
@@ -89,7 +95,14 @@ python 05_scripts/build_lite_final_assets.py
 - `02_processed_data/classic/`：classic 标准数据与索引
 - `02_processed_data/fresh/`：fresh 数据与元信息
 - `04_experiment_outputs/`：benchmark 和对照实验输出
-- `07_delivery_packages/cvrp_docs_lite_package/`：执行 `build_lite_final_assets.py` 后生成
+
+## 建议阅读入口
+
+- `README.md`：项目总体说明与运行入口
+- `06_docs/handover_notes/Experiment_Run_Summary.md`：本轮正式实验摘要
+- `06_docs/handover_notes/CVRP_LLM_Handover_Notes.md`：项目结构、方法和接手说明
+
+说明：面向文档同学的交付整理包已作为外部交付物处理，仓库内以 `handover_notes` 和 `pipeline_docs` 作为长期保留文档入口。
 
 ## 许可证
 

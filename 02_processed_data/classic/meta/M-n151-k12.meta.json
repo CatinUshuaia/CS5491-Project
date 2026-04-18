@@ -1,8 +1,8 @@
 {
   "instance_id": "M-n151-k12",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\M\\M-n151-k12.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\M\\M-n151-k12.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\M\\M-n151-k12.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\M\\M-n151-k12.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(Christophides et al, No of trucks: 12, Best value: 1053)",

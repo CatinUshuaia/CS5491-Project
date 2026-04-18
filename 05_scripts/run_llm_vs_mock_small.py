@@ -6,10 +6,6 @@ import time
 from pathlib import Path
 from typing import Dict, List, Optional
 
-import numpy as np
-import openai
-import pandas as pd
-
 import sys
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -17,14 +13,8 @@ MODULE_DIR = ROOT_DIR / "03_core_algorithm" / "modules"
 if str(MODULE_DIR) not in sys.path:
     sys.path.append(str(MODULE_DIR))
 
-from benchmark_experiment_workflow import (  # noqa: E402
-    evaluate_baselines_table,
-    search_outer_loop_ablation,
-    set_global_seed,
-    stratified_sample_instances,
-)
-from benchmark_export_plot_utils import export_and_plot  # noqa: E402
 from run_formal_benchmark import (  # noqa: E402
+    ORTOOLS_SOLVER_NAME,
     add_novelty_columns,
     dedup_expressions,
     evaluate_expression_list_on_instances,
@@ -40,6 +30,18 @@ from run_formal_benchmark import (  # noqa: E402
     summarize_expression_results,
     update_archive_signatures,
 )
+
+import numpy as np
+import openai
+import pandas as pd
+
+from benchmark_experiment_workflow import (  # noqa: E402
+    evaluate_baselines_table,
+    search_outer_loop_ablation,
+    set_global_seed,
+    stratified_sample_instances,
+)
+from benchmark_export_plot_utils import export_and_plot  # noqa: E402
 
 
 TOKEN_LOG: List[Dict] = []
@@ -127,26 +129,62 @@ def _filter_valid_expressions(expressions: List[str], max_complexity: Optional[i
     return dedup_expressions(out)
 
 
-def _extract_key_from_notebook() -> str:
-    nb_path = ROOT_DIR / "03_core_algorithm" / "notebooks" / "benchmark_cvrp_clean (1).ipynb"
+def _is_placeholder_api_key(value: str) -> bool:
+    low = value.strip().lower()
+    if not low:
+        return True
+    return low in {
+        "please use your api",
+        "your_api_key_here",
+        "sk-your-key",
+        "replace_me",
+    }
+
+
+def _extract_key_from_notebook(nb_path: Path) -> str:
     if not nb_path.exists():
         return ""
     try:
         nb = json.loads(nb_path.read_text(encoding="utf-8"))
         for cell in nb.get("cells", []):
             src = "".join(cell.get("source", []))
-            m = re.search(r'API_KEY\s*=\s*"([^"]+)"', src)
-            if m:
-                return m.group(1).strip()
+            for pattern in [
+                r'API_KEY\s*=\s*"([^"]+)"',
+                r"API_KEY\s*=\s*'([^']+)'",
+                r'OPENAI_API_KEY\s*=\s*"([^"]+)"',
+                r"OPENAI_API_KEY\s*=\s*'([^']+)'",
+            ]:
+                m = re.search(pattern, src)
+                if m:
+                    api_key = m.group(1).strip()
+                    if not _is_placeholder_api_key(api_key):
+                        return api_key
     except Exception:
         pass
+    return ""
+
+
+def _extract_key_from_notebooks() -> str:
+    candidates = [
+        ROOT_DIR / "03_core_algorithm" / "notebooks" / "benchmark_cvrp_clean (1).ipynb",
+        ROOT_DIR / "03_core_algorithm" / "notebooks" / "benchmark_cvrp_advanced (1).ipynb",
+        ROOT_DIR / "benchmark_cvrp_advanced (1).ipynb",
+    ]
+    for nb_path in candidates:
+        api_key = _extract_key_from_notebook(nb_path)
+        if api_key:
+            return api_key
     return ""
 
 
 def _make_openai_client() -> Optional[openai.OpenAI]:
     api_key = os.getenv("CVRP_OPENAI_API_KEY", "").strip()
     if not api_key:
-        api_key = _extract_key_from_notebook()
+        api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        api_key = _extract_key_from_notebooks()
+    if _is_placeholder_api_key(api_key):
+        api_key = ""
     if not api_key:
         return None
     host = os.getenv("CVRP_OPENAI_HOST", "https://api.bltcy.ai").rstrip("/")
@@ -230,12 +268,14 @@ def _best_row(summary_df: pd.DataFrame) -> Dict:
 
 
 def main() -> None:
+    start_time = time.time()
     out_root = ROOT_DIR / "04_experiment_outputs" / "llm_vs_mock_small"
     out_root.mkdir(parents=True, exist_ok=True)
 
     base_dir = ROOT_DIR / "02_processed_data" / "classic" / "base"
     instances = load_multiple_base_instances(str(base_dir), limit=None)
-    sampled = stratified_sample_instances(instances, per_bucket=5, seed=42)  # ~15 instances
+    # Historical script name kept for compatibility; configuration is now report-ready.
+    sampled = stratified_sample_instances(instances, per_bucket=10, seed=42)
 
     seed_expressions = [
         "dist_matrix[current][c]",
@@ -252,25 +292,44 @@ def main() -> None:
         nearest_neighbor_v2=nearest_neighbor_v2,
         greedy_cvrp_solver=greedy_cvrp_solver,
         ortools_cvrp_solver=ortools_cvrp_solver,
+        ortools_solver_name=ORTOOLS_SOLVER_NAME,
     )
     baseline_detail.to_csv(out_root / "baseline_detail.csv", index=False, encoding="utf-8")
     baseline_summary.to_csv(out_root / "baseline_summary.csv", index=False, encoding="utf-8")
 
     modes = ["mock", "llm"]
-    seeds = [42]
-    num_rounds = 2
-    variants_per_expr = 4
+    seeds = [42, 52, 62]
+    num_rounds = 4
+    variants_per_expr = 6
     top_k = 5
-    max_complexity = None
+    max_complexity = 90
     require_novel = False
+    enable_dedup = True
 
     client = _make_openai_client()
     if client is None:
-        raise RuntimeError("Cannot run realtime LLM comparison: missing API key.")
+        print("[warn] Missing API key, skip realtime LLM mode and run mock-only comparison.", flush=True)
+        modes = ["mock"]
+
+    print("[start] classic mock vs llm benchmark", flush=True)
+    print(f"  output_root={out_root}", flush=True)
+    print(f"  loaded_instances={len(instances)}", flush=True)
+    print(f"  sampled_instances={len(sampled)}", flush=True)
+    print(f"  modes={modes}, seeds={seeds}", flush=True)
+    print(
+        f"  num_rounds={num_rounds}, variants_per_expr={variants_per_expr}, top_k_per_round={top_k}",
+        flush=True,
+    )
+    print(
+        f"  max_complexity={max_complexity}, require_novel={require_novel}, enable_dedup={enable_dedup}",
+        flush=True,
+    )
+    print(f"  llm_enabled={client is not None}", flush=True)
 
     rows = []
     for mode in modes:
         for seed in seeds:
+            print(f"[start] mode={mode}, seed={seed}", flush=True)
             set_global_seed(seed)
             run_name = f"{mode}_seed{seed}"
             before_calls = len(TOKEN_LOG)
@@ -282,7 +341,7 @@ def main() -> None:
                 top_k_per_round=top_k,
                 generation_mode=mode,
                 verbose=True,
-                enable_dedup=False,
+                enable_dedup=enable_dedup,
                 max_complexity=max_complexity,
                 require_novel=require_novel,
                 llm_client=client,
@@ -332,6 +391,13 @@ def main() -> None:
                     **best,
                 }
             )
+            print(
+                f"[done] mode={mode}, seed={seed}, best_avg_cost={best['best_avg_cost']:.2f}, "
+                f"best_feasible_rate={best['best_feasible_rate']:.3f}, "
+                f"llm_calls={len(llm_calls) if mode == 'llm' else 0}, "
+                f"llm_total_tokens={total_tokens if mode == 'llm' else 0}",
+                flush=True,
+            )
 
     compare_df = pd.DataFrame(rows)
     compare_df.to_csv(out_root / "mock_vs_llm_seed_summary.csv", index=False, encoding="utf-8")
@@ -366,9 +432,11 @@ def main() -> None:
     # quick comparison plots
     import matplotlib.pyplot as plt
 
+    mode_label = "Mock vs LLM benchmark" if len(modes) > 1 else "Mock-only benchmark"
+
     plt.figure(figsize=(7, 4))
     plt.bar(agg["mode"], agg["best_avg_cost_mean"], yerr=agg["best_avg_cost_std"].fillna(0.0))
-    plt.title("Mock vs LLM (small-scale): best_avg_cost")
+    plt.title(f"{mode_label}: best_avg_cost")
     plt.ylabel("best_avg_cost")
     plt.tight_layout()
     plt.savefig(out_root / "mock_vs_llm_cost_bar.png", dpi=160)
@@ -376,7 +444,7 @@ def main() -> None:
 
     plt.figure(figsize=(7, 4))
     plt.bar(agg["mode"], agg["best_feasible_rate_mean"])
-    plt.title("Mock vs LLM (small-scale): feasible_rate")
+    plt.title(f"{mode_label}: feasible_rate")
     plt.ylabel("best_feasible_rate")
     plt.ylim(0, 1.05)
     plt.tight_layout()
@@ -394,11 +462,14 @@ def main() -> None:
         "top_k_per_round": top_k,
         "max_complexity": max_complexity,
         "require_novel": require_novel,
+        "enable_dedup": enable_dedup,
+        "llm_enabled": client is not None,
     }
     (out_root / "experiment_meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
 
-    print("Done.")
-    print(f"Output root: {out_root}")
+    elapsed = time.time() - start_time
+    print(f"[done] classic mock vs llm benchmark finished in {elapsed:.2f}s", flush=True)
+    print(f"[output] root={out_root}", flush=True)
     print(agg.to_string(index=False))
     print(f"Token summary: {token_summary}")
 

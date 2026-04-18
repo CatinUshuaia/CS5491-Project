@@ -1,384 +1,495 @@
-# CVRP 启发式搜索与 LLM 候选表达式生成项目交接说明
+# CVRP 启发式搜索与 LLM 项目详细介绍
 
-## 1. 项目范围与当前状态
-本 notebook 实现了一个面向 CVRP（Capacitated Vehicle Routing Problem，容量约束车辆路径问题）的启发式搜索实验框架。其核心思路是：使用表达式定义客户选择打分规则，对候选表达式进行评估、筛选与迭代扩展，并可通过 LLM 生成新的候选表达式。
+## 1. 项目概述
 
-当前版本已经完成以下核心工作：
+本项目围绕容量车辆路径问题（CVRP）构建了一套可复现的实验框架，目标不是直接训练一个端到端模型，而是让系统在一组可解释的启发式表达式中进行搜索，并比较以下几类方法在不同数据场景下的表现：
 
-- 环境配置与依赖安装；
-- CVRP 实例数据读取，并统一整理为内部 `instance` 格式；
-- baseline 求解器与对照流程；
-- 基于表达式的启发式构造；
-- 单轮候选表达式评估与聚合统计；
-- 候选池控制模块，包括重复过滤、复杂度控制、行为签名式 novelty 支持；
-- LLM 候选表达式生成接口；
-- 外层搜索流程（generation → evaluation → selection → carry-over）；
-- 在小规模实例子集上的端到端联调验证。
+- 传统 baseline 求解器，如 `nearest_neighbor`、`greedy`、`ortools`
+- 基于表达式的启发式搜索
+- 使用 mock 扰动生成候选表达式的搜索流程
+- 使用 LLM 生成候选表达式的搜索流程
 
-目前该框架已经可以 **完整运行主流程**。后续工作的重点是：
+项目当前已经从最初的 notebook 原型演进为可批量执行的正式工程版，支持：
 
-- 接入新的数据集；
-- 扩展到更大的 benchmark；
-- 系统执行实验并整理结果；
-- 补齐消融实验。
+- classic 标准 CVRP 数据处理与 benchmark
+- fresh 生鲜场景数据扩展与 benchmark
+- 正式 benchmark、消融实验、mock vs LLM 对照实验
+- 表格、图像与结果文件自动导出
 
 ---
 
-## 2. Notebook 结构与功能模块
+## 2. 项目目标与核心思路
 
-### 2.1 环境与依赖
-前部单元格安装并导入实验所需依赖，主要包括：
-
-- `ortools`
-- `vrplib`
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `openai`
-
-当前 notebook 主要面向 Colab 环境编写；如果迁移到本地或其他平台，可能需要对安装方式做少量调整。
-
-### 2.2 基础工具函数
-notebook 中定义了若干通用的距离与可行性辅助函数，包括：
-
-- `euclidean_distance(a, b)`
-- `build_distance_matrix(coords)`
-- `route_distance(route, dist_matrix)`
-- `total_distance(routes, dist_matrix)`
-- `check_feasibility(routes, demands, capacity, depot=0)`
-
-这些函数用于支持：
-
-- 路径长度计算；
-- 整体解的总代价计算；
-- 容量约束可行性检查。
-
-### 2.3 Baseline 求解器
-当前 notebook 中已包含若干 baseline CVRP 求解方式，便于后续实验对照：
-
-- `greedy_cvrp_solver(instance)`
-- `ortools_cvrp_solver(instance, time_limit_sec=3)`
-- `nearest_neighbor_cvrp_solver(instance)`
-
-此外，还支持基于表达式的启发式构造：
-
-- `nn_score(current, c, instance, remaining, dist_matrix)`
-- `make_score_fn_from_expression(expr)`
-- `heuristic_cvrp_solver(...)`
-
-其中，表达式驱动的求解器是整个项目的关键桥梁：LLM 生成的表达式最终会被转成 score function，并作用在具体的 CVRP 构造过程中。
-
-### 2.4 数据读取与 instance 标准化
-主要数据读取函数为：
-
-- `load_base_instance(json_path)`
-
-该函数会将每个 JSON 实例文件转换为统一的内部 `instance` 对象。当前格式为：
-
-```python
-instance = {
-    "name": data["instance_id"],
-    "depot": 0,
-    "coords": coords,
-    "demands": demands,
-    "capacity": data["vehicle_capacity"],
-    "num_nodes": len(coords),
-    "distance_matrix": data["distance_matrix"],
-    "raw": data,
-}
-```
-
-需要注意：
-
-- 内部表示中固定使用 `depot = 0`；
-- `coords`、`demands`、`distance_matrix` 三者必须严格对齐；
-- `raw` 中保留了原始 JSON 的完整字段，可供后续分析使用，例如 `known_opt_cost`、`known_opt_routes`、`set_id` 等。
-
-批量读取由以下函数处理：
-
-- `load_multiple_base_instances(base_dir, limit=None)`
-
-当前为了联调主流程，仅使用 `limit=5` 的小规模子集进行测试。
-
-### 2.5 候选表达式评估与结果汇总
-单个表达式在多个实例上的评估由以下函数完成：
-
-- `evaluate_expression_on_instances(instances, expr)`
-
-表达式级别的结果汇总由以下函数完成：
-
-- `summarize_expression_results(df)`
-
-命名求解器（baseline）在多个实例上的批量评估由以下函数完成：
-
-- `evaluate_named_solver_on_instances(instances, solver_name, solver_fn)`
-
-固定候选池下的多表达式搜索由以下函数支持：
-
-- `search_expressions_multi(instances, candidate_expressions, top_k=5)`
-
-这些函数会输出单实例结果以及聚合后的汇总结果，常见指标包括：
-
-- cost
-- runtime
-- feasible
-- num_routes
-
-### 2.6 候选池控制模块
-当前 notebook 中已经实现了三类候选池控制机制。
-
-#### （1）重复过滤
-- `dedup_expressions(candidate_expressions)`
-
-该模块用于做表达式字符串级别去重，避免完全相同的候选被重复评估。
-
-#### （2）复杂度控制
-- `expression_complexity(expr)`
-- `filter_expressions_by_complexity(expressions, max_complexity=None)`
-
-当前复杂度定义基于表达式字符串长度与运算符数量，是一个轻量级复杂度估计，用于：
-
-- 过滤过于复杂的候选；
-- 在排序时作为辅助指标。
-
-#### （3）基于行为签名的 novelty 支持
-- `make_behavior_signature_from_summary_row(...)`
-- `add_novelty_columns(summary_df, archive_signatures=None)`
-- `update_archive_signatures(summary_df, archive_signatures=None, only_novel=True)`
-
-novelty 的实现基于聚合行为统计（如平均 cost、平均路线数、可行率等）构成的离散签名，而不是符号表达式本身的精确等价判定。
-
-表达式汇总结果的排序由以下函数处理：
-
-- `sort_expression_summary(summary_df)`
-
-当前的排序优先级为：
-
-1. 可行率更高；
-2. 平均 cost 更低；
-3. 平均路线数更少；
-4. complexity 更低。
-
-### 2.7 候选生成
-当前支持两类候选表达式生成方式。
-
-#### 模拟生成（用于本地测试）
-- `generate_mock_expression_variants(seed_expr, n=8)`
-- `generate_mock_candidates_from_top_expressions(...)`
-
-#### LLM 生成
-- `build_expression_generation_prompt(...)`
-- `try_parse_json_object(text)`
-- 若干表达式合法性检查辅助函数；
-- `call_openai_for_expressions_chat(...)`
-- `generate_candidates_with_llm(...)`
-
-LLM 被要求返回如下 JSON 结构：
-
-```json
-{"expressions": ["expr1", "expr2", "..."]}
-```
-
-随后仅保留满足变量范围与表达式格式约束的候选。
-
-### 2.8 外层搜索流程
-外层搜索主流程由以下函数实现：
-
-- `evaluate_expression_list_on_instances(instances, expressions)`
-- `run_one_search_round(...)`
-- `search_expressions_outer_loop(...)`
-
-这部分是整个实验框架的核心。在每一轮中，系统依次完成：
-
-1. 对候选表达式做去重与过滤；
-2. 在选定实例集上评估所有候选；
-3. 汇总、排序并选出 top 表达式；
-4. 更新 novelty archive；
-5. 使用 mock 或 LLM 方式生成下一轮候选；
-6. 进入下一轮 outer loop。
-
----
-
-## 3. 输入输出约定
-
-### 3.1 Route 格式
-单条 route 使用节点下标列表表示，例如：
-
-```python
-[0, 3, 5, 0]
-```
-
-其中 `0` 表示 depot。一个完整解使用 route 列表表示，即：
-
-```python
-[[0, 3, 5, 0], [0, 2, 4, 0]]
-```
-
-### 3.2 表达式格式
-候选表达式应为单行 Python 算术表达式，例如：
+项目的核心思想是把“如何选择下一个客户节点”表示为一个可执行的 Python 算术表达式。例如：
 
 ```python
 dist_matrix[current][c] - instance['demands'][c]
 ```
 
-表达式最终会被转为如下接口的 score function：
+给定这样的表达式，系统会把它转换成一个打分函数，在构造 CVRP 路径时为每个候选客户打分，分数越小越优先。围绕这一思想，项目形成了完整搜索闭环：
 
-```python
-score_fn(current, c, instance, remaining, dist_matrix)
-```
+1. 准备一组 seed expression 作为初始候选。
+2. 在一批实例上评估每个表达式的表现。
+3. 按可行率、目标值、路线数、复杂度等指标排序。
+4. 保留 top 表达式。
+5. 用 mock 或 LLM 生成下一轮候选。
+6. 重复上述过程，形成 outer loop。
 
-约定为：**分数越小，优先级越高**。
+这种设计的优点是：
 
-### 3.3 评估输出
-当前评估流程至少会记录以下字段：
+- 可解释：最终得到的是可读的启发式表达式，而不是黑盒参数。
+- 可控：可以明确约束候选复杂度、变量范围与安全性。
+- 可扩展：可以方便接入新数据集、新目标函数、新搜索策略。
 
-- `instance`
-- `expression`
-- `cost`
-- `runtime_sec`
-- `feasible`
-- `num_routes`
+---
 
-聚合后的汇总结果通常包含：
+## 3. 当前项目结构
 
-- `num_instances`
+项目主要目录如下：
+
+- `01_raw_data/`：原始 CVRPLib 数据及快照
+- `02_processed_data/`：处理后的 classic / fresh 数据
+- `03_core_algorithm/`：核心算法模块、方法实现与 notebook 原型
+- `04_experiment_outputs/`：benchmark、对照实验输出结果
+- `05_scripts/`：正式 pipeline 脚本入口
+- `06_docs/`：数据说明、流程文档、交接说明
+
+当前应优先把 `05_scripts/` 与 `03_core_algorithm/modules/` 视为正式主链路，notebook 更多用于原型开发、展示和历史追溯。
+
+---
+
+## 4. 数据体系
+
+### 4.1 classic 数据
+
+classic 数据来自 CVRPLib。脚本 `05_scripts/process_cvrplib.py` 会完成：
+
+- 解析 `.vrp` 与 `.sol`
+- 构造标准化 `base.json`
+- 生成 `meta.json`
+- 导出 `index.csv`
+- 生成 classic QA 报告与数据 schema 文档
+
+处理后的 classic 数据位于：
+
+- `02_processed_data/classic/base/`
+- `02_processed_data/classic/meta/`
+- `02_processed_data/classic/index.csv`
+
+### 4.2 fresh 数据
+
+fresh 数据不是外部独立数据集，而是在 classic 基础上扩展出的生鲜配送场景版本。脚本 `05_scripts/generate_fresh_dataset.py` 会为每个 classic 实例补充：
+
+- 时间窗
+- 服务时间
+- 新鲜度等级
+- 最大可接受运输时长
+- 温区
+- 迟到惩罚
+- 损耗惩罚
+- fresh 场景目标权重
+
+处理后的 fresh 数据位于：
+
+- `02_processed_data/fresh/fresh/`
+- `02_processed_data/fresh/fresh_meta/`
+
+这使得项目同时支持两类问题：
+
+- classic：以距离为主目标的标准 CVRP
+- fresh：同时考虑距离、迟到、损耗惩罚的扩展 CVRP
+
+---
+
+## 5. 内部数据表示与关键约定
+
+无论 classic 还是 fresh，项目都会先把实例标准化为统一的内部 `instance` 格式，再交给 solver 和搜索流程使用。
+
+关键约定如下：
+
+### 5.1 Depot 统一为 0
+
+内部统一使用 `depot = 0`。这意味着：
+
+- route 表示以 `0` 作为仓点
+- `distance_matrix`、`demands`、`coords` 都要与这个编号体系对齐
+
+### 5.2 classic 关键字段
+
+classic `instance` 至少包含：
+
+- `name`
+- `depot`
+- `demands`
+- `capacity`
+- `num_nodes`
+- `distance_matrix`
+- `raw`
+
+### 5.3 fresh 关键字段
+
+fresh 在 classic 基础上增加：
+
+- `service_time_min`
+- `ready_time_min`
+- `due_time_min`
+- `freshness_class`
+- `max_travel_time_min`
+- `late_penalty_per_min`
+- `spoilage_penalty`
+- `objective_weights`
+
+### 5.4 表达式接口
+
+classic 表达式常见变量包括：
+
+- `dist_matrix[current][c]`
+- `dist_matrix[c][instance['depot']]`
+- `instance['demands'][c]`
+- `remaining`
+
+fresh 表达式常见变量包括：
+
+- `travel_to_c`
+- `est_lateness`
+- `est_spoil`
+- `instance['demands'][c]`
+- `remaining`
+
+表达式最终都必须输出一个标量分数，且默认规则为：**分数越小，优先级越高**。
+
+---
+
+## 6. 核心算法模块
+
+### 6.1 baseline 求解器
+
+项目包含三类 baseline：
+
+- `nearest_neighbor`
+- `greedy`
+- `ortools`
+
+其中：
+
+- `nearest_neighbor` 和 `greedy` 提供轻量级可解释基线
+- `ortools` 提供强基线参考
+
+在 fresh 场景中，虽然 `ortools` 路径距离通常更短，但由于它没有直接围绕 fresh 的综合目标做定制，因此在迟到/损耗惩罚计入后不一定最优。
+
+### 6.2 表达式驱动启发式
+
+项目的关键桥梁是“把表达式变成 score function”，再用这个 score function 驱动构造式求解器：
+
+- classic：基于距离、需求、剩余容量等变量排序客户
+- fresh：在 classic 基础上增加对迟到和损耗的动态估计
+
+因此，搜索流程的本质是在搜索“更好的客户选择规则”。
+
+### 6.3 候选评估与聚合
+
+项目会对每个候选表达式在多实例上做批量评估，并汇总为表达式级结果。
+
+classic 常见聚合指标：
+
 - `feasible_rate`
 - `avg_cost`
 - `avg_runtime_sec`
 - `avg_num_routes`
-- `complexity`
-- novelty 相关字段（若启用）
+
+fresh 常见聚合指标：
+
+- `feasible_rate`
+- `avg_objective`
+- `avg_distance`
+- `avg_late_penalty`
+- `avg_spoil_penalty`
+- `avg_num_routes`
+- `avg_runtime_sec`
+
+### 6.4 搜索增强模块
+
+为提升搜索效率和候选质量，项目实现了三类增强机制：
+
+#### 重复过滤
+
+不仅做字符串级去重，还做：
+
+- 语法规范化去重
+- 基于 probe 实例的轻量行为去重
+
+#### 复杂度控制
+
+使用 AST 结构复杂度近似衡量表达式复杂度，用于：
+
+- 过滤过于复杂的候选
+- 在排序时偏向更简洁表达式
+
+#### novelty 支持
+
+用聚合行为签名而不是表达式文本来跟踪“是否真正带来新行为”，其目的在于：
+
+- 减少重复探索
+- 鼓励候选多样性
+
+### 6.5 排序逻辑
+
+当前排序逻辑遵循：
+
+1. 优先更高的可行率
+2. 再比较更低的目标值
+3. 再比较更少的路线数
+4. 再比较更低的复杂度
+
+同时会引入一个 `mo_score` 作为多目标辅助 tie-break，保证排序更稳定。
 
 ---
 
-## 4. 当前已经验证通过的部分
-目前以下内容已经在小规模实例子集上完成联调验证：
+## 7. LLM 与 mock 候选生成
 
-- 数据读取与 instance 标准化；
-- baseline 求解器运行；
-- 表达式解析与启发式构造；
-- 多实例上的候选表达式评估；
-- 单轮与多轮搜索执行；
-- OpenAI API 接口与候选表达式生成。
+项目当前支持两种候选生成方式。
 
+### 7.1 mock 生成
 
----
+mock 方式本质上是对 top 表达式做局部扰动，快速生成一批结构相近的变体。它的特点是：
 
-## 5. 后续工作建议分工
-后续工作可以较清晰地拆分为以下两部分。
+- 便宜
+- 稳定
+- 适合做 baseline 搜索生成器
 
-### 5.1 当前 notebook 已基本完成的部分
-以下内容可以视为当前版本的稳定主干：
+### 7.2 LLM 生成
 
-- instance 读取与标准化；
-- baseline 评估；
-- 表达式驱动的启发式求解流程；
-- LLM 候选生成接口；
-- 单轮搜索与 outer loop 主逻辑；
-- 重复过滤、复杂度控制、novelty 支持模块。
+LLM 方式会根据 top 表达式构造 prompt，请模型返回 JSON 形式的新表达式列表。随后系统会做：
 
-### 5.2 适合后续同学接手的部分
-#### A. 新生鲜/新数据集接入
-- 将新数据适配为相同的 `instance` schema；
-- 确保 `coords`、`demands`、`capacity`、`distance_matrix` 字段正确对齐；
-- 验证新实例无需修改主流程即可进入现有评估框架。
+- JSON 解析
+- 安全性检查
+- 复杂度过滤
+- 去重
 
-#### B. 大规模 benchmark 实验执行
-- 将当前小规模测试实例替换为更大的 benchmark 集；
-- 批量运行 baseline 与 outer loop 搜索实验；
-- 保存中间结果表与最终结果表；
-- 在更多实例、更多轮次上比较不同方法表现。
+当前脚本支持通过环境变量配置：
 
-#### C. 实验分析与结果整理
-- 汇总各项性能指标；
-- 比较 baseline、表达式搜索、LLM 增强搜索的差异；
-- 分析 feasible rate、cost、route 数、complexity、novelty 等趋势；
-- 准备最终报告所需的表格与图。
+- `CVRP_OPENAI_API_KEY`
+- `CVRP_OPENAI_HOST`
+
+如果本地没有配置 API key，对照脚本会自动退化为 mock-only。
 
 ---
 
-## 6. 不建议随意修改的部分
-以下约定在 notebook 中被多处默认使用，如需修改，应先检查下游影响。
+## 8. 正式实验入口
 
-### 6.1 Depot 编号约定
-当前内部约定为：
+当前推荐执行顺序如下：
 
-- `depot index = 0`
+1. `python 05_scripts/process_cvrplib.py`
+2. `python 05_scripts/generate_fresh_dataset.py`
+3. `python 05_scripts/run_formal_benchmark.py`
+4. `python 05_scripts/run_llm_vs_mock_small.py`
+5. `python 05_scripts/run_fresh_formal_benchmark.py`
+6. `python 05_scripts/run_fresh_llm_vs_mock_small.py`
 
-该约定会影响 route 表示、需求求和、距离访问等多个部分。
-
-### 6.2 Instance schema
-当前 solver 与 evaluation 代码都依赖前述标准化后的 `instance` 格式。若接入新数据，建议映射到该 schema，而不是直接修改后续函数接口。
-
-### 6.3 表达式接口
-生成的表达式默认只能使用允许的局部变量，并输出一个标量 score。若修改 score function 接口，会同时影响：
-
-- 候选生成；
-- 表达式验证；
-- 求解器调用；
-- outer loop。
-
-### 6.4 排序逻辑
-当前排序逻辑默认优先保证可行性，再比较代价。这是有意设计的实验目标，不建议在未说明理由的情况下随意改动。
+这 6 个脚本覆盖了当前项目的完整主流程。
 
 ---
 
-## 7. 已实现但尚未系统测试的部分（To-do）
-### 7.1 搜索增强模块的消融实验
-原计划需要对若干搜索增强模块做系统性消融实验。目前这些模块 **已经实现并接入当前 pipeline**，但 **尚未在更大 benchmark 上系统测试**。
+## 9. 项目进度与验证状态
 
-当前已实现的模块包括：
+截至目前，项目已完成以下工作：
 
-1. **重复过滤（duplicate filtering）**
-   - 已实现表达式级去重；
-   - 目的：避免完全相同候选被重复评估。
-
-2. **复杂度控制（complexity-aware filtering / ranking）**
-   - 已实现复杂度计算；
-   - 已支持基于复杂度的过滤与排序辅助；
-   - 目的：抑制过于复杂的表达式，并兼顾可解释性与搜索效率。
-
-3. **基于行为签名的 novelty 支持（novelty-based tracking / filtering）**
-   - 已实现行为签名构造；
-   - 已实现 archive-based novelty 标记；
-   - 在对应参数开启时，可将 novelty 作为过滤条件使用；
-   - 目的：鼓励行为多样性，减少对等价或近似等价启发式的重复探索。
-
-#### 当前仍需完成的工作
-需要在更大 benchmark 上补做系统性的消融实验，用于量化上述模块各自的贡献。建议至少考虑如下实验配置：
-
-- 基础搜索流程；
-- 基础搜索 + 重复过滤；
-- 基础搜索 + 复杂度控制；
-- 基础搜索 + novelty 过滤；
-- 三者全部开启的完整版本。
-
-如果后续实验资源允许，也可进一步细分 complexity filtering 与 complexity-aware ranking 的作用。
-
-### 7.2 Benchmark 规模扩展
-当前验证规模仍较小，尚未覆盖完整 benchmark。需要在更大实例集上重复实验，以支持最终结论。
-
-### 7.3 候选安全性与鲁棒性
-尽管目前已经有表达式过滤与合法性检查，LLM 仍可能生成低质量或不可用候选。若后续实验中发现问题，可继续增强过滤规则与异常处理。
-
-### 7.4 与已知最优解的对比分析
-原始 JSON 数据已保存在 `instance["raw"]` 中，后续如需分析 gap、对比 known optimal cost 或 known routes，可直接从该字段中提取信息。
+- classic 数据标准化处理
+- fresh 生鲜数据扩展生成
+- classic / fresh 核心算法模块脚本化
+- 正式 benchmark 脚本封装
+- 消融实验自动化执行
+- mock vs LLM 对照实验
+- 结果导表与图像导出
+- 完整全流程正式运行验证
 
 ---
 
-## 8. 后续接手建议顺序
-若后续同学在当前 notebook 基础上继续推进，建议按以下顺序进行：
+## 10. 实验结果摘要
 
-1. **先原样运行当前 notebook**，确认环境与依赖正常；
-2. **先不要改主流程**，优先做数据扩展或新数据接入；
-3. **保持当前 `instance` 内部格式不变**；
-4. 使用现有入口函数继续推进实验：
-   - `run_one_search_round(...)`
-   - `search_expressions_outer_loop(...)`
-5. 在大规模运行稳定后，再继续进行：
-   - 结果保存；
-   - 汇总表整理；
-   - 图表制作；
-   - 消融实验执行；
-   - 最终报告撰写。
+### 10.1 运行规模
+
+本轮正式全流程执行情况如下：
+
+- classic / fresh 均加载 `95` 个实例
+- classic formal benchmark：`29` 个实例，`4` 个 seed
+- fresh formal benchmark：`29` 个实例，`3` 个 seed
+- classic mock vs LLM：`29` 个实例，`3` 个 mock seed + `3` 个 LLM seed
+- fresh mock vs LLM：`29` 个实例，`3` 个 mock seed + `3` 个 LLM seed
+- 全部流程总耗时约 `72.34` 分钟
+
+### 10.2 classic 结果
+
+- formal benchmark 最优 `best_avg_cost_mean = 1148.54`
+- 所有消融配置最终最优值一致，说明当前搜索流程在 benchmark 上已收敛到同一水平
+- baseline 中 `ortools` 最优，`avg_cost = 946.79`
+- 结论：classic 搜索优于 `nearest_neighbor` 和 `greedy`，但仍未追平 `ortools`
+
+### 10.3 classic mock vs LLM
+
+- mock 最优聚合结果：`1260.07`
+- LLM 最优聚合结果：`1280.89`
+- LLM 相对 mock 退化约 `1.65%`
+
+说明：
+
+- 当前 classic 表达式空间中，LLM 尚未表现出稳定优于 mock 的生成优势
+- LLM 能生成更多变体，但并未突破当前 mock 已能找到的较优规则
+
+### 10.4 fresh 结果
+
+- formal benchmark 最优 `best_avg_cost_mean = 355783.50`
+- 所有消融配置最终最优值一致
+- baseline 中最优为 `nearest_neighbor`
+- 搜索最优结果与 `nearest_neighbor` 持平
+
+说明：
+
+- 当前 fresh 搜索流程还没有找到比基础 `travel_to_c` 更好的规则
+- fresh 目标中损耗惩罚占比很高，是当前总 objective 的主要来源
+
+### 10.5 fresh mock vs LLM
+
+- mock 与 LLM 聚合结果完全持平
+- 两者全部 seed 的最佳表达式都回到了 `travel_to_c`
+
+说明：
+
+- 当前 fresh 表达式空间和 prompt 设计还没有把生鲜场景特征真正转化为更优策略
+- 这并不表示 LLM 无用，而是说明当前实验设置下它的边际收益尚未被释放
+
+---
+
+
+## 11. 主要结果产物位置
+
+### 正式 benchmark
+
+- `04_experiment_outputs/formal_benchmark/`
+- `04_experiment_outputs/fresh_formal_benchmark/`
+
+重点文件：
+
+- `ablation_seed_summary.csv`
+- `ablation_aggregate_summary.csv`
+- `formal_experiment_meta.json`
+
+### mock vs LLM
+
+- `04_experiment_outputs/llm_vs_mock_small/`
+- `04_experiment_outputs/fresh_llm_vs_mock_small/`
+
+重点文件：
+
+- `baseline_summary.csv`
+- `mock_vs_llm_seed_summary.csv`
+- `mock_vs_llm_aggregate_summary.csv`
+- `llm_token_summary.json`
+
+### 数据与 QA 文档
+
+- `06_docs/pipeline_docs/data_schema.md`
+- `06_docs/pipeline_docs/fresh_data_schema.md`
+- `06_docs/pipeline_docs/qa_report.md`
+- `06_docs/pipeline_docs/fresh_qa_report.md`
+
+---
+
+## 12. 维护与接手时的重要注意事项
+
+### 12.1 不建议轻易改动的部分
+
+以下约定被多处默认依赖：
+
+- `depot = 0`
+- 统一 `instance` schema
+- 表达式只返回单标量 score
+- 排序优先保证可行性
+
+如果调整这些约定，需要同时检查：
+
+- solver
+- evaluation
+- 候选过滤
+- LLM prompt
+- outer loop
+- 导出结果逻辑
+
+### 12.2 notebook 与正式代码的关系
+
+当前仓库中的 advanced notebook 仍然有参考价值，但它们更适合：
+
+- 回看算法原型
+- 理解函数来源
+- 做快速交互式试验
+
+真正用于正式执行时，应优先使用：
+
+- `03_core_algorithm/modules/`
+- `05_scripts/`
+
+### 12.3 如何理解当前结果
+
+目前结果不应解读为“LLM 不适合做该任务”，而应理解为：
+
+- 当前表达式空间较窄
+- 当前 prompt 还不够强
+- 当前搜索机制尚未充分放大 LLM 的长处
+
+因此，LLM 当前没有显著优于 mock，更像是在说明：
+
+**方法设计仍是瓶颈，样本量已经不是主要瓶颈。**
+
+---
+
+## 13. 后续优化建议
+
+如果后续还要继续推进，建议按以下优先级进行。
+
+### 优先级 1：改进 fresh 方法设计
+
+重点包括：
+
+- 扩大 fresh 表达式变量集合
+- 让候选显式建模 `lateness` / `spoilage` / `distance` 的 trade-off
+- 重新设计 LLM prompt
+- 调整候选过滤与排序策略
+
+### 优先级 2：在方法改进后再补一轮 benchmark
+
+当前 benchmark 已足够支持阶段性结论；下一轮更大规模实验更适合放在方法改进之后，而不是立刻继续盲目扩量。
+
+### 优先级 3：补充更面向报告的分析
+
+例如：
+
+- classic 相对 `known_opt_cost` 的 gap 分析
+- fresh 目标分解分析
+- 不同规模实例下的表现差异
+- 表达式复杂度与效果的相关性
+
+---
+
+## 14. 总结
+
+本项目已经从最初的 notebook 原型发展为一套较完整的 CVRP 启发式搜索实验工程，具备以下特点：
+
+- 同时支持 classic 与 fresh 两类场景
+- 支持 baseline、表达式搜索、mock、LLM 对照
+- 支持正式 benchmark 与消融实验
+- 支持结果导出、图表生成与文档沉淀
+
+当前版本最大的价值在于：
+
+- 流程稳定
+- 结果可复现
+- 结构清晰
+- 便于接手和继续演进
+
+当前版本最大的局限在于：
+
+- classic 尚未超过 `ortools`
+- fresh 尚未找到超越 `travel_to_c` 的更优规则
+- LLM 相比 mock 还没有形成稳定优势
+
 

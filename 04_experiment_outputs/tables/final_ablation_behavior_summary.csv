@@ -1,6 +1,0 @@
-config,rounds_mean,rows_mean,runtime_mean
-base,4.0,27.0,0.0397056469566114
-base_plus_dedup,4.0,27.0,0.0399703180703673
-base_plus_complexity,4.0,24.0,0.0375849657131793
-base_plus_novelty,2.0,10.0,0.0406304617037717
-all_enabled,2.0,9.0,0.0387116592962622

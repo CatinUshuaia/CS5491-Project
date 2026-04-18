@@ -1,8 +1,8 @@
 {
   "instance_id": "F-n45-k4",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\F\\F-n45-k4.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\F\\F-n45-k4.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\F\\F-n45-k4.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\F\\F-n45-k4.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(Fisher: problem 10, No of trucks: 4, Optimal value: 724)",

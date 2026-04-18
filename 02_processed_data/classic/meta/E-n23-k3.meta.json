@@ -1,8 +1,8 @@
 {
   "instance_id": "E-n23-k3",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\E\\E-n23-k3.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\E\\E-n23-k3.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\E\\E-n23-k3.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\E\\E-n23-k3.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(Christophides and Eilon, Min no of trucks: 3, Optimal value: 569)",

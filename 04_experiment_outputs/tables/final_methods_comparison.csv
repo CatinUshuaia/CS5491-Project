@@ -1,6 +1,0 @@
-method,family,feasible_rate,avg_cost,avg_runtime_sec,token_total,note
-ortools,baseline,1.0,995.8666666666668,3.0018877506256105,0,classic baseline
-nearest_neighbor,baseline,1.0,1337.0,0.0006465752919514,0,classic baseline
-greedy,baseline,1.0,2591.0,0.0010511557261149,0,classic baseline
-search_llm,search,1.0,1229.1333333333334,0.0599965095520019,6170,llm search best result
-search_mock,search,1.0,1330.0666666666666,0.0628316879272461,0,mock search best result

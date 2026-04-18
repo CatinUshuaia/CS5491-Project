@@ -1,6 +1,6 @@
 # Fresh Data Schema
 
-## File: `data/processed/fresh/<instance_id>.fresh.json`
+## File: `02_processed_data/fresh/fresh/<instance_id>.fresh.json`
 
 - Includes all fields from classic `base.json`
 - Additional instance-level fields:
@@ -18,6 +18,6 @@
   - `late_penalty_per_min`
   - `spoilage_penalty`
 
-## File: `data/processed/fresh_meta/<instance_id>.fresh.meta.json`
+## File: `02_processed_data/fresh/fresh_meta/<instance_id>.fresh.meta.json`
 
 - Generation rules, seeds, and source mapping for full reproducibility.

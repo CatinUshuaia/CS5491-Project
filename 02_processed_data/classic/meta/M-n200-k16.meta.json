@@ -1,8 +1,8 @@
 {
   "instance_id": "M-n200-k16",
   "source": {
-    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\M\\M-n200-k16.vrp",
-    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\M\\M-n200-k16.sol"
+    "vrp_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\M\\M-n200-k16.vrp",
+    "sol_file": "C:\\Users\\Administrator\\Desktop\\CVRP\\01_raw_data\\cvrplib_sets\\M\\M-n200-k16.sol"
   },
   "parser_version": "1.0",
   "raw_comment": "(From Christophides et al, No of trucks: 16)",
